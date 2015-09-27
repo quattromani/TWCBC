@@ -142,6 +142,14 @@ connect: {
     }
   },
 
+  'gh-pages': {
+    options: {
+      base: 'dist',
+      add: true
+    },
+    src: ['**']
+  },
+
     // Before generating any new files,
     // remove any previously-created files.
     clean: ['<%= config.dist %>/**/*.{html,xml}']
