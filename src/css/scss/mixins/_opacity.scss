@@ -1,8 +1,0 @@
-// Opacity
-@mixin opacity($opacity) {
-  opacity: $opacity;
-  @if $support-legacy {
-    $opacity-ie: ($opacity * 100);
-    filter: #{alpha(opacity=$opacity-ie)};
-  }
-}
