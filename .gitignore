@@ -1,6 +1,3 @@
-# Ignore the site output
-_site
-
 # Ignore node_modules
 /node_modules
 
