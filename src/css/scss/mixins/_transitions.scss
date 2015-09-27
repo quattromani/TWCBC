@@ -1,5 +1,0 @@
-// Transitions
-@mixin transition($what: all, $length: .2s, $easing: ease-in-out) {
-  will-change: transition;
-  transition: $what $length $easing;
-}
