@@ -22,7 +22,7 @@ button,
   letter-spacing: .075em;
 
   a & {
-    color: $color-white;
+    color: $white;
   }
 
   &:hover {
@@ -39,7 +39,7 @@ button,
   &.btn-primary,
   &.button-primary {
     background: $base-button-color;
-    color: $color-white;
+    color: $white;
 
     &:hover {
      background: $base-button-color-hover;
@@ -47,38 +47,38 @@ button,
  }
 
  &.btn-error {
-  background: $color-primary-red;
-  color: $color-white;
+  background: $red;
+  color: $white;
 
   &:hover {
-   background: lighten($color-primary-red, 25%);
+   background: lighten($red, 25%);
  }
 }
 
 &.btn-success {
-  background: $color-primary-green;
-  color: $color-white;
+  background: $green;
+  color: $white;
 
   &:hover {
-   background: $color-primary-green;
+   background: $green;
  }
 }
 
 &.btn-info {
-  background: $color-primary-blue;
-  color: $color-white;
+  background: $blue;
+  color: $white;
 
   &:hover {
-   background: lighten($color-primary-blue, 20%);
+   background: lighten($blue, 20%);
  }
 }
 
 &.btn-black {
-  background: $color-black;
-  color: $color-white;
+  background: $black;
+  color: $white;
 
   &:hover {
-   background: $color-grey;
+   background: $grey;
  }
 }
 
@@ -86,8 +86,9 @@ button,
 &.js-disabled,
 &.disabled {
   cursor: default;
-  background: $color-light-grey;
-  color: $base-font-color;
+  background: $lightgrey;
+  color: $text
+;
   pointer-events: none;
 
   &:hover,
@@ -115,7 +116,7 @@ button,
   @include padding(($base-spacing / 6), ($base-spacing / 1.5));
 }
 
-@media (max-width: $mobile) {
+@include bp($small) {
   &.mobile-full {
    display: block;
    width: 100%;
@@ -134,13 +135,13 @@ button,
 }
 
 .cta {
-  @include box-shadow(inset 0 0 0 .125em $color-white);
-  color: $color-white;
+  @include box-shadow(inset 0 0 0 .125em $white);
+  color: $white;
 
   &:hover {
     background: none;
-    @include box-shadow(inset 0 0 0 .125em $color-light-grey);
-    color: $color-light-grey;
+    @include box-shadow(inset 0 0 0 .125em $lightgrey);
+    color: $lightgrey;
   }
 }
 
@@ -188,7 +189,7 @@ button,
 // Google search on 404
 .search-goog {
   input[type='text'] {
-    border: 1px solid $color-light-grey !important;
+    border: 1px solid $lightgrey !important;
     padding: .5em !important;
     margin-bottom: .5em !important;
   }
@@ -198,7 +199,7 @@ button,
     @extend .btn-primary;
 
     &:hover {
-      color: $color-white;
+      color: $white;
     }
   }
 }
@@ -215,7 +216,7 @@ input[type='submit'] {
   margin: 0 auto;
   background-color: #567ac9;
   text-align: center;
-  color: $color-white;
+  color: $white;
 
   &:before {
     @include padding($base-spacing/2 $base-spacing/1.5);
@@ -228,11 +229,11 @@ input[type='submit'] {
     top: 0;
     left: -$base-spacing*1.5;
     background-color: #1f479c;
-    color: $color-white;
+    color: $white;
     content:"\f09a";
     height: 100%;
 
-    @include media($mobile) {
+    @include bp($small) {
       line-height: 2;
     }
   }

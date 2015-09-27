@@ -25,12 +25,12 @@
       @include padding($base-spacing/2 $base-spacing/2);
       @include margin(0);
       @include border-radius;
-      @include rgba($color-black,.0);
+      @include rgba($black,.0);
       @include font-family($base-font-family);
       @include transition(all, .2s, ease-in-out);
       max-width: 100%;
       border: 1px solid $form-border-color;
-      background-color: $color-off-white;
+      background-color: $offwhite;
       font-weight: 300;
       color: inherit;
 
@@ -83,12 +83,12 @@
         border: none;
         outline: none;
         -webkit-appearance: none;
-        background-color: $color-light-grey;
+        background-color: $lightgrey;
 
         &::-webkit-slider-thumb {
           -webkit-appearance: none;
           @include border-radius(100%);
-          background-color: $color-grey;
+          background-color: $grey;
           width: 1em;
           height: 1em;
         }
@@ -126,8 +126,8 @@ input[type="file"]::-webkit-file-upload-button {
 
 // Errors and Validation
 .email-register-messages {
-  @include font-family($heading-font-family-alt);
-  color: $alert-color;
+  @include font-family($heading-font-family-light);
+  color: $red;
 
   ul {
     @include bulleted;
@@ -145,5 +145,5 @@ input[type="file"]::-webkit-file-upload-button {
 }
 
 .invalid {
-  border: 1px solid $alert-color;
+  border: 1px solid $red;
 }

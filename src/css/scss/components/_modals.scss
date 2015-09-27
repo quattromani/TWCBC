@@ -15,7 +15,8 @@
 		margin: auto;
 		margin-top: -16em;
 		background: none repeat scroll 0 0 #fff;
-		color: $base-font-color;
+		color: $text
+;
 		z-index: 99999;
 
 		> .modal-content {
@@ -45,7 +46,7 @@
 		overflow: auto;
 		max-height: 25em;
 
-		@include media($mobile) {
+		@include bp($small) {
 			max-height: 15.625em;
 		}
 	}

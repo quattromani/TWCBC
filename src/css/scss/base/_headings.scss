@@ -17,11 +17,11 @@ $i: 1;
     text-transform: nth($value, 6);
 
 		@if $i <= 3 {
-			@include media($tablet) {
+			@include bp($medium) {
 				@include font-size(nth($value, 2) * .875)
 			}
 
-			@include media($mobile) {
+			@include bp($small) {
 				@include font-size(nth($value, 2) * .75)
 			}
 		}
@@ -36,9 +36,4 @@ $i: 1;
 .h5,
 .h6 {
 	@include inline-block;
-}
-
-h1,
-.h1 {
-  @include article-header;
 }

@@ -8,10 +8,10 @@
    .expandableHybrid {
     li {
       h6 {
-        margin-bottom: 0;
         @include padding(.5em);
+        @include linear-gradient(#3779b3, #02447e);
+        margin-bottom: 0;
         border-bottom: 1px solid #e1e1e1;
-        @include background-gradient(#3779b3, #02447e);
         color: $text-white;
       }
 

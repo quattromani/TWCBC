@@ -1,0 +1,28 @@
+ # Site settings
+title: "TWCBC Style Guide"
+email: max@qoppa.com
+description: ""
+baseurl: ""
+url: "http://quattromani.github.io/TWCBC/"
+author: "maxquattromani"
+twitter_username: maxquattromani
+github_username:  maxquattromani
+disqus: maxquattromani
+
+# Build settings
+exclude: ['node_modules', 'scss', 'DAM']
+
+google_analytics: false
+google_analytics_id:
+jquery_version: 1.8.3
+
+sitemap:
+  file: "/sitemap.xml"
+  exclude:
+      - "/atom.xml"
+      - "/feed.xml"
+      - "/feed/index.xml"
+  include_posts:
+      - "/index.html"
+  change_frequency_name: "change_frequency"
+  priority_name: "priority"

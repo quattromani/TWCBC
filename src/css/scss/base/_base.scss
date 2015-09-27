@@ -17,7 +17,7 @@ html {
   height: 100%;
   font-family: $base-font-family;
   font-size: $base-font-reset;
-  color: $base-font-color;
+  color: $text;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -35,9 +35,7 @@ html, body {
 }
 
 body {
-  @include linear-gradient($site-bg-start, $site-bg-end);
   background-repeat: repeat;
-  background-attachment: $site-background-attachment;
 }
 
 body,
@@ -74,7 +72,7 @@ audio,
 canvas,
 progress,
 video {
-  display: inline-block;
+  @include inline-block;
   vertical-align: baseline;
 }
 

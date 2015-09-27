@@ -70,7 +70,7 @@ ul {
 
   &.lined > li {
     overflow: auto;
-    border-bottom: 1px dotted lighten($base-font-color, 40%);
+    border-bottom: 1px dotted lighten($text, 40%);
 
     &.js-last {
       border-bottom: 0;
@@ -81,7 +81,7 @@ ul {
 // Striped List Items
 .striped {
   li:nth-child(odd) {
-    background-color: rgba($color-light-grey, .1);
+    background-color: rgba($lightgrey, .1);
   }
 }
 

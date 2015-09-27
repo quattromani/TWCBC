@@ -2,12 +2,12 @@
 
 video {
   @include inline-block;
+  @include margin;
   top: 0;
   left: 0;
   max-width: 100%;
-  @include margin;
 
-  @include media($mobile) {
+  @include bp($small) {
     video {
       height: auto;
     }

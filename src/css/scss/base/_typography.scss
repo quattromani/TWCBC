@@ -10,7 +10,7 @@ a {
   background-color: transparent;
   vertical-align: baseline;
   font-family: inherit;
-  color: $base-link-color;
+  color: $link;
   text-decoration: $base-link-text-decoration;
   cursor: pointer;
   @include transition;
@@ -21,12 +21,12 @@ a {
   }
 
   &:hover {
-    color: $base-link-color-hover;
+    color: $link;
   }
 
   &.muted,
   .muted & {
-    color: $color-light-grey;
+    color: $lightgrey;
   }
 
   &:active,
@@ -36,10 +36,10 @@ a {
 
   &[href^="http://"],
   &[href^="https://"] {
-    color: $link-external-color;
+    color: $link;
 
     &:hover {
-      color: $link-external-color-hover;
+      color: $link;
     }
   }
 }
@@ -80,7 +80,8 @@ blockquote {
   padding-left: $base-spacing;
   border-left: 3px solid currentColor;
   font-style: italic;
-  color: tint($base-font-color, 20%);
+  color: tint($text
+, 20%);
 }
 
 q {
@@ -114,8 +115,8 @@ sup {
 }
 
 mark {
-  background: $info-bg;
-  color: $info-color;
+  background: $text-info;
+  color: $text-info;
 }
 
 /* ==========================

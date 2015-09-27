@@ -40,7 +40,7 @@
 }
 
 .base-font-alt {
-  font-family: $base-font-family-alt;
+  font-family: $base-font-family-medium;
 }
 
 .lede {
@@ -131,7 +131,7 @@ $widths: 5;
 }
 
 .image-bordered {
-  border: ($base-spacing / 2) solid $color-light-grey;
+  border: ($base-spacing / 2) solid $lightgrey;
 }
 
 .avatar {
@@ -144,8 +144,8 @@ $widths: 5;
 	@include margin(0, 0, $base-spacing, 0);
 	@include padding($base-spacing);
 	@include border-radius;
-	border: 1px solid $color-dark-grey;
-	background: $color-light-grey;
+	border: 1px solid $grey;
+	background: $lightgrey;
 
 	h1,h2,h3,h4,h5,h6 {
 		margin-bottom: 0;
@@ -158,34 +158,36 @@ $widths: 5;
 
 .bordered-solid {
 	@include padding($base-spacing);
-	border: 1px solid $color-grey;
+	border: 1px solid $grey;
 }
 
 .bordered-dotted {
 	@include padding($base-spacing);
-	border: 1px dotted $color-grey;
+	border: 1px dotted $grey;
 }
 
 .bordered-left,
 %bordered-left {
 	padding-left: $site-gutter-width;
-	border-left: 1px dotted $color-grey;
+	border-left: 1px dotted $grey;
 }
 
 .bordered-left-dark {
 	@extend %bordered-left;
-	border-left: 1px solid $base-font-color;
+	border-left: 1px solid $text
+;
 }
 
 .bordered-right,
 %bordered-right {
 	padding-right: $site-gutter-width;
-	border-right: 1px dotted $color-grey;
+	border-right: 1px dotted $grey;
 }
 
 .bordered-right-dark {
 	@extend %bordered-right;
-	border-right: 1px solid $base-font-color;
+	border-right: 1px solid $text
+;
 }
 
 .overlay-striped {
@@ -215,7 +217,7 @@ $widths: 5;
 .rwd-break {
   display: none;
 
-  @include media($mobile) {
+  @include bp($small) {
     display: block;
   }
 }
@@ -246,7 +248,7 @@ $widths: 5;
 	margin-bottom: $base-spacing;
 }
 
-@include media($tablet) {
+@include bp($medium) {
 	.tablet-hidden {
 		display: none !important;
 	}
@@ -276,7 +278,7 @@ $widths: 5;
 	}
 }
 
-@include media($mobile) {
+@include bp($small) {
 
 	.mobile-hidden {
 		display: none !important;

@@ -1,5 +1,4 @@
-// Pull modules for individually compiled css files
-@import "../modules/allModules";
+@charset "UTF-8";
 
 /* ==========================================================================
     Layout -- Version: 1.9.0.2 - Updated: 1/11/2014
@@ -12,7 +11,7 @@
 .twc-container {
   display: block;
   width: 100%;
-  max-width: $site-width;
+  max-width: $max-width;
   margin: 0 auto;
   padding: 2em 0;
   overflow: visible;

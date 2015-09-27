@@ -39,6 +39,6 @@ $fontawesome: 'FontAwesome';
 $pre: Inconsolata,Monaco,Consolas,"Andale Mono","Bitstream Vera Sans Mono","Courier New",Courier,monospace;
 
 // =Inline Text Elements
-$em-color: $base-font-color;
-$mark-bg: $info-color;
-$mark-color: $base-font-color !default;
+$em-color: $text;
+$mark-bg: $text-info;
+$mark-color: $text !default;

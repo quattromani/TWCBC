@@ -53,13 +53,6 @@
     color: darken($dribbble-link-color, 5%);
   }
 }
-[class*='fa-calendar'] {
-  color: $calendar-link-color;
-
-  &:hover {
-    color: darken($dribbble-link-color, 5%);
-  }
-}
 
 // For Font Awesome 4.3.0
 $icon-adjust: "\f042";

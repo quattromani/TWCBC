@@ -2,7 +2,7 @@
 
 details {
 	@include margin(1em, 0);
-	background: lighten($color-light-grey, 5%);
+	background: lighten($lightgrey, 5%);
 
 	p {
 		@include padding(1em);
@@ -12,9 +12,9 @@ details {
 		@include inline-block;
 		width: 100%;
 		@include padding(.5em);
-		background: $color-grey;
+		background: $grey;
 		outline: none;
-		color: $color-white;
+		color: $white;
 
     // Hide the Default Marker
     &::-webkit-details-marker {
@@ -22,12 +22,12 @@ details {
     }
 
     &:before {
+      @include font-family($fontawesome);
       display: inline-block;
       width: 1em;
       height: 1em;
       margin-right: .5em;
       content: "\f078";
-      @include font-family($fontawesome);
     }
   }
 
