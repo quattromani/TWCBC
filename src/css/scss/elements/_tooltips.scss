@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+/* ==========================================================================
+    Tooltips -- Version: 1.9.0.1 - Updated: 2/6/2014
+   ========================================================================== */
+
+   .tooltip {
+    position: relative;
+    color: $link;
+    text-decoration: none;
+
+    a {
+      position: relative;
+    }
+
+    span.tooltip-text {
+      @include border-radius(2px);
+      @include background-gradient(#e0e7eb, $background-white);
+      @include opacity(0);
+      @include box-shadow(0 0 3px 0 $text);
+      @include transition(opacity, .3s, ease);
+      position: absolute;
+      left: 50%;
+      width: 150px;
+      margin-left: -75px;
+      padding: .5em 1em;
+      border: 3px solid $text-white;
+      color: $text;
+      text-align: center;
+      z-index: 999999;
+    }
+
+    &:hover span.tooltip-text {
+      @include opacity(1);
+    }
+
+    span.tooltip-text:hover {
+      @include opacity(0);
+      cursor: default;
+    }
+
+    &.above span.tooltip-text {
+      bottom: 2em;
+
+      &:before {
+        position: absolute;
+        bottom: -11px;
+        left: 43%;
+        width: 0;
+        height: 0;
+        content: " ";
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid $text-white;
+        z-index: 5;
+      }
+
+      &:after {
+        position: absolute;
+        display: block;
+        left: 43%;
+        bottom: -13px;
+        width: 0;
+        height: 0;
+        content: " ";
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid #999;
+      }
+    }
+
+    &.below span.tooltip-text {
+      top: 2em;
+
+      &:before {
+        position: absolute;
+        top: -11px;
+        left: 43%;
+        width: 0;
+        height: 0;
+        content: " ";
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid $text-white;
+        z-index: 5;
+      }
+
+      &:after {
+        position: absolute;
+        display: block;
+        left: 43%;
+        top: -13px;
+        width: 0;
+        height: 0;
+        content: " ";
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #999;
+      }
+    }
+  }
+
+/* ie8 (.ie8) */
+
+
+.twc-ie8 .tooltip {
+  span.tooltip-text {
+    @include opacity(0);
+    background-image: none;
+  }
+
+  &:hover span.tooltip-text {
+    @include opacity(1);
+  }
+}

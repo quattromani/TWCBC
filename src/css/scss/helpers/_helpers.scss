@@ -1,0 +1,301 @@
+@charset "UTF-8";
+
+.clear {
+	clear: both;
+}
+
+.relative {
+	position: relative;
+}
+
+.center {
+	@include center;
+}
+
+.left {
+	float: left;
+	left: 0;
+}
+
+.right {
+	float: right;
+	right: 0;
+}
+
+.fixed-top {
+	position: fixed;
+}
+
+.fixed-bottom {
+	position: fixed;
+	bottom: 0;
+}
+
+/* ==========================
+    Body Text
+   ========================== */
+
+.base-font {
+  font-family: $base-font-family;
+}
+
+.base-font-alt {
+  font-family: $base-font-family-medium;
+}
+
+.lede {
+  @include font-size($lede-font-size);
+}
+
+.body-text {
+  @include font-size($body-text);
+}
+
+.small-body-text {
+  @include font-size($small-body-text);
+}
+
+.disclaimer-text {
+  @include font-size($disclaimer-text);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.small-caps {
+  font-variant: small-caps;
+}
+
+// Create widths in increments of 5%
+[class*='width-'] {
+	@include inline-block;
+}
+
+$widths: 5;
+@while $widths <= 100 {
+	.width-#{$widths} {
+		width: ($widths * 1%);
+	}
+
+	$widths: $widths + 5 !global;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-center {
+	text-align: center;
+	clear: both;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-justify {
+	text-align: justify;
+}
+
+.text-bold {
+	font-weight: 700;
+}
+
+.image-left {
+	float: left;
+	margin-right: $base-spacing;
+}
+
+.image-center {
+	@include margin(0, auto);
+	text-align: center;
+}
+
+.image-right {
+	float: right;
+	margin-left: $base-spacing;
+}
+
+.image-rounded {
+  @include border-radius;
+}
+
+.image-circular,
+%image-circular {
+  @include border-radius(50%);
+}
+
+.image-bordered {
+  border: ($base-spacing / 2) solid $lightgrey;
+}
+
+.avatar {
+  &-circle {
+    @extend %image-circular;
+  }
+}
+
+.box {
+	@include margin(0, 0, $base-spacing, 0);
+	@include padding($base-spacing);
+	@include border-radius;
+	border: 1px solid $grey;
+	background: $lightgrey;
+
+	h1,h2,h3,h4,h5,h6 {
+		margin-bottom: 0;
+	}
+}
+
+.border-radius {
+	@include border-radius;
+}
+
+.bordered-solid {
+	@include padding($base-spacing);
+	border: 1px solid $grey;
+}
+
+.bordered-dotted {
+	@include padding($base-spacing);
+	border: 1px dotted $grey;
+}
+
+.bordered-left,
+%bordered-left {
+	padding-left: $site-gutter-width;
+	border-left: 1px dotted $grey;
+}
+
+.bordered-left-dark {
+	@extend %bordered-left;
+	border-left: 1px solid $text
+;
+}
+
+.bordered-right,
+%bordered-right {
+	padding-right: $site-gutter-width;
+	border-right: 1px dotted $grey;
+}
+
+.bordered-right-dark {
+	@extend %bordered-right;
+	border-right: 1px solid $text
+;
+}
+
+.overlay-striped {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAGCAYAAAAG5SQMAAAAG0lEQVR42mJgQICZcIIBXZSBOGUAAAAA//8DAIbHA5cISpS5AAAAAElFTkSuQmCC);
+}
+
+.column-count-2 {
+	@include columns(2, $base-spacing * 2);
+}
+
+.column-count-3 {
+	@include columns(3, $base-spacing * 2);
+}
+
+.column-count-4 {
+	@include columns(4, $base-spacing * 2);
+}
+
+.column-count-6 {
+	@include columns(6, $base-spacing * 2);
+}
+
+.nowrap {
+	overflow: hidden;
+}
+
+.rwd-break {
+  display: none;
+
+  @include bp($small) {
+    display: block;
+  }
+}
+
+.hidden,
+.desktop-hidden {
+	display: none;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+.no-fouc {
+	display: none;
+}
+
+.js-last {
+	border-bottom: 0;
+}
+
+.desktop-br { display: block; }
+
+// Text Truncation
+
+[class*='truncate'] {
+	overflow: hidden;
+	margin-bottom: $base-spacing;
+}
+
+@include bp($medium) {
+	.tablet-hidden {
+		display: none !important;
+	}
+
+	.desktop-hidden {
+		display: block;
+	}
+
+	.tablet-br {
+		display: block;
+	}
+
+	.bordered-left,
+	.bordered-right {
+		@include padding;
+		border: 0;
+	}
+
+	.column-count-2,
+	.column-count-3,
+	.column-count-4 {
+		@include columns(2, $base-spacing * 2)
+	}
+
+	.column-count-6 {
+		@include columns(3, $base-spacing * 2);
+	}
+}
+
+@include bp($small) {
+
+	.mobile-hidden {
+		display: none !important;
+	}
+
+	.mobile-full {
+		display: block;
+		float: none;
+	}
+
+	.mobile-br {
+		display: block;
+	}
+
+	.column-count-2,
+	.column-count-3,
+	.column-count-4 {
+		@include columns(1, 0)
+	}
+}

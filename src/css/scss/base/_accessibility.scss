@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/* ==========================================================================
+    Accessibility -- Version: 1.9.0.1 - Updated: 1/1/14 #{timestamp()}
+   ========================================================================== */
+
+// This class does not have a component class requirement
+.visually-hidden {
+  @include margin(-$base-spacing);
+  @include padding;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+
+  &.focusable {
+    &:active,
+    &:focus {
+      @include margin;
+      position: static;
+      width: auto;
+      clip: auto;
+      height: auto;
+      overflow: visible;
+    }
+  }
+}
