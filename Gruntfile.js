@@ -33,7 +33,7 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         files: {
-          '<%= config.src %>/css/build/styles.css' : '<%= config.src %>/css/scss/styles.scss'
+          '<%= config.src %>/css/styles.css' : '<%= config.src %>/css/scss/styles.scss'
         }
       }
     },
@@ -61,9 +61,9 @@ cssmin: {
   target: {
     files: [{
       expand: true,
-      cwd: '<%= config.src %>/css/build',
+      cwd: '<%= config.src %>/css/',
       src: ['*.css', '!*.min.css'],
-      dest: '<%= config.src %>/css/build',
+      dest: '<%= config.src %>/css/',
       ext: '.min.css'
     }]
   }
@@ -72,7 +72,7 @@ cssmin: {
 autoprefixer: {
   dev: {
     files: {
-      '<%= config.src %>/css/build/styles.css': ['<%= config.src %>/css/build/styles.css']
+      '<%= config.src %>/css/styles.css': ['<%= config.src %>/css/styles.css']
     }
   }
 },
