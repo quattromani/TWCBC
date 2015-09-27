@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+hr {
+	@include margin($base-spacing, 0);
+	border: 0;
+	border-top: 1px solid $hr-color-top;
+	border-bottom: 1px solid $color-white;
+
+	&.below-desktop {
+		display: none;
+
+		@include media($tablet) {
+			display: block;
+			border: none;
+		}
+
+		@include media($mobile) {
+			display: block;
+			border-top: 1px solid $hr-color-top;
+			border-bottom: 1px solid $color-white;
+		}
+	}
+}

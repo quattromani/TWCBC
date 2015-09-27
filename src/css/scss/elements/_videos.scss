@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+video {
+  @include inline-block;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  @include margin;
+
+  @include media($mobile) {
+    video {
+      height: auto;
+    }
+  }
+
+  figure & {
+    margin-bottom: $base-spacing;
+  }
+}
+
+.video-container {
+  margin-bottom: $base-spacing;
+  text-align: center;
+}

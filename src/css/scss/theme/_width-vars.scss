@@ -1,0 +1,12 @@
+$base-spacing: 2rem !default;
+$pad: $base-spacing;
+
+// =Grid settings
+$gutter: $base-spacing;
+$grid-columns: 12;
+$max-width: 980px;
+
+// TWC Residential Breakpoints
+$big: 769px;
+$medium: 768px;
+$small: 640px;

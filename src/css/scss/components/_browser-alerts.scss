@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/* ==========================================================================
+    Alerts -- 1.9.0.0 - Updated: 12/29/2013
+   ========================================================================== */
+
+.twc-browser-alert-section {
+  @extend .twc-alert-section;
+  @include background-gradient(#fef937, #e8d440);
+  ul {
+    margin-bottom: 0;
+  }
+
+  .twc-alert-close:after {
+    color: $text;
+  }
+}

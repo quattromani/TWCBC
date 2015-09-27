@@ -1,0 +1,15 @@
+// =Headings
+$heading-font-family: 'gotham-medium', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$heading-font-family-alt: 'gotham-medium', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$heading-color-primary: $color-brand-primary;
+$heading-color-secondary: $color-brand-secondary;
+$heading-line-height: 1;
+
+$heading-list: (
+  h1   36   100   $heading-font-family-light    $heading-color-primary       initial,
+  h2   30   100   $heading-font-family          $heading-color-secondary     initial,
+  h3   24   100   $heading-font-family-light    $heading-color-secondary     initial,
+  h4   22   100   $heading-font-family          $heading-color-secondary     initial,
+  h5   20   100   $heading-font-family          $heading-color-primary       initial,
+  h6   18   100   $heading-font-family-light    $heading-color-secondary     initial
+);

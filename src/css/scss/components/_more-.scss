@@ -1,0 +1,30 @@
+[class*='more-'] {
+    margin-bottom: $base-spacing;
+
+    h2 {
+      @include article-header;
+    }
+
+    ul {
+      @include padding($base-spacing);
+      background-color: $color-light-grey;
+      overflow: auto;
+      margin-bottom: 0;
+
+      @include media($mobile) {
+        width: calc(100% +  #{$base-spacing*2});
+        margin-left: -$base-spacing;
+      }
+
+      li {
+        @include card;
+        @include span-columns(3);
+        @include omega(5);
+
+        @include media($mobile) {
+          @include span-columns(2);
+          @include omega(2);
+        }
+      }
+    }
+  }
