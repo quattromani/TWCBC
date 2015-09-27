@@ -175,4 +175,6 @@ grunt.registerTask('build', [
   'assemble'
   ]);
 
+grunt.registerTask('publish', ['gh-pages']);
+
 };
