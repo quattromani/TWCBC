@@ -2538,7 +2538,7 @@ mark {
   margin-left: 2rem; }
 
 .image-rounded {
-  border-radius: 0;
+  border-radius: 3px;
   background-clip: border-box; }
 
 .image-circular,
@@ -2552,7 +2552,7 @@ mark {
 .box {
   margin: 0 0 2rem 0;
   padding: 2rem;
-  border-radius: 0;
+  border-radius: 3px;
   background-clip: border-box;
   border: 1px solid #666;
   background: #e1e1e1; }
@@ -2560,7 +2560,7 @@ mark {
     margin-bottom: 0; }
 
 .border-radius {
-  border-radius: 0;
+  border-radius: 3px;
   background-clip: border-box; }
 
 .bordered-solid {
@@ -2680,6 +2680,8 @@ button,
   *vertical-align: auto;
   margin: 0;
   padding: 1rem 2rem;
+  border-radius: 3px;
+  background-clip: border-box;
   font-family: "TWC-Round-Book", "Helvetica Neue", Helvetica, Arial, sans-serif, Arial, Sans-Serif;
   font-style: normal;
   font-weight: normal;
@@ -2939,7 +2941,7 @@ button,
 
 .facebook-button {
   padding: 1rem 2rem;
-  border-radius: 0 0 0 0;
+  border-radius: 0 3px 3px 0;
   background-clip: border-box;
   position: relative;
   margin: 0 auto;
@@ -2948,7 +2950,7 @@ button,
   color: #fff; }
   .facebook-button:before {
     padding: 1rem 1.33333rem;
-    border-radius: 0 0 0 0;
+    border-radius: 3px 0 0 3px;
     background-clip: border-box;
     font-family: "FontAwesome", Arial, Sans-Serif;
     font-style: normal;
@@ -3002,7 +3004,7 @@ textarea,
 select {
   padding: 1rem 1rem;
   margin: 0;
-  border-radius: 0;
+  border-radius: 3px;
   background-clip: border-box;
   background: transparent;
   font-family: Arial, "Helvetica Neue", Helvetica, Arial, sans-serif, Arial, Sans-Serif;
@@ -3202,7 +3204,7 @@ audio {
   box-shadow: 0 1px 2px 0 #888;
   background: #fff; }
 .tab-component .tabs {
-  border-radius: 0;
+  border-radius: 3px;
   background-clip: border-box;
   display: table;
   width: 100%;
@@ -3347,7 +3349,7 @@ details {
     Meters -- Version: 1.9.0.0 - Updated: 12/29/2013
    ========================================================================== */
 .meter {
-  border-radius: 0;
+  border-radius: 3px;
   background-clip: border-box;
   box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
   position: relative;
@@ -3804,7 +3806,7 @@ a.subHead:before {
     float: left;
     padding: .5em 1em;
     background: #4f799f;
-    border-radius: 0;
+    border-radius: 3px;
     background-clip: border-box;
     color: #f2f4f6; }
 
@@ -4145,13 +4147,13 @@ footer {
     bottom: unset; }
   .styleguide .colors, .styleguide .grid {
     padding: 2rem;
-    border-radius: 0;
+    border-radius: 3px;
     background-clip: border-box; }
     .styleguide .colors.white, .styleguide .white.grid {
       outline: 1px solid white; }
   .styleguide .swatch {
     margin-bottom: 2rem;
-    border-radius: 0;
+    border-radius: 3px;
     background-clip: border-box;
     overflow: auto; }
   .styleguide .swatch-color {
@@ -4183,7 +4185,7 @@ footer {
       .styleguide .swatch-info p:first-of-type {
         font-weight: bold; }
   .styleguide .grid {
-    border-radius: 0;
+    border-radius: 3px;
     background-clip: border-box;
     background: #369; }
     .styleguide .grid:nth-of-type(even) {
@@ -4204,7 +4206,7 @@ footer {
   .styleguide pre {
     margin: 2rem 0 0;
     padding: 2rem;
-    border-radius: 0;
+    border-radius: 3px;
     background-clip: border-box;
     overflow: auto;
     word-wrap: break-word;
@@ -4412,7 +4414,7 @@ footer {
     border-top: 1px solid #0f0;
     z-index: 10000; } }
 .modal .modal-container {
-  border-radius: 0;
+  border-radius: 3px;
   background-clip: border-box;
   display: none;
   position: fixed;
@@ -4438,7 +4440,7 @@ footer {
   cursor: pointer; }
 .modal .modal-header {
   padding: 1em;
-  border-radius: 0 0 0 0;
+  border-radius: 3px 3px 0 0;
   background-clip: border-box;
   background: #f0f2f5; }
   .modal .modal-header h1, .modal .modal-header h2, .modal .modal-header h3, .modal .modal-header h4, .modal .modal-header h5, .modal .modal-header h6 {
@@ -4449,7 +4451,7 @@ footer {
   max-height: 25em; }
 .modal .modal-footer {
   padding: 1em;
-  border-radius: 0 0 0 0;
+  border-radius: 0 0 3px 3px;
   background-clip: border-box;
   overflow: auto;
   background: #f0f2f5; }
