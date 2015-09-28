@@ -16,10 +16,10 @@
   @font-face {
     font-family: $font-face-name;
     src: url('#{$font-path}#{nth($font-face, 1)}.eot');
-    src: url('webfont.eot?#iefix') format('embedded-opentype'),
+    src: url('#{$font-path}#{nth($font-face, 1)}.eot?#iefix') format('embedded-opentype'),
          url('#{$font-path}#{nth($font-face, 1)}.woff') format('woff'),
          url('#{$font-path}#{nth($font-face, 1)}.ttf') format('truetype'),
-         url('webfont.svg#svgFontName') format('svg');
+         url('#{$font-path}#{nth($font-face, 1)}.svg#svgFontName') format('svg');
     font-weight: $font-weight;
     font-style: $font-style;
   }

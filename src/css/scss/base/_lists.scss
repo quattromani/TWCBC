@@ -86,12 +86,28 @@ ul {
 }
 
 // Definition List
+dt, dd {
+  display: inline;
+  margin: 0;
+}
+
 dt {
   font-weight: bold;
 }
 
 dd {
-  margin-left: $base-spacing;
+  + dt {
+    &:before {
+      content: "\A";
+      white-space: pre;
+    }
+  }
+
+  + dd {
+    content: ', ';
+    font-weight: normal;
+    margin-left: -.25em;
+  }
 }
 
 /* SmartLinks */

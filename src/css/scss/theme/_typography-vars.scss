@@ -16,13 +16,14 @@ $font-faces: (
   'TWC-Round-Book': ('TWCRound/TWC-Round-Book', 400),
   'TWC-Round-Medium': ('TWCRound/TWC-Round-Medium', 400),
   'TWC-Round-Light': ('TWCRound/TWC-Round-Light', 400),
-  'fontawesome': ('fontawesome/fontawesome-webfont', normal)
+  'fontawesome': ('icons/fontawesome/fontawesome-webfont', normal)
 );
 
-$font-path: '/fonts/';
+$font-path: 'fonts/';
 
 // =Font Families
-$base-font-family: 'TWC-Round-Book', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$base-font-family: Arial, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$base-font-family-book: 'TWC-Round-Book', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $base-font-family-medium: 'TWC-Round-Medium', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $base-font-family-light: 'TWC-Round-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $fontawesome: 'fontawesome';
