@@ -6,3 +6,6 @@
 
 # Ignore sublime project files
 *.sublime-*
+
+# Ignore .grunt
+.grunt
