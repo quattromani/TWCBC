@@ -139,6 +139,12 @@ connect: {
       cwd: '<%= config.src %>/templates/assets/audio',
       src: '**',
       dest: '<%= config.dist %>/audio'
+    },
+    scripts: {
+      cwd: '<%= config.src %>/js/vendor',
+      src: '**',
+      dest: '<%= config.dist %>/js/vendor',
+      expand: true,
     }
   },
 

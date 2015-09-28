@@ -7,6 +7,7 @@ button,
   @include inline-block;
   @include margin(0);
   @include padding($base-spacing/2 $base-spacing);
+  @include border-radius;
   @include font-family($button-font-family);
   @include font-size(16);
   @include transition;
