@@ -2,5 +2,23 @@
 
 // Begin Nav
 nav[role=navigation] {
-  @include container;
+  @include linear-gradient($white, #ced1d5);
+  display: table;
+  width: 100%;
+  border-top: 1px solid #cacbce;
+
+  ul {
+    display:table-row;
+    width:100%;
+  }
+
+  li {
+    @include padding($base-spacing/2);
+    display:table-cell;
+    text-align: center;
+
+    a {
+      @include padding($base-spacing/2);
+    }
+  }
 }

@@ -10,7 +10,7 @@ module.exports = function(grunt) {
 
     config: {
       src: 'src',
-      dist: 'dist'
+      dist: './'
     },
 
     concat: {
@@ -122,7 +122,7 @@ connect: {
     },
     images: {
       expand: true,
-      cwd: '<%= config.src %>/templates/assets/images',
+      cwd: '<%= config.src %>/images',
       src: '**',
       dest: '<%= config.dist %>/images'
     },

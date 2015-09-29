@@ -1,39 +1,5 @@
 - name: 'Editorial Guidelines'
   url: '/editorial-guidelines'
-  active: "editorial-guidelines"
-  child_links:
-    - name: "Public Works"
-      url: "/public-works"
-      active: "public-services"
-    - name: "Highway Maintenance"
-      url: "/highway-maintenance"
-      active: "public-services"
-    - name: "Public Landscape"
-      url: "/public-landscape"
-      active: "public-services"
-    - name: "Snow Removal"
-      url: "/snow-removal"
-      active: "public-services"
-    - name: "Traffic Control"
-      url: "/traffic-control"
-      active: "public-services"
 
 - name: 'Toolkit'
   url: '/toolkit'
-  active: "toolkit"
-  child_links:
-    - name: "Public Works"
-      url: "/public-works"
-      active: "public-services"
-    - name: "Highway Maintenance"
-      url: "/highway-maintenance"
-      active: "public-services"
-    - name: "Public Landscape"
-      url: "/public-landscape"
-      active: "public-services"
-    - name: "Snow Removal"
-      url: "/snow-removal"
-      active: "public-services"
-    - name: "Traffic Control"
-      url: "/traffic-control"
-      active: "public-services"

@@ -2,6 +2,10 @@
 @charset "UTF-8";
 
 .styleguide {
+  .twc-breadcrumbs {
+    @include margin($base-spacing 0);
+  }
+
   .sub-section {
     position: relative;
   }
@@ -103,10 +107,6 @@ form {
     width: 100%;
     margin-bottom: $base-spacing;
   }
-}
-
-.prettyprint {
-  display: none;
 }
 
 .heading-font-family {

@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 footer {
-  @include container;
+  @include padding($base-spacing 0);
+  @include linear-gradient(#d3d3d4, $white);
   text-align: center;
 }
