@@ -150,7 +150,7 @@ connect: {
 
   'gh-pages': {
     options: {
-      base: 'dist',
+      base: './',
       add: true
     },
     src: ['**']
