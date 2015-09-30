@@ -6,14 +6,14 @@ button,
 .cta {
   @include inline-block;
   @include margin(0);
-  @include padding($base-spacing/2 $base-spacing);
+  @include padding($base-spacing/2.667 $base-spacing);
   @include border-radius;
+  @include linear-gradient(#3779b3,#02447e);
   @include font-family($button-font-family);
   @include font-size(16);
   @include transition;
   bottom: $base-spacing/2;
-  background-color: $base-button-bg;
-  font-weight: 200;
+  font-weight: 700;
   color: $base-button-color;
   border: 0;
   text-align: center;
@@ -27,7 +27,7 @@ button,
   }
 
   &:hover {
-    background-color: $base-button-bg-hover;
+    @include linear-gradient(#265a83,#1b405e);
     color: $base-button-color-hover;
   }
 
