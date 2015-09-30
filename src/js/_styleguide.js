@@ -55,4 +55,5 @@ headerHeight = $('header[role=banner]').outerHeight();
 
 $(function() {
   $('.content').css('margin-top',headerHeight);
+  $('aside').css('margin-top',headerHeight);
 });
