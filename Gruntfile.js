@@ -86,7 +86,9 @@ connect: {
       },
       livereload: {
         options: {
-          open: true,
+          open: {
+            target: 'http://localhost:9000/TWCBC'
+          },
           base: [
           '<%= config.dist %>'
           ]
