@@ -113,7 +113,7 @@ headerHeight = $('header[role=banner]').outerHeight();
 
 $(function() {
   $('.content').css('margin-top',headerHeight);
-  $('aside').css('margin-top',headerHeight);
+  $('aside').css("cssText", "height: " + headerHeight + " !important;");
 });
 ;/* ==========================================================================
     Accordion -- Version: 1.9.0.0 - Updated: 12/31/2013
@@ -156,7 +156,7 @@ $(function() {
     target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
      if (target.length) {
        $('html,body').animate({
-           scrollTop: target.offset().top - 20
+           scrollTop: target.offset().top - headerHeight
       }, 600);
       return false;
     }

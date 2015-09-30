@@ -10,11 +10,7 @@
 
   .twc-container {
     zoom: 1;
-    width: 100%;
-    max-width: $max-width;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: auto;
+    padding: 0 calc(50% - #{$max-width / 2});
   }
 
   .twc-content {
@@ -29,7 +25,20 @@
 
   aside {
     position: sticky;
-    top: $base-spacing;
+    top: 194px;
+  }
+
+  .banded-dark {
+    @extend .twc-container;
+    background-color: $offwhite;
+    padding-top: $base-spacing;
+    padding-bottom: $base-spacing;
+  }
+
+  .banded-light {
+    @extend .twc-container;
+    padding-top: $base-spacing;
+    padding-bottom: $base-spacing;
   }
 
 /* ==========================

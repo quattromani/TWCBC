@@ -1,7 +1,9 @@
 @charset "UTF-8";
 
 footer {
+  @include inline-block;
   @include padding($base-spacing 0);
   @include linear-gradient(#d3d3d4, $white);
+  width: 100%;
   text-align: center;
 }
