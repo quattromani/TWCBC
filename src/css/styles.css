@@ -4107,7 +4107,9 @@ header[role=banner] {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#d0d6dd), to(#fff));
   background-image: -webkit-linear-gradient(top, #d0d6dd, #fff);
   background-image: linear-gradient(top, #d0d6dd, #fff);
-  /* -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#d0d6dd', EndColorStr='#fff')"; */ }
+  /* -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#d0d6dd', EndColorStr='#fff')"; */
+  position: fixed;
+  width: 100%; }
 
 nav[role=navigation] {
   background-color: #fff;

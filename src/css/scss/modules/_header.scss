@@ -2,5 +2,7 @@
 
 header[role=banner] {
   @include padding($base-spacing 0);
-  @include linear-gradient(#d0d6dd, #fff);
+  @include linear-gradient(#d0d6dd, $white);
+  position: fixed;
+  width: 100%;
 }
