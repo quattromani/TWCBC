@@ -1895,7 +1895,7 @@ h1,
 .h1 {
   font-size: 36px;
   font-size: 3.6rem;
-  font-family: "TWC-Round-Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Arial, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   line-height: 1;
   color: #333;
@@ -1905,7 +1905,7 @@ h2,
 .h2 {
   font-size: 30px;
   font-size: 3rem;
-  font-family: "TWC-Round-Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Arial, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   line-height: 1;
   color: #333;
@@ -1915,7 +1915,7 @@ h3,
 .h3 {
   font-size: 24px;
   font-size: 2.4rem;
-  font-family: "TWC-Round-Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Arial, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   line-height: 1;
   color: #333;
@@ -1925,8 +1925,8 @@ h4,
 .h4 {
   font-size: 22px;
   font-size: 2.2rem;
-  font-family: "TWC-Round-Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-family: Arial, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
   line-height: 1;
   color: #333;
   text-transform: initial; }
@@ -1935,8 +1935,8 @@ h5,
 .h5 {
   font-size: 20px;
   font-size: 2rem;
-  font-family: "TWC-Round-Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-family: Arial, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
   line-height: 1;
   color: #333;
   text-transform: initial; }
@@ -1945,8 +1945,8 @@ h6,
 .h6 {
   font-size: 18px;
   font-size: 1.8rem;
-  font-family: "TWC-Round-Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-family: Arial, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
   line-height: 1;
   color: #333;
   text-transform: initial; }
@@ -2416,7 +2416,7 @@ mark {
   font-family: Arial, "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .base-font-alt {
-  font-family: "TWC-Round-Medium", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: Arial, "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .lede {
   font-size: 14.625px;
@@ -2682,7 +2682,7 @@ button,
   padding: 1rem 2rem;
   border-radius: 3px;
   background-clip: border-box;
-  font-family: "TWC-Round-Book", "Helvetica Neue", Helvetica, Arial, sans-serif, Arial, Sans-Serif;
+  font-family: Arial, "Helvetica Neue", Helvetica, Arial, sans-serif, Arial, Sans-Serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -3101,7 +3101,7 @@ input[type="file"]::-webkit-file-upload-button {
   border: 0 !important; }
 
 .email-register-messages {
-  font-family: "TWC-Round-Medium", "Helvetica Neue", Helvetica, Arial, sans-serif, Arial, Sans-Serif;
+  font-family: Arial, "Helvetica Neue", Helvetica, Arial, sans-serif, Arial, Sans-Serif;
   font-style: normal;
   font-weight: normal;
   color: #f00; }
@@ -4233,7 +4233,7 @@ footer {
     width: 100%;
     margin-bottom: 2rem; }
   .styleguide .heading-font-family {
-    font-family: "TWC-Round-Book", "Helvetica Neue", Helvetica, Arial, sans-serif, Arial, Sans-Serif;
+    font-family: Arial, "Helvetica Neue", Helvetica, Arial, sans-serif, Arial, Sans-Serif;
     font-style: normal;
     font-weight: normal; }
   .styleguide pre {

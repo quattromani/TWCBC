@@ -23,11 +23,11 @@ $font-path: 'fonts/';
 
 // =Font Families
 $base-font-family: Arial, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$base-font-family-book: 'TWC-Round-Book', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$base-font-family-medium: 'TWC-Round-Medium', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$base-font-family-light: 'TWC-Round-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$base-font-family-book: $base-font-family;
+$base-font-family-medium: $base-font-family;
+$base-font-family-light: $base-font-family;
 $fontawesome: 'fontawesome';
-$pre: Inconsolata,Monaco,Consolas,'Andale Mono','Bitstream Vera Sans Mono','Courier New',Courier,monospace;
+$pre: Inconsolata, Monaco, Consolas,'Andale Mono','Bitstream Vera Sans Mono','Courier New',Courier,monospace;
 
 // =TWCBC Fonts
 $italic: italic;
