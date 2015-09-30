@@ -25,8 +25,8 @@ ___
 
 ###Install
 1. `git clone git@github.com:quattromani/TWCBC.git`  
-2. run `npm install`  
-3. run `grunt`  
+2. `npm install`  
+3. `grunt`  
 
 ###This project is built with:
 * grunt
