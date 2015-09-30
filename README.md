@@ -24,9 +24,9 @@ You can see what's already a pattern at the [Component Library]. Don't be afraid
 ___
 
 ###Install
-Git clone  
-`npm install`
-`grunt`
+1. `git clone git@github.com:quattromani/TWCBC.git`  
+2. run `npm install`  
+3. run `grunt`  
 
 ###This project is built with:
 * grunt
