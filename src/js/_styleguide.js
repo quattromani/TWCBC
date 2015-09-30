@@ -49,3 +49,10 @@ $('.fonts').each(function(){
 	var fonts = $(this).css('font-family');
 	$(this).prepend(fonts);
 });
+
+// Make room for the fixed header
+headerHeight = $('header[role=banner]').outerHeight();
+
+$(function() {
+  $('.content').css('margin-top',headerHeight);
+});
