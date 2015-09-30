@@ -4109,7 +4109,6 @@ ul.twc-share li {
     footer [class*='twc-col7_12121212121212-c']:nth-of-type(1n+2) {
       margin-top: 0; } }
 header[role=banner] {
-  padding: 2rem 0;
   background-color: #d0d6dd;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#d0d6dd), to(#fff));
   background-image: -webkit-linear-gradient(top, #d0d6dd, #fff);
@@ -4119,6 +4118,8 @@ header[role=banner] {
   top: 0;
   width: 100%;
   z-index: 99; }
+  header[role=banner] .twc-logo {
+    padding: 2rem 0; }
 
 nav[role=navigation] {
   background-color: #fff;

@@ -1,10 +1,13 @@
 @charset "UTF-8";
 
 header[role=banner] {
-  @include padding($base-spacing 0);
   @include linear-gradient(#d0d6dd, $white);
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 99;
+
+  .twc-logo {
+    @include padding($base-spacing 0);
+  }
 }
