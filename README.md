@@ -5,12 +5,6 @@ Welcome to the Time Warner Cable Business Class Editorial Framework & Style Guid
 ## Version
 0.0.1
 
-## Installation
-
-1. `git clone git@github.com:quattromani/TWCBC.git`  
-2. `npm install`  
-3. `grunt`  
-
 ## Style Guide / House Style
 >A style guide is a set of standards for the writing and design of documents, either for general use or for a specific publication, organization or field. The implementation of a style guide provides uniformity in style and formatting within a document and across multiple documents.
 
@@ -28,6 +22,11 @@ Each pattern has four primary components:
 
 You can see what's already a pattern at the [Component Library]. Don't be afraid to take an existing pattern and beat it into submission to create something new. Just be sure to name it and document it.
 
+## Installation
+
+1. `git clone git@github.com:quattromani/TWCBC.git`  
+2. `npm install`  
+3. `grunt`  
 
 ## This project is built with:
 * grunt
