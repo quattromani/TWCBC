@@ -233,10 +233,6 @@ input[type='submit'] {
     color: $white;
     content:"\f09a";
     height: 100%;
-
-    @include bp($small) {
-      line-height: 2;
-    }
   }
 
   &:hover {
