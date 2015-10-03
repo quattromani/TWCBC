@@ -135,15 +135,26 @@ form {
   }
 }
 
-  .banded-dark {
-    @extend .twc-container;
-    background-color: $offwhite;
-    padding-top: $base-spacing * 2;
-    padding-bottom: $base-spacing * 2;
-  }
+.banded-brand {
+  @extend .twc-container;
+  background-color: $link;
+  padding-top: $base-spacing * 3;
+  padding-bottom: $base-spacing * 3;
 
-  .banded-light {
-    @extend .twc-container;
-    padding-top: $base-spacing * 2;
-    padding-bottom: $base-spacing * 2;
+  * {
+    color: $white;
   }
+}
+
+.banded-dark {
+  @extend .twc-container;
+  background-color: $offwhite;
+  padding-top: $base-spacing * 3;
+  padding-bottom: $base-spacing * 3;
+}
+
+.banded-light {
+  @extend .twc-container;
+  padding-top: $base-spacing * 3;
+  padding-bottom: $base-spacing * 3;
+}

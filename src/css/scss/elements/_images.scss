@@ -1,50 +1,45 @@
 @charset "UTF-8";
 
-@mixin image-rounded {
-  @include border-radius;
-}
-
-@mixin image-circular {
-  @include border-radius(50%);
-}
-
-@mixin image-bordered {
-  border: ($base-spacing / 2) solid $white;
-
-  @include media($mobile){
-    border: none;
-  }
-}
-
-@mixin image-shadowed {
-  box-shadow: 0 0 5px -2px rgba($black, .6);
-}
-
-img {
-  display: inherit;
-  height: auto;
-  border: 0;
-  // style the alt text
-  font-style: italics;
-  color: $text;
-
-  &:after {
-    content: " (image)";
-  }
-}
+/* ==========================================================================
+    Images -- Version: 1.9.0.0 - Updated: 12/29/2013
+   ========================================================================== */
 
 figure {
   position: relative;
   width: 100%;
+  img {
+    max-width: 100%;
+    margin: 0 auto 1em;
+  }
 }
 
 figcaption {
-  margin-bottom: ($base-spacing / 2);
+  width: auto;
+  margin-bottom: .5em;
   @include font-size(14);
-  font-weight: bold;
+  line-height: 1;
+}
+
+img {
+  display: inherit;
+  border: 0;
+}
+
+.image-rounded {
+  @include border-radius();
+}
+
+.image-circular {
+  @include border-radius(100%);
+}
+
+.image-bordered {
+  border: 3px solid $text-white;
+  outline: 1px solid $grey;
 }
 
 // Responsive Images
+
 [class*='image-focus-'] {
   min-height: 200px;
   background-size: cover;
@@ -71,21 +66,16 @@ figcaption {
   background-position: right center;
 }
 
+/* ie8 (.twc-ie8) */
+/* Fix IE8 background-position issue */
+.twc-ie8 [class*="image-focus-"] {
+  background-position: center center;
+  width: 100%;
+}
+
 /* ie9 (.twc-ie9) */
 /* Fix IE9 overflow bug */
 
 .twc-ie9 svg:not(:root) {
   overflow: hidden;
-}
-
-// ie9 (.ie9)
-// Fix IE9 overflow bug
-.ie9 svg:not(:root) {
-  overflow: hidden;
-}
-
-.text-center {
-  img {
-    margin: 0 auto;
-  }
 }

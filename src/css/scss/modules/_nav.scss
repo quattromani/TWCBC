@@ -21,6 +21,7 @@ nav[role=navigation] {
       background-color: #343b46;
 
       a {
+        font-weight: normal;
         color: $white;
       }
     }
@@ -33,6 +34,7 @@ nav[role=navigation] {
       @include padding($base-spacing/2 $base-spacing);
       display: table-cell;
       width: 50%;
+      font-weight: normal;
       text-transform: uppercase;
       color: $black;
     }

@@ -1,5 +1,50 @@
 @charset "UTF-8";
 
+/* ==========================
+    Links
+   ========================== */
+
+a {
+  @include margin(0);
+  @include padding(0);
+  @include transition;
+  background-color: transparent;
+  vertical-align: baseline;
+  font-family: inherit;
+  font-weight: 700;
+  color: $link;
+  text-decoration: $base-link-text-decoration;
+  cursor: pointer;
+
+  img {
+    border: 0 none;
+    text-decoration: none;
+  }
+
+  &:hover {
+    color: $link;
+  }
+
+  &.muted,
+  .muted & {
+    color: $lightgrey;
+  }
+
+  &:active,
+  &:hover {
+    outline: 0;
+  }
+
+  &[href^="http://"],
+  &[href^="https://"] {
+    color: $link;
+
+    &:hover {
+      color: $link;
+    }
+  }
+}
+
 // Email links
 a[href^="mailto"] {
   font-weight: normal;

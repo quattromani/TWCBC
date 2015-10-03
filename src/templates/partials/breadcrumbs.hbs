@@ -6,24 +6,31 @@
           Editorial Framework &amp; Style Guide
         </a>
       </li>
+      {{#if page.category }}
+      <li>
+        <a analyticsname="" href="/toolkit">
+          {{ page.category }}
+        </a>
+      </li>
+      {{/if}}
       {{#if page.section }}
       <li>
         <a analyticsname="" href="/toolkit">
-          {{ section }}
+          {{ page.section }}
         </a>
       </li>
       {{/if}}
       {{#if page.subsection }}
       <li>
         <a analyticsname="" href="/primary-elements">
-          {{ subsection }}
+          {{ page.subsection }}
         </a>
       </li>
       {{/if}}
       {{#if page.zoom }}
       <li class="twc-last js-last">
         <a analyticsname="" href="/lists">
-            {{ page }}
+            {{ pag.zoome }}
         </a>
       </li>
       {{/if}}

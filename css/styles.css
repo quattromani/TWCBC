@@ -1997,6 +1997,36 @@ h6,
   [class*='fa-dribbble']:hover {
     color: #e7357a; }
 
+/* ==========================
+    Links
+   ========================== */
+a {
+  margin: 0;
+  padding: 0;
+  will-change: transition;
+  -webkit-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+  background-color: transparent;
+  vertical-align: baseline;
+  font-family: inherit;
+  font-weight: 700;
+  color: #369;
+  text-decoration: none;
+  cursor: pointer; }
+  a img {
+    border: 0 none;
+    text-decoration: none; }
+  a:hover {
+    color: #369; }
+  a.muted, .muted a {
+    color: #e1e1e1; }
+  a:active, a:hover {
+    outline: 0; }
+  a[href^="http://"], a[href^="https://"] {
+    color: #369; }
+    a[href^="http://"]:hover, a[href^="https://"]:hover {
+      color: #369; }
+
 a[href^="mailto"] {
   font-weight: normal;
   color: #369;
@@ -2171,35 +2201,6 @@ dd + dd {
   margin-left: 1em;
   border-bottom: none;
   list-style: outside disc; }
-
-/* ==========================
-    Links
-   ========================== */
-a {
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  vertical-align: baseline;
-  font-family: inherit;
-  color: #369;
-  text-decoration: none;
-  cursor: pointer;
-  will-change: transition;
-  -webkit-transition: all 0.2s ease-in-out;
-          transition: all 0.2s ease-in-out; }
-  a img {
-    border: 0 none;
-    text-decoration: none; }
-  a:hover {
-    color: #369; }
-  a.muted, .muted a {
-    color: #e1e1e1; }
-  a:active, a:hover {
-    outline: 0; }
-  a[href^="http://"], a[href^="https://"] {
-    color: #369; }
-    a[href^="http://"]:hover, a[href^="https://"]:hover {
-      color: #369; }
 
 small {
   display: inline-block; }
@@ -3129,24 +3130,38 @@ input[type="file"]::-webkit-file-upload-button {
 .invalid {
   border: 1px solid #f00; }
 
-img {
-  display: inherit;
-  height: auto;
-  border: 0;
-  font-style: italics;
-  color: #333; }
-  img:after {
-    content: " (image)"; }
-
+/* ==========================================================================
+    Images -- Version: 1.9.0.0 - Updated: 12/29/2013
+   ========================================================================== */
 figure {
   position: relative;
   width: 100%; }
+  figure img {
+    max-width: 100%;
+    margin: 0 auto 1em; }
 
 figcaption {
-  margin-bottom: 1rem;
+  width: auto;
+  margin-bottom: .5em;
   font-size: 14px;
   font-size: 1.4rem;
-  font-weight: bold; }
+  line-height: 1; }
+
+img {
+  display: inherit;
+  border: 0; }
+
+.image-rounded {
+  border-radius: 3px;
+  background-clip: border-box; }
+
+.image-circular {
+  border-radius: 100%;
+  background-clip: border-box; }
+
+.image-bordered {
+  border: 3px solid #fff;
+  outline: 1px solid #666; }
 
 [class*='image-focus-'] {
   min-height: 200px;
@@ -3168,16 +3183,16 @@ figcaption {
 .image-focus-5 {
   background-position: right center; }
 
+/* ie8 (.twc-ie8) */
+/* Fix IE8 background-position issue */
+.twc-ie8 [class*="image-focus-"] {
+  background-position: center center;
+  width: 100%; }
+
 /* ie9 (.twc-ie9) */
 /* Fix IE9 overflow bug */
 .twc-ie9 svg:not(:root) {
   overflow: hidden; }
-
-.ie9 svg:not(:root) {
-  overflow: hidden; }
-
-.text-center img {
-  margin: 0 auto; }
 
 video {
   display: inline-block;
@@ -3321,7 +3336,7 @@ th {
 hr {
   margin: 2rem 0;
   border: 0;
-  border-top: 1px solid #666;
+  border-top: 1px solid #e1e1e1;
   border-bottom: 1px solid #fff; }
   hr.below-desktop {
     display: none; }
@@ -3388,7 +3403,7 @@ details {
 .twc-full {
   width: 100%; }
 
-.twc-container, .banded-dark, .banded-light {
+.twc-container, .banded-brand, .banded-dark, .banded-light {
   zoom: 1;
   padding: 0 calc(50% - 490px); }
 
@@ -3879,7 +3894,7 @@ ul.twc-share li {
     content: '\f105'; }
 
 @media (max-width: 66.15em) {
-  .twc-container, .banded-dark, .banded-light {
+  .twc-container, .banded-brand, .banded-dark, .banded-light {
     padding: 2.5%; } }
 @media (max-width: 768px) {
   /* ==========================
@@ -4131,6 +4146,7 @@ nav[role=navigation] {
     nav[role=navigation] li:hover {
       background-color: #343b46; }
       nav[role=navigation] li:hover a {
+        font-weight: normal;
         color: #fff; }
     nav[role=navigation] li:first-of-type {
       border-left: 1px solid #cacbce; }
@@ -4138,6 +4154,7 @@ nav[role=navigation] {
       padding: 1rem 2rem;
       display: table-cell;
       width: 50%;
+      font-weight: normal;
       text-transform: uppercase;
       color: #000; }
 
@@ -4342,7 +4359,7 @@ footer [class*='social-'] {
   .twc-footer {
     padding: 0; }
 
-  .twc-container.footer-menu, .footer-menu.banded-dark, .footer-menu.banded-light {
+  .twc-container.footer-menu, .footer-menu.banded-brand, .footer-menu.banded-dark, .footer-menu.banded-light {
     width: 100%;
     padding: 0; }
 
@@ -4566,14 +4583,21 @@ footer [class*='social-'] {
     font-size: 1em;
     color: #0f0; }
 
+.banded-brand {
+  background-color: #369;
+  padding-top: 6rem;
+  padding-bottom: 6rem; }
+  .banded-brand * {
+    color: #fff; }
+
 .banded-dark {
   background-color: #f2f4f6;
-  padding-top: 4rem;
-  padding-bottom: 4rem; }
+  padding-top: 6rem;
+  padding-bottom: 6rem; }
 
 .banded-light {
-  padding-top: 4rem;
-  padding-bottom: 4rem; }
+  padding-top: 6rem;
+  padding-bottom: 6rem; }
 
 /* ==========================================================================
     Syntax Highlighter -- Version: 1.9.0.0 - Compiled: timestamp()
@@ -4930,14 +4954,14 @@ footer [class*='social-'] {
   background: #d14853;
   box-shadow: inset 0 -10px 14px 0 rgba(0, 0, 0, 0.2);
   color: #fff; }
-.twc-alert-section .twc-container, .twc-alert-section .banded-dark, .twc-alert-section .banded-light {
+.twc-alert-section .twc-container, .twc-alert-section .banded-brand, .twc-alert-section .banded-dark, .twc-alert-section .banded-light {
   padding: 1em 2em 1em 0; }
 .twc-alert-section p.twc-alert-text {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif, Arial, Sans-Serif;
   font-style: normal;
   font-weight: normal;
   position: relative; }
-  .twc-alert-section p.twc-alert-text .twc-container, .twc-alert-section p.twc-alert-text .banded-dark, .twc-alert-section p.twc-alert-text .banded-light {
+  .twc-alert-section p.twc-alert-text .twc-container, .twc-alert-section p.twc-alert-text .banded-brand, .twc-alert-section p.twc-alert-text .banded-dark, .twc-alert-section p.twc-alert-text .banded-light {
     padding: 1em 2em 1em 0; }
 .twc-alert-section .twc-customerLocation p.twc-alert-text:before,
 .twc-alert-section p.twc-alert-text:before {
@@ -4966,7 +4990,7 @@ footer [class*='social-'] {
 .twc-alert-section a.twc-icon:hover {
   color: inherit; }
 @media (max-width: 768px) {
-  .twc-alert-section p.twc-alert-text.twc-container, .twc-alert-section p.twc-alert-text.banded-dark, .twc-alert-section p.twc-alert-text.banded-light {
+  .twc-alert-section p.twc-alert-text.twc-container, .twc-alert-section p.twc-alert-text.banded-brand, .twc-alert-section p.twc-alert-text.banded-dark, .twc-alert-section p.twc-alert-text.banded-light {
     padding: 1em 3em 1em 3em; }
   .twc-alert-section .twc-alert-close:after {
     font-size: 24px;
@@ -4982,3 +5006,35 @@ footer [class*='social-'] {
     padding-top: 0; }
   .twc-alert-section .twc-alert-close:after {
     padding: 0; } }
+
+/* ==========================================================================
+    Breadcrumbs -- Version: 1.9.0.0 - Updated: 12/29/2013
+   ========================================================================== */
+.twc-breadcrumbs-gradient {
+  position: absolute;
+  top: 2px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 0, 0, 0.4)), color-stop(60%, transparent), color-stop(100%, transparent));
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.4) 0%, transparent 60%, transparent 100%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4) 0%, transparent 60%, transparent 100%); }
+  .twc-breadcrumbs-gradient .twc-container, .twc-breadcrumbs-gradient .banded-brand, .twc-breadcrumbs-gradient .banded-dark, .twc-breadcrumbs-gradient .banded-light {
+    padding: 2rem 0; }
+
+.twc-breadcrumbs ul {
+  top: 0;
+  margin-bottom: 0;
+  color: #666; }
+.twc-breadcrumbs li a {
+  color: #666;
+  font-weight: 100;
+  text-transform: capitalize; }
+.twc-breadcrumbs li.js-last a {
+  font-weight: 700; }
+
+/* ie9 (.ie9) */
+.twc-ie9 .twc-breadcrumbs {
+  background: none; }
+
+@media (max-width: 768px) {
+  .twc-breadcrumbs-gradient,
+  .twc-breadcrumbs, .twc-banner ul {
+    display: none; } }
