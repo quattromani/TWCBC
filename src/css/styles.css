@@ -4169,12 +4169,19 @@ nav[role=navigation] {
   background: linear-gradient(to bottom, #d3d3d4 0%, #e7e7e8 3%, white 16%, white 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d3d3d4', endColorstr='#ffffff',GradientType=0 );
   font-size: 12px;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  text-align: center; }
+  .twc-footer .horizontal.list {
+    padding: 2rem 0; }
+  .twc-footer .twc-footer-copyright-msg p {
+    font-size: 13px;
+    font-size: 1.3rem; }
   .twc-footer [class*='twc-col3_333333-c'] {
     width: 30%;
     margin-left: 5%;
     margin-bottom: 2em; }
   .twc-footer a {
+    font-weight: 100;
     color: #666; }
     .twc-footer a:hover {
       color: #369;

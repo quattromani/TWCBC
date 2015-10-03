@@ -109,7 +109,7 @@ $('.fonts').each(function(){
 });
 
 // Make room for the fixed header
-headerHeight = $('header[role=banner]').outerHeight();
+headerHeight = $('header[role=banner]').height();
 
 $(function() {
   $('.content').css('margin-top',headerHeight);

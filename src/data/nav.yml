@@ -1,3 +1,6 @@
+- name: 'Approach'
+  url: '/approach'
+
 - name: 'Editorial Guidelines'
   url: '/editorial-guidelines'
 
