@@ -1,26 +1,32 @@
 <div class="twc-breadcrumbs">
   <div class="twc-container">
     <ul class="horizontal slashes">
-      <li class="twc-first js-first">
+      <li class="twc-first">
         <a analyticsname="" href="/">
           Editorial Framework &amp; Style Guide
         </a>
       </li>
+      {{#if page.section }}
       <li>
         <a analyticsname="" href="/toolkit">
-          Toolkit
+          {{ section }}
         </a>
       </li>
+      {{/if}}
+      {{#if page.subsection }}
       <li>
         <a analyticsname="" href="/primary-elements">
-          Primary Elements
+          {{ subsection }}
         </a>
       </li>
+      {{/if}}
+      {{#if page.zoom }}
       <li class="twc-last js-last">
         <a analyticsname="" href="/lists">
-          Lists
+            {{ page }}
         </a>
       </li>
+      {{/if}}
     </ul>
   </div>
 </div>

@@ -13,12 +13,28 @@ nav[role=navigation] {
   }
 
   li {
-    @include padding($base-spacing/2);
-    display:table-cell;
+    display: table-cell;
+    border-right: 1px solid #cacbce;
     text-align: center;
 
+    &:hover {
+      background-color: #343b46;
+
+      a {
+        color: $white;
+      }
+    }
+
+    &:first-of-type {
+      border-left: 1px solid #cacbce;
+    }
+
     a {
-      @include padding($base-spacing/2);
+      @include padding($base-spacing/2 $base-spacing);
+      display: table-cell;
+      width: 50%;
+      text-transform: uppercase;
+      color: $black;
     }
   }
 }
