@@ -134,3 +134,14 @@ form {
     color: $green;
   }
 }
+
+  .banded-dark {
+    @extend .twc-container;
+    @include padding(($base-spacing * 2) 0);
+    background-color: $offwhite;
+  }
+
+  .banded-light {
+    @extend .twc-container;
+    @include padding(($base-spacing * 2) 0);
+  }

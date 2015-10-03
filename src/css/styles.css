@@ -3402,15 +3402,6 @@ aside {
   position: sticky;
   top: 194px; }
 
-.banded-dark {
-  background-color: #f2f4f6;
-  padding-top: 2rem;
-  padding-bottom: 2rem; }
-
-.banded-light {
-  padding-top: 2rem;
-  padding-bottom: 2rem; }
-
 /* ==========================
     Column Control
    ========================== */
@@ -4278,6 +4269,13 @@ footer {
     font-family: Inconsolata, Monaco, Consolas, "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
     font-size: 1em;
     color: #0f0; }
+
+.banded-dark {
+  padding: 4rem 0;
+  background-color: #f2f4f6; }
+
+.banded-light {
+  padding: 4rem 0; }
 
 /* ==========================================================================
     Syntax Highlighter -- Version: 1.9.0.0 - Compiled: timestamp()

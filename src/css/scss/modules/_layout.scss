@@ -28,19 +28,6 @@
     top: 194px;
   }
 
-  .banded-dark {
-    @extend .twc-container;
-    background-color: $offwhite;
-    padding-top: $base-spacing;
-    padding-bottom: $base-spacing;
-  }
-
-  .banded-light {
-    @extend .twc-container;
-    padding-top: $base-spacing;
-    padding-bottom: $base-spacing;
-  }
-
 /* ==========================
     Column Control
    ========================== */
