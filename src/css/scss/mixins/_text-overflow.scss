@@ -1,7 +1,13 @@
 // Text overflow
 // Requires inline-block or block for proper styling
-@mixin text-overflow() {
+@mixin text-overflow {
+  @include inline-block;
   overflow: hidden;
+  vertical-align: top;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+@mixin truncate {
+  @include text-overflow;
 }
