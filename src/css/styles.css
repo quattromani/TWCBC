@@ -27,14 +27,10 @@
   font-style: "normal"; }
 @font-face {
   font-family: "fontawesome";
-  src: url("fonts/icons/fontawesome/fontawesome-webfont.eot");
-  src: url("fonts/icons/fontawesome/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/icons/fontawesome/fontawesome-webfont.woff") format("woff"), url("fonts/icons/fontawesome/fontawesome-webfont.ttf") format("truetype"), url("fonts/icons/fontawesome/fontawesome-webfont.svg#svgFontName") format("svg");
+  src: url("fonts/icons/fontawesome-webfont.eot");
+  src: url("fonts/icons/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/icons/fontawesome-webfont.woff") format("woff"), url("fonts/icons/fontawesome-webfont.ttf") format("truetype"), url("fonts/icons/fontawesome-webfont.svg#svgFontName") format("svg");
   font-weight: normal;
   font-style: "normal"; }
-/*!
- *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
- *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
- */
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -43,7 +39,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-/* makes the font 33% larger relative to the icon container */
 .fa-lg {
   font-size: 1.33333333em;
   line-height: 0.75em;
@@ -2052,7 +2047,7 @@ a[href^="tel"] {
   font-size: 1.4rem;
   display: block; }
   .read-more::after {
-    font-family: "FontAwesome", Arial, Sans-Serif;
+    font-family: "fontawesome", Arial, Sans-Serif;
     font-style: normal;
     font-weight: normal;
     font-weight: normal;
@@ -2068,7 +2063,7 @@ a[href^="tel"] {
 .back {
   margin-bottom: 2rem !important; }
   .back::before {
-    font-family: "FontAwesome", Arial, Sans-Serif;
+    font-family: "fontawesome", Arial, Sans-Serif;
     font-style: normal;
     font-weight: normal;
     font-weight: normal;
@@ -2086,7 +2081,7 @@ a.morelink {
   font-weight: 100; }
   .read-more a::after,
   a.morelink::after {
-    font-family: "FontAwesome", Arial, Sans-Serif;
+    font-family: "fontawesome", Arial, Sans-Serif;
     font-style: normal;
     font-weight: normal;
     font-weight: normal;
@@ -2100,7 +2095,7 @@ a.morelink {
     color: currentColor; }
 
 a.morelink.less::before {
-  font-family: "FontAwesome", Arial, Sans-Serif;
+  font-family: "fontawesome", Arial, Sans-Serif;
   font-style: normal;
   font-weight: normal;
   font-weight: normal;
@@ -2963,7 +2958,7 @@ button,
     padding: 1rem 1.33333rem;
     border-radius: 3px 0 0 3px;
     background-clip: border-box;
-    font-family: "FontAwesome", Arial, Sans-Serif;
+    font-family: "fontawesome", Arial, Sans-Serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -3292,7 +3287,7 @@ audio {
       .tab-component .tabs li a {
         width: 100%; }
         .tab-component .tabs li a:after {
-          font-family: "FontAwesome";
+          font-family: "fontawesome";
           content: '\f107';
           float: right;
           will-change: transition;
@@ -3359,7 +3354,7 @@ details {
     details summary::-webkit-details-marker {
       display: none; }
     details summary:before {
-      font-family: "FontAwesome", Arial, Sans-Serif;
+      font-family: "fontawesome", Arial, Sans-Serif;
       font-style: normal;
       font-weight: normal;
       display: inline-block;
@@ -3784,12 +3779,12 @@ p.subHead a {
   font-size: 13px;
   font-size: 1.3rem; }
   p.subHead a:before {
-    font-family: "FontAwesome";
+    font-family: "fontawesome";
     content: "\f104";
     padding-right: 5px; }
 
 a.subHead:before {
-  font-family: "FontAwesome";
+  font-family: "fontawesome";
   content: "\f104";
   padding-right: 5px; }
 
@@ -3888,7 +3883,7 @@ ul.twc-share li {
   font-weight: 500; }
   .viewAll:after {
     padding-left: 5px;
-    font-family: "FontAwesome";
+    font-family: "fontawesome";
     font-size: inherit;
     font-weight: inherit;
     content: '\f105'; }
@@ -4462,7 +4457,7 @@ footer [class*='social-'] {
 
   .twc-footer h3.label + ul li a:after {
     float: right;
-    font-family: "FontAwesome";
+    font-family: "fontawesome";
     content: '\f105';
     color: inherit; } }
 /* ==========================================================================
@@ -4876,14 +4871,14 @@ footer [class*='social-'] {
 .expandableHybrid li.js-notexpandable h6:after,
 .expandableHybrid li.js-notexpandableHybrid h6:after {
   float: right;
-  font-family: "FontAwesome";
+  font-family: "fontawesome";
   content: '\f105';
   color: inherit; }
 .expandable li.js-expandable h6:after, .expandable li.js-expandableHybrid h6:after,
 .expandableHybrid li.js-expandable h6:after,
 .expandableHybrid li.js-expandableHybrid h6:after {
   float: right;
-  font-family: "FontAwesome";
+  font-family: "fontawesome";
   content: '\f107';
   color: inherit; }
 .expandable li.js-expandable.js-active h6:after, .expandable li.js-expandableHybrid.js-active h6:after,
@@ -4903,13 +4898,13 @@ footer [class*='social-'] {
   .expandable li ul li.js-notexpandableHybrid a:after,
   .expandableHybrid li ul li.js-notexpandableHybrid a:after {
     float: right;
-    font-family: "FontAwesome";
+    font-family: "fontawesome";
     content: '\f105';
     color: #C2C2C2; }
   .expandable li ul li.js-expandableHybridSub a:after,
   .expandableHybrid li ul li.js-expandableHybridSub a:after {
     float: right;
-    font-family: "FontAwesome";
+    font-family: "fontawesome";
     content: '\f105';
     color: #C2C2C2; }
   .expandable li ul li.js-active.js-expandableHybridSub,
@@ -4918,7 +4913,7 @@ footer [class*='social-'] {
     .expandable li ul li.js-active.js-expandableHybridSub a:after,
     .expandableHybrid li ul li.js-active.js-expandableHybridSub a:after {
       float: right;
-      font-family: "FontAwesome";
+      font-family: "fontawesome";
       content: '\f105';
       color: #C2C2C2; }
 .expandable li li,
@@ -4938,19 +4933,19 @@ footer [class*='social-'] {
 @media (max-width: 768px) {
   .expandable li ul li.js-notexpandableHybrid a:after, .expandableHybrid li ul li.js-notexpandableHybrid a:after {
     float: right;
-    font-family: "FontAwesome";
+    font-family: "fontawesome";
     content: '\f105';
     color: #C2C2C2; }
   .expandable li ul li.js-expandableHybridSub a:after, .expandableHybrid li ul li.js-expandableHybridSub a:after {
     float: right;
-    font-family: "FontAwesome";
+    font-family: "fontawesome";
     content: '\f107';
     color: #C2C2C2; }
   .expandable li ul li.js-active.js-expandableHybridSub, .expandableHybrid li ul li.js-active.js-expandableHybridSub {
     background: #e3effb; }
     .expandable li ul li.js-active.js-expandableHybridSub a:after, .expandableHybrid li ul li.js-active.js-expandableHybridSub a:after {
       float: right;
-      font-family: "FontAwesome";
+      font-family: "fontawesome";
       content: '\f106';
       color: #C2C2C2; } }
 /* ==========================================================================
@@ -4972,7 +4967,7 @@ footer [class*='social-'] {
     padding: 1em 2em 1em 0; }
 .twc-alert-section .twc-customerLocation p.twc-alert-text:before,
 .twc-alert-section p.twc-alert-text:before {
-  font-family: "FontAwesome", Arial, Sans-Serif;
+  font-family: "fontawesome", Arial, Sans-Serif;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -4985,7 +4980,7 @@ footer [class*='social-'] {
   vertical-align: middle; }
 .twc-alert-section .twc-alert-close:after {
   padding: 0 1em;
-  font-family: "FontAwesome", Arial, Sans-Serif;
+  font-family: "fontawesome", Arial, Sans-Serif;
   font-style: normal;
   font-weight: normal;
   position: absolute;
