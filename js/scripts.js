@@ -112,7 +112,7 @@ $('.fonts').each(function(){
 headerHeight = $('header[role=banner]').height();
 
 $(function() {
-  $('.content').css('margin-top',headerHeight);
+  $('.twc-content').css('margin-top',headerHeight);
   $('aside').css("cssText", "height: " + headerHeight + " !important;");
 });
 ;/* ==========================================================================
