@@ -1,50 +1,53 @@
-- name: 'Approach'
+- title: 'Approach'
   url: '/approach'
   active: "approach"
-  child_links:
-    - name: "The Brand Experience"
-      url: "/brand-experience"
+  section:
+    - title: "The Brand Experience"
+      url: "brand-experience"
       active: "approach"
-    - name: "Message Map"
-      url: "/message-map"
+    - title: "Message Map"
+      url: "message-map"
       active: "approach"
-    - name: "Audiences"
-      url: "/audiences"
+    - title: "Audiences"
+      url: "audiences"
       active: "approach"
 
-- name: 'Editorial Guidelines'
+- title: 'Editorial Guidelines'
   url: '/editorial-guidelines'
   active: "editorial-guidelines"
-  child_links:
-    - name: "Voice &amp; Tone"
-      url: "/voice-and-tone"
+  section:
+    - title: "Voice & Tone"
+      url: "voice-and-tone"
       active: "editorial-guidelines"
-    - name: "Grammar and Mechanics"
-      url: "/grammar-and-mechanics"
+    - title: "Grammar and Mechanics"
+      url: "grammar-and-mechanics"
       active: "editorial-guidelines"
-    - name: "Working with Digital Web Marketing"
-      url: "/working-with-digital-web-marketing"
+    - title: "Working with Digital Web Marketing"
+      url: "working-with-digital-web-marketing"
       active: "editorial-guidelines"
-    - name: "Visual Assets"
-      url: "/visual-assets"
+    - title: "Visual Assets"
+      url: "visual-assets"
       active: "editorial-guidelines"
 
-- name: 'Toolkit'
+- title: 'Toolkit'
   url: '/toolkit'
   active: "toolkit"
-  child_links:
-    - name: "Primary Elements"
-      url: "/primary-elements"
+  section:
+    - title: "Primary Elements"
+      url: "primary-elements"
       active: "toolkit"
-    - name: "Component Library"
-      url: "/component-library"
+      subsection:
+      - title: Text
+        url: text
+    - title: "Component Library"
+      url: "component-library"
       active: "toolkit"
-    - name: "Helpers"
-      url: "/helpers"
+    - title: "Helpers"
+      url: "helpers"
       active: "toolkit"
-    - name: "Accessibility"
-      url: "/accessibility"
+    - title: "Accessibility"
+      url: "accessibility"
       active: "toolkit"
-    - name: "Best Practices"
-      url: "/tbrest-practices"
+    - title: "Best Practices"
+      url: "best-practices"
       active: "toolkit"

@@ -4,10 +4,21 @@
 	<div class="twc-container">
 		<ul class="navigation menu">
 			{{#each nav}}
-			<li>
-				<a href="{{url}}"><span>{{name}}</span></a>
-			</li>
-			{{/each}}
-		</ul>
-	</div>
+      <li>
+        <a href="{{url}}">
+          <span>{{title}}</span>
+        </a>
+        <ul>
+        {{#each section}}
+          <li>
+            <a href="{{url}}">
+              <span>{{title}}</span>
+            </a>
+          </li>
+          {{/each}}
+        </ul>
+      </li>
+      {{/each}}
+    </ul>
+  </div>
 </nav>

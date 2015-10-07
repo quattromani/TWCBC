@@ -4138,11 +4138,26 @@ nav[role=navigation] {
     display: table-cell;
     border-right: 1px solid #cacbce;
     text-align: center; }
+    nav[role=navigation] li ul {
+      background-color: #fff;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ced1d5));
+      background-image: -webkit-linear-gradient(top, #fff, #ced1d5);
+      background-image: linear-gradient(top, #fff, #ced1d5);
+      /* -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#fff', EndColorStr='#ced1d5')"; */
+      display: none;
+      position: absolute;
+      width: auto; }
     nav[role=navigation] li:hover {
       background-color: #343b46; }
       nav[role=navigation] li:hover a {
         font-weight: normal;
         color: #fff; }
+      nav[role=navigation] li:hover ul {
+        display: block; }
+        nav[role=navigation] li:hover ul li:hover a {
+          color: #fff; }
+        nav[role=navigation] li:hover ul a {
+          color: #000; }
     nav[role=navigation] li:first-of-type {
       border-left: 1px solid #cacbce; }
     nav[role=navigation] li a {

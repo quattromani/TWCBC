@@ -17,12 +17,35 @@ nav[role=navigation] {
     border-right: 1px solid #cacbce;
     text-align: center;
 
+    ul {
+      @include linear-gradient($white, #ced1d5);
+      display: none;
+      position: absolute;
+      width: auto;
+    }
+
     &:hover {
       background-color: #343b46;
 
       a {
         font-weight: normal;
         color: $white;
+      }
+
+      ul {
+        display: block;
+
+        li {
+          &:hover {
+            a {
+              color: $white;
+            }
+          }
+        }
+
+        a {
+          color: $black;
+        }
       }
     }
 
