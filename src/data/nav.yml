@@ -1,5 +1,5 @@
 - title: 'Approach'
-  url: '/approach'
+  url: 'approach'
   active: "approach"
   section:
     - title: "The Brand Experience"
@@ -13,7 +13,7 @@
       active: "approach"
 
 - title: 'Editorial Guidelines'
-  url: '/editorial-guidelines'
+  url: 'editorial-guidelines'
   active: "editorial-guidelines"
   section:
     - title: "Voice & Tone"
@@ -30,7 +30,7 @@
       active: "editorial-guidelines"
 
 - title: 'Toolkit'
-  url: '/toolkit'
+  url: 'toolkit'
   active: "toolkit"
   section:
     - title: "Primary Elements"
