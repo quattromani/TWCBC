@@ -5,13 +5,13 @@
 		<ul class="navigation menu">
 			{{#each nav}}
       <li>
-        <a href="{{url}}">
+        <a href="{{ site.url }}/{{url}}">
           <span>{{title}}</span>
         </a>
         <ul>
         {{#each section}}
           <li>
-            <a href="{{url}}">
+            <a href="{{ site.url }}/{{url}}">
               <span>{{title}}</span>
             </a>
           </li>

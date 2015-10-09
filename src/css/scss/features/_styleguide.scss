@@ -2,6 +2,18 @@
 @charset "UTF-8";
 
 .styleguide {
+  nav {
+    .twc-container {
+      padding: 0;
+    }
+  }
+
+  .twc-container {
+    .twc-bc-container {
+      padding-top: 0;
+    }
+  }
+
   .twc-breadcrumbs {
     @include margin($base-spacing 0);
   }
@@ -24,94 +36,94 @@
     @include border-radius;
 
     &.white {
-     outline: 1px solid lighten($lightgrey, 30%);
-   }
+      outline: 1px solid lighten($lightgrey, 30%);
+    }
 
-   @include bp($medium) {
-     margin-bottom: $base-spacing / 2;
-   }
- }
-
- .swatch {
-  margin-bottom: $base-spacing;
-  @include border-radius;
-  overflow: auto;
-}
-
-.swatch-color {
-  position: relative;
-  @include padding(3.5em, $base-spacing);
-
-  &.white {
-   border: 1px solid $lightgrey;
-   border-bottom: none;
- }
-
- &:before,
- &:after  {
-   position: absolute;
-   content: '';
-   top: 0;
-   right: 2em;
-   height: 100%;
-   padding: 1em;
-   background-color: hsla(100, 100, 100, .1);
- }
-
- &:after {
-   right: 0;
-   background-color: hsla(0, 0, 0, .1);
- }
-
- @include bp($small) {
-   @include padding(1em, $base-spacing);
- }
-}
-
-.swatch-info {
-  @include padding($base-spacing / 2);
-  border: 1px solid $lightgrey;
-  border-top: none;
-  background: $white;
-  color: $text
-  ;
-  text-align: center;
-
-  p {
-   margin-bottom: $base-spacing / 2;
-
-   &:first-of-type {
-    font-weight: bold;
-  }
-}
-}
-
-.grid {
-  @extend .colors;
-  @include border-radius;
-  background: $link;
-
-  &:nth-of-type(even) {
-   background: $offwhite;
- }
-}
-
-form {
-  input, label {
-    display:block;
+    @include bp($medium) {
+      margin-bottom: $base-spacing / 2;
+    }
   }
 
-  input,
-  select,
-  textarea {
-    width: 100%;
+  .swatch {
     margin-bottom: $base-spacing;
+    @include border-radius;
+    overflow: auto;
   }
-}
 
-.heading-font-family {
-  @include font-family($heading-font-family);
-}
+  .swatch-color {
+    position: relative;
+    @include padding(3.5em, $base-spacing);
+
+    &.white {
+      border: 1px solid $lightgrey;
+      border-bottom: none;
+    }
+
+    &:before,
+    &:after  {
+      position: absolute;
+      content: '';
+      top: 0;
+      right: 2em;
+      height: 100%;
+      padding: 1em;
+      background-color: hsla(100, 100, 100, .1);
+    }
+
+    &:after {
+      right: 0;
+      background-color: hsla(0, 0, 0, .1);
+    }
+
+    @include bp($small) {
+      @include padding(1em, $base-spacing);
+    }
+  }
+
+  .swatch-info {
+    @include padding($base-spacing / 2);
+    border: 1px solid $lightgrey;
+    border-top: none;
+    background: $white;
+    color: $text
+    ;
+    text-align: center;
+
+    p {
+      margin-bottom: $base-spacing / 2;
+
+      &:first-of-type {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .grid {
+    @extend .colors;
+    @include border-radius;
+    background: $link;
+
+    &:nth-of-type(even) {
+      background: $offwhite;
+    }
+  }
+
+  form {
+    input, label {
+      display:block;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      margin-bottom: $base-spacing;
+    }
+  }
+
+  .heading-font-family {
+    @include font-family($heading-font-family);
+  }
 
   /* ==========================
     Pre
@@ -133,28 +145,31 @@ form {
     font-size: 1em;
     color: $green;
   }
-}
 
-.banded-brand {
-  @extend .twc-container;
-  background-color: $link;
-  padding-top: $base-spacing * 3;
-  padding-bottom: $base-spacing * 3;
+  .banded-brand {
+    background-color: $link;
+    padding-top: $base-spacing * 3;
+    padding-bottom: $base-spacing * 3;
 
-  * {
-    color: $white;
+    * {
+      color: $white;
+    }
   }
-}
 
-.banded-dark {
-  @extend .twc-container;
-  background-color: $offwhite;
-  padding-top: $base-spacing * 3;
-  padding-bottom: $base-spacing * 3;
-}
+  .banded-dark {
+    background-color: $offwhite;
+    padding-top: $base-spacing * 3;
+    padding-bottom: $base-spacing * 3;
+  }
 
-.banded-light {
-  @extend .twc-container;
-  padding-top: $base-spacing * 3;
-  padding-bottom: $base-spacing * 3;
+  .banded-light {
+    padding-top: $base-spacing * 3;
+    padding-bottom: $base-spacing * 3;
+  }
+
+  footer {
+    .twc-container {
+      padding: 0;
+    }
+  }
 }
