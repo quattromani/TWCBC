@@ -1,53 +1,137 @@
-- title: 'Approach'
-  url: 'approach'
-  active: "approach"
-  section:
-    - title: "The Brand Experience"
-      url: "brand-experience"
-      active: "approach"
-    - title: "Message Map"
-      url: "message-map"
-      active: "approach"
-    - title: "Audiences"
-      url: "audiences"
-      active: "approach"
+category:
+  - title: 'Approach'
+    url: 'approach'
+    active: "approach"
+    section:
+      - title: "The Brand Experience"
+        url: "brand-experience"
+        active: "approach"
+      - title: "Message Map"
+        url: "message-map"
+        active: "approach"
+      - title: "Audiences"
+        url: "audiences"
+        active: "approach"
 
-- title: 'Editorial Guidelines'
-  url: 'editorial-guidelines'
-  active: "editorial-guidelines"
-  section:
-    - title: "Voice & Tone"
-      url: "voice-and-tone"
-      active: "editorial-guidelines"
-    - title: "Grammar and Mechanics"
-      url: "grammar-and-mechanics"
-      active: "editorial-guidelines"
-    - title: "Working with Digital Web Marketing"
-      url: "working-with-digital-web-marketing"
-      active: "editorial-guidelines"
-    - title: "Visual Assets"
-      url: "visual-assets"
-      active: "editorial-guidelines"
+  - title: 'Editorial Guidelines'
+    url: 'editorial-guidelines'
+    active: "editorial-guidelines"
+    section:
+      - title: "Voice & Tone"
+        url: "voice-and-tone"
+        active: "editorial-guidelines"
+        subsection:
+        - title: "Content Goals and Principles"
+          url: "content-goals-and-principles"
+        - title: "Our Personality"
+          url: "our-personality"
+        - title: "Addressing the Reader"
+          url: "addressing-the-reader"
+        - title: "Language Style"
+          url: "language-style"
 
-- title: 'Toolkit'
-  url: 'toolkit'
-  active: "toolkit"
-  section:
-    - title: "Primary Elements"
-      url: "primary-elements"
-      active: "toolkit"
-      subsection:
-      - title: Text
-        url: text
-    - title: "Component Library"
-      url: "component-library"
-      active: "toolkit"
-    - title: "Helpers"
-      url: "helpers"
-      active: "toolkit"
-    - title: "Accessibility"
-      url: "accessibility"
-      active: "toolkit"
-    - title: "Best Practices"
-      url: "best-practices"
-      active: "toolkit"
+      - title: "Grammar and Mechanics"
+        url: "grammar-and-mechanics"
+        active: "editorial-guidelines"
+        subsection:
+        - title: "Abbreviations & Acronyms"
+          url: "abbreviations-and-acronyms"
+        - title: "punctuation"
+          url: "punctuation"
+        - title: "Capitalization"
+          url: "capitalization"
+        - title: "Glossary"
+          url: "glossary"
+        - title: "Legal Disclaimers"
+          url: "legal-disclaimers"
+
+      - title: "Working with Digital Web Marketing"
+        url: "working-with-digital-web-marketing"
+        active: "editorial-guidelines"
+        subsection:
+        - title: "Digital Marketing Plays"
+          url: "digital-marketing-plays"
+        - title: "Process Flow"
+          url: "process-flow"
+        - title: "Approvals"
+          url: "approvals"
+        - title: "Tools"
+          url: "tools"
+        - title: "Organization"
+          url: "organization"
+
+      - title: "Visual Assets"
+        url: "visual-assets"
+        active: "editorial-guidelines"
+        subsection:
+        - title: "Design Principles"
+          url: "design-principles"
+        - title: "About the Digital Design"
+          url: "about-the-digital-design"
+        - title: "Logo"
+          url: "logo"
+        - title: "Colors"
+          url: "colors"
+        - title: "Typefaces"
+          url: "typefaces"
+        - title: "Imagery"
+          url: "imagery"
+        - title: "Icons & Infographics"
+          url: "icons-and-infographics"
+          zoom:
+          - title: "Usage Guidelines"
+            url: "usage-guidelines"
+          - title: "Library"
+            url: "library"
+          - title: "Approval Process"
+            url: "approval-process"
+        - title: "Video"
+          url: "video"
+        - title: "Social Media Assets"
+          url: "social-media-assets"
+
+  - title: 'Toolkit'
+    url: 'toolkit'
+    active: "toolkit"
+    section:
+      - title: "Primary Elements"
+        url: "primary-elements"
+        active: "toolkit"
+        subsection:
+        - title: Text
+          url: text
+          zoom:
+          - title: "Fonts"
+            url: "fonts"
+          - title: "Headings"
+            url: "headings"
+          - title: "Body Text"
+            url: "body-text"
+          - title: "Inline Text"
+            url: "inline-text"
+        - title: Lists
+          url: "lists"
+          zoom:
+          - title: "Unordered Lists"
+            url: "unordered-lists"
+          - title: "Ordered Lists"
+            url: "ordered-lists"
+          - title: "Definition Lists"
+            url: "definition-lists"
+          - title: "Vertical Lists"
+            url: "vertical-lists"
+          - title: "Horizontal Lists"
+            url: "horizontal-lists"
+
+      - title: "Component Library"
+        url: "component-library"
+        active: "toolkit"
+      - title: "Helpers"
+        url: "helpers"
+        active: "toolkit"
+      - title: "Accessibility"
+        url: "accessibility"
+        active: "toolkit"
+      - title: "Best Practices"
+        url: "best-practices"
+        active: "toolkit"
