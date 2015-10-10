@@ -4,18 +4,21 @@
 .styleguide {
   nav {
     .twc-container {
+      position: relative;
       padding: 0;
     }
   }
 
   .twc-container {
-    .twc-bc-container {
+    overflow: inherit;
+
+    &.twc-bc-container {
       padding-top: 0;
     }
   }
 
   .twc-breadcrumbs {
-    @include margin($base-spacing 0);
+    position: relative;
   }
 
   .sub-section {

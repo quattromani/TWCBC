@@ -2414,6 +2414,7 @@ nav[role=navigation] {
       /* -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#fff', EndColorStr='#ced1d5')"; */
       display: none;
       position: absolute;
+      left: 0;
       width: auto; }
     nav[role=navigation] li:hover {
       background-color: #343b46; }
@@ -2479,11 +2480,14 @@ nav[role=navigation] {
     Pre
    ========================== */ }
   .styleguide nav .twc-container {
+    position: relative;
     padding: 0; }
-  .styleguide .twc-container .twc-bc-container {
-    padding-top: 0; }
+  .styleguide .twc-container {
+    overflow: inherit; }
+    .styleguide .twc-container.twc-bc-container {
+      padding-top: 0; }
   .styleguide .twc-breadcrumbs {
-    margin: 2rem 0; }
+    position: relative; }
   .styleguide .sub-section {
     position: relative; }
   .styleguide .btn.go {

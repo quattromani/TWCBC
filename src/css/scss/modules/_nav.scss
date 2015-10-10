@@ -21,6 +21,7 @@ nav[role=navigation] {
       @include linear-gradient($white, #ced1d5);
       display: none;
       position: absolute;
+      left: 0;
       width: auto;
     }
 
