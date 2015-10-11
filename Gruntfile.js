@@ -102,6 +102,7 @@ connect: {
           layout: 'default.hbs',
           layoutdir: '<%= config.src %>/templates/layouts/',
           data: '<%= config.src %>/data/*.{json,yml}',
+          helpers: ['<%= config.src %>/templates/helpers/**/*.js'],
         partials: '<%= config.src %>/templates/partials/{,*/}*.hbs'
       },
       files: [{
