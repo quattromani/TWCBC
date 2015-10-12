@@ -1,44 +1,26 @@
 var _ = require('lodash');
 
 module.exports.register = function(Handlebars, options, params) {
-  Handlebars.registerHelper('read_data', function(data, options) {
-    console.log("Jeff's helper called");
+  Handlebars.registerHelper('pluck_list_by_title', function(data, title, options) {
+    console.log("Jeff's helper called", title);
     // console.log(JSON.stringify(data, null, '  '));
 
+    var list = _.chain(data.category)
+      .map(function(item) {
+        return item.section;
+      })
+      .flatten()
+      .find(function(item) {
+        return item.title.toLowerCase() === title.toLowerCase();
+      })
+      .value();
 
-    function traverseTo(dataset, title) {
-      var keys = _.keys(dataset);
-
-      for (var key in keys) {
-        var list = dataset[keys[key]];
-
-        if (Array.isArray(list)) {
-          console.log("is list");
-
-          for (var i = 0; i < list.length; i++) {
-            var entry = list[i];
-            console.log(entry);
-
-            if (!!entry.title) {
-              console.log(entry.title);
-
-              if (entry.title === title) {
-                return entry;
-              }
-
-              return traverseTo(entry, title);
-            }
-
-            console.log("no item with title " + title + " found");
-          }
-        }
-      }
+    if (!!list && list.subsection) {
+      list = list.subsection;
     }
+    console.log(list);
 
-    traverseTo(data, "Toolkit");
-    // console.log(JSON.stringify(traverseTo(data, "Toolkit"), null, '  '));
-
-
+    return list;
 
     // return options.fn(this);
   });
