@@ -1,9 +1,9 @@
 var _ = require('lodash');
 
 module.exports.register = function(Handlebars, options, params) {
-  Handlebars.registerHelper('secondary_nav', function(data, category, section, subsection, options) {
+  Handlebars.registerHelper('secondary_nav', function(data, category, section, subsection, zoom, options) {
 
-    // console.log(category, section, subsection);
+    console.log(category, section, subsection, zoom);
 
     var category_object = null;
     var section_object = null;
@@ -14,14 +14,14 @@ module.exports.register = function(Handlebars, options, params) {
     var subsection_url = null;
 
     category_object = _.find(data, function(item) {
-      return item.title === category;
+      return !!item.title && !!category && item.title.toLowerCase() === category.toLowerCase();
     });
 
     if (!!category_object && !!category_object.section && !!category_object.url) {
       category_url = category_object.url;
 
       section_object = _.find(category_object.section, function(item) {
-        return item.title === section;
+        return !!item.title && !!section && item.title.toLowerCase() === section.toLowerCase();
       });
 
       if (!!section_object && !!section_object.subsection && !!section_object.url) {
@@ -54,10 +54,10 @@ module.exports.register = function(Handlebars, options, params) {
             html += '<li>';
 
             if (!!list[i].zoom[j].title && !!list[i].zoom[j].url) {
-              html += '<a href="' + start_url + '/' + list[i].url + '#' + list[i].zoom[j].url + '">' + list[i].zoom[j].title + '</a>';
+              html += '<a href="/' + start_url + '/' + list[i].url + '#' + list[i].zoom[j].url + '">' + list[i].zoom[j].title + '</a>';
 
             } else if (!!list[i].zoom[j].title) {
-              html += '<a href="">' + list[i].zoom[j].title + '</a>';
+              html += '<a href="/">' + list[i].zoom[j].title + '</a>';
             }
 
             html += '</li>';
@@ -79,7 +79,5 @@ module.exports.register = function(Handlebars, options, params) {
 
       return html;
     }
-
-
   });
 };
