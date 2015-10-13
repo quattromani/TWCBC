@@ -44,7 +44,7 @@ module.exports.register = function(Handlebars, options, params) {
       for (var i = 0; i < list.length; i++) {
         html += '<li class="js-expandable">';
 
-        console.log(list[i]);
+        // console.log(list[i]);
 
         if (!!list[i].zoom && !!list[i].url && !!list[i].title) {
           html += '<h6>' + list[i].title + '</h6>';
