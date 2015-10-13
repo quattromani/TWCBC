@@ -2488,6 +2488,8 @@ nav[role=navigation] {
       padding-top: 0; }
   .styleguide .twc-breadcrumbs {
     position: relative; }
+  .styleguide .twc-box-column {
+    clear: both; }
   .styleguide .sub-section {
     position: relative; }
   .styleguide .btn.go {
@@ -2583,6 +2585,11 @@ nav[role=navigation] {
     padding-bottom: 6rem; }
   .styleguide footer .twc-container {
     padding: 0; }
+  .styleguide h5 {
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+    *vertical-align: auto; }
   .styleguide .expandable li ul {
     display: block; }
 
