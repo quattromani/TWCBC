@@ -12,6 +12,7 @@
 
 # Ignore generated
 /css
+/js
 /approach
 /editorial-guidelines
 /toolkit
