@@ -54,10 +54,10 @@ module.exports.register = function(Handlebars, options, params) {
             html += '<li>';
 
             if (!!list[i].zoom[j].title && !!list[i].zoom[j].url) {
-              html += '<a href="' + start_url + '/' + list[i].url + '#' + list[i].zoom[j].url + '">' + list[i].zoom[j].title + '</a>';
+              html += '<a href="/' + start_url + '/' + list[i].url + '#' + list[i].zoom[j].url + '">' + list[i].zoom[j].title + '</a>';
 
             } else if (!!list[i].zoom[j].title) {
-              html += '<a href="">' + list[i].zoom[j].title + '</a>';
+              html += '<a href="/">' + list[i].zoom[j].title + '</a>';
             }
 
             html += '</li>';
