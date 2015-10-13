@@ -21,6 +21,10 @@
     position: relative;
   }
 
+  .twc-box-column {
+    clear: both;
+  }
+
   .sub-section {
     position: relative;
   }
@@ -176,8 +180,11 @@
     }
   }
 
-// Temporary
-.expandable li ul {
-  display: block;
-}
+  h5 {
+    @include inline-block;
+  }
+
+  .expandable li ul {
+    display: block;
+  }
 }
