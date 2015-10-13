@@ -3,16 +3,16 @@
 <nav role="navigation">
 	<div class="twc-container">
 		<ul class="navigation menu">
-			{{#each nav.category}}
+			{{#each nav.category }}
       <li>
-        <a href="{{ site.url }}/{{url}}">
+        <a href="/{{ url }}">
           <span>{{title}}</span>
         </a>
         <ul>
-        {{#each section}}
+        {{#each (inherit_url section url) }}
           <li>
-            <a href="{{ site.url }}/{{url}}">
-              <span>{{title}}</span>
+            <a href="/{{ parent_url }}/{{ url }}">
+              <span>{{ title }}</span>
             </a>
           </li>
           {{/each}}
