@@ -1,21 +1,35 @@
 <h2>{{#if page.section }} {{ section }} {{else}} {{ category }} {{/if}}</h2>
-<div class="accordion">
-  <div class="expandable">
-    <ul>
-      <li class="js-notexpandable"><h6>Text</h6></li>
-      <li class="js-expandable"><h6>Lists</h6>
-        <ul>
-          <li class="js-notexpandable"><a href="/lists/#about">About</a></li>
-          <li class="js-notexpandable"><a href="/lists/#unordered-lists">Unordered Lists</a></li>
-          <li class="js-notexpandable"><a href="/lists/#ordered-lists">Ordered Lists</a></li>
-          <li class="js-notexpandable"><a href="/lists/#definition-lists">Definition Lists</a></li>
-          <li class="js-notexpandable"><a href="/lists/#horizontal-lists">Horizontal Lists</a></li>
-          <li class="js-notexpandable"><a href="/lists/#vertical-lists">Vertical Lists</a></li>
-        </ul>
-      </li>
-      <li class="js-notexpandable"><h6>Buttons</h6></li>
-      <li class="js-notexpandable"><h6>Images</h6></li>
-      <li class="js-notexpandable"><h6>Links</h6></li>
-    </ul>
+
+{{ secondary_nav this.nav.category category section title }}
+
+{{!-- {{#if (pluck_list_by_title this.nav.category title) }}
+  <div class="accordion">
+    <div class="expandable">
+
+      {{ get_url_for_secondary_nav this.nav.category category section }}
+
+      <ul>
+        {{#each (inherit_url (pluck_list_by_title this.nav.category title) (json (get_url_for_secondary_nav this.nav.category category section))) }}
+
+          {{#if zoom }}
+            <li class="js-expandable"><h6>{{ title }}</h6>
+
+            <ul>
+              {{#each (inherit_url zoom (concatenate_to parent_url '/' url)) }}
+                <li class="js-notexpandable"><a href="/{{ parent_url }}#{{ url }}">{{ title }}</a></li>
+              {{/each }}
+            </ul>
+
+          {{ else }}
+
+            <li class="js-expandable"><a href="/{{ parent_url }}/{{ url }}"><h6>{{ title }}</h6></a>
+
+          {{/if }}
+
+          </li>
+
+        {{/each }}
+      </ul>
+    </div>
   </div>
-</div>
+{{/if }} --}}
