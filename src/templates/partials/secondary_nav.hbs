@@ -5,11 +5,14 @@
   <div class="expandable">
     <ul>
       {{#each (pluck_list_by_title this.nav title) }}
-      <li class="js-expandable"><h6>{{ this.title }}</h6>
-        {{ this }}
-        {{!-- <ul>
-          <li class="js-notexpandable"><a href="/lists/#about"></a></li>
-        </ul> --}}
+      <li class="js-expandable"><h6>{{ title }}</h6>
+        {{#if zoom }}
+        <ul>
+          {{#each zoom }}
+            <li class="js-notexpandable"><a href="/lists/#{{ url }}">{{ title }}</a></li>
+          {{/each }}
+        </ul>
+        {{/if }}
       </li>
       {{/each }}
     </ul>
