@@ -9,3 +9,9 @@
 
 # Ignore .grunt
 .grunt
+
+# Ignore generated
+/css
+/approach
+/editorial-guidelines
+/toolkit
