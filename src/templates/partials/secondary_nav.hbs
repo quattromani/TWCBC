@@ -1,22 +1,35 @@
 <h2>{{#if page.section }} {{ section }} {{else}} {{ category }} {{/if}}</h2>
 
+{{ secondary_nav this.nav.category category section title }}
 
-{{#if (inherit_url (pluck_list_by_title this.nav.category title) category.url) }}
-<div class="accordion">
-  <div class="expandable">
-    <ul>
-      {{#each (inherit_url (pluck_list_by_title this.nav.category title) (concatenate_to parent_url '/' url)) }}
-      <li class="js-expandable"><h6>{{ title }}</h6>
-        {{#if zoom }}
-        <ul>
-          {{#each (inherit_url zoom (concatenate_to parent_url '/' url)) }}
-            <li class="js-notexpandable"><a href="/{{ parent_url }}#{{ url }}">{{ title }}</a></li>
-          {{/each }}
-        </ul>
-        {{/if }}
-      </li>
-      {{/each }}
-    </ul>
+{{!-- {{#if (pluck_list_by_title this.nav.category title) }}
+  <div class="accordion">
+    <div class="expandable">
+
+      {{ get_url_for_secondary_nav this.nav.category category section }}
+
+      <ul>
+        {{#each (inherit_url (pluck_list_by_title this.nav.category title) (json (get_url_for_secondary_nav this.nav.category category section))) }}
+
+          {{#if zoom }}
+            <li class="js-expandable"><h6>{{ title }}</h6>
+
+            <ul>
+              {{#each (inherit_url zoom (concatenate_to parent_url '/' url)) }}
+                <li class="js-notexpandable"><a href="/{{ parent_url }}#{{ url }}">{{ title }}</a></li>
+              {{/each }}
+            </ul>
+
+          {{ else }}
+
+            <li class="js-expandable"><a href="/{{ parent_url }}/{{ url }}"><h6>{{ title }}</h6></a>
+
+          {{/if }}
+
+          </li>
+
+        {{/each }}
+      </ul>
+    </div>
   </div>
-</div>
-{{/if }}
+{{/if }} --}}
