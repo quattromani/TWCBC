@@ -1,7 +1,23 @@
-{{ pluck_list_by_title this.nav title }}
-
 <h2>{{#if page.section }} {{ section }} {{else}} {{ category }} {{/if}}</h2>
+
+{{#if (pluck_list_by_title this.nav title) }}
 <div class="accordion">
+  <div class="expandable">
+    <ul>
+      {{#each (pluck_list_by_title this.nav title) }}
+      <li class="js-expandable"><h6>{{ this.title }}</h6>
+        {{ this }}
+        {{!-- <ul>
+          <li class="js-notexpandable"><a href="/lists/#about"></a></li>
+        </ul> --}}
+      </li>
+      {{/each }}
+    </ul>
+  </div>
+</div>
+{{/if }}
+
+{{!-- <div class="accordion">
   <div class="expandable">
     <ul>
       <li class="js-notexpandable"><h6>Text</h6></li>
@@ -20,4 +36,4 @@
       <li class="js-notexpandable"><h6>Links</h6></li>
     </ul>
   </div>
-</div>
+</div> --}}
