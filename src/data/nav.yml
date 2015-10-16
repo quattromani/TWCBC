@@ -1,6 +1,6 @@
 category:
   - title: 'Approach'
-    url: 'TWCBC/approach'
+    url: 'twcbcstyletemp/approach'
     active: "approach"
     section:
       - title: "The Brand Experience"
@@ -14,7 +14,7 @@ category:
         active: "approach"
 
   - title: 'Editorial Guidelines'
-    url: 'TWCBC/editorial-guidelines'
+    url: 'twcbcstyletemp/editorial-guidelines'
     active: "editorial-guidelines"
     section:
       - title: "Voice & Tone"
@@ -103,7 +103,7 @@ category:
           url: "social-media-assets"
 
   - title: 'Toolkit'
-    url: 'TWCBC/toolkit'
+    url: 'twcbcstyletemp/toolkit'
     active: "toolkit"
     section:
       - title: "Primary Elements"
