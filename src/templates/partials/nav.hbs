@@ -1,9 +1,11 @@
 <a href="#" class="open-panel"><span></span></a>
 
-<nav role="navigation">
+{{ primary_nav nav.category site.baseurl }}
+
+{{!-- <nav role="navigation">
 	<div class="twc-container">
 		<ul class="navigation menu">
-			{{#each nav }}
+			{{#each nav.category }}
       <li>
         <a href="/{{ url }}.html">
           <span>{{title}}</span>
@@ -21,4 +23,4 @@
       {{/each}}
     </ul>
   </div>
-</nav>
+</nav> --}}

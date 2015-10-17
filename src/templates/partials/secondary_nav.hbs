@@ -1,6 +1,6 @@
 <h2>{{#if page.section }} {{ section }} {{else}} {{ category }} {{/if}}</h2>
 
-{{ secondary_nav this.nav.category category section title zoom }}
+{{ secondary_nav this.nav.category site.baseurl category section title zoom }}
 
 {{!-- {{#if (pluck_list_by_title this.nav.category title) }}
   <div class="accordion">

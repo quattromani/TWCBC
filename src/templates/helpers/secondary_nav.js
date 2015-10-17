@@ -1,9 +1,7 @@
 var _ = require('lodash');
 
 module.exports.register = function(Handlebars, options, params) {
-  Handlebars.registerHelper('secondary_nav', function(data, category, section, subsection, zoom, options) {
-
-    console.log(category, section, subsection, zoom);
+  Handlebars.registerHelper('secondary_nav', function(data, base_url, category, section, subsection, zoom, options) {
 
     var category_object = null;
     var section_object = null;
@@ -25,7 +23,7 @@ module.exports.register = function(Handlebars, options, params) {
       });
 
       if (!!section_object && !!section_object.subsection && !!section_object.url) {
-        section_url = category_url + "/" + section_object.url;
+        section_url = base_url + "/" + category_url + "/" + section_object.url;
 
         return new Handlebars.SafeString(buildHTML(section_url, section_object.subsection));
 
@@ -54,10 +52,10 @@ module.exports.register = function(Handlebars, options, params) {
             html += '<li>';
 
             if (!!list[i].zoom[j].title && !!list[i].zoom[j].url) {
-              html += '<a href="/' + start_url + '/' + list[i].url + '#' + list[i].zoom[j].url + '">' + list[i].zoom[j].title + '</a>';
+              html += '<a href="' + start_url + '/' + list[i].url + '.html#' + list[i].zoom[j].url + '">' + list[i].zoom[j].title + '</a>';
 
             } else if (!!list[i].zoom[j].title) {
-              html += '<a href="/">' + list[i].zoom[j].title + '</a>';
+              html += '<a href="">' + list[i].zoom[j].title + '</a>';
             }
 
             html += '</li>';
@@ -66,7 +64,7 @@ module.exports.register = function(Handlebars, options, params) {
           html += '</ul>';
 
         } else if (!!list[i].url && !!list[i].title){
-          html += '<a href="/' + start_url + '/' + list[i].url + '"><h6>' + list[i].title + '</h6></a>';
+          html += '<a href="' + start_url + '/' + list[i].url + '.html"><h6>' + list[i].title + '</h6></a>';
 
         } else if (!!list[i].title) {
           html += '<h6>' + list[i].title + '</h6>';
