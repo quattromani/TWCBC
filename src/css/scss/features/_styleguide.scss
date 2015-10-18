@@ -11,10 +11,6 @@
 
   .twc-container {
     overflow: inherit;
-
-    &.twc-bc-container {
-      padding-top: 0;
-    }
   }
 
   .twc-breadcrumbs {
@@ -27,6 +23,10 @@
 
   .sub-section {
     position: relative;
+  }
+
+  h2 {
+    text-transform: capitalize;
   }
 
   .btn {
