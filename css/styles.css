@@ -2482,6 +2482,8 @@ nav[role=navigation] {
   .styleguide nav .twc-container {
     position: relative;
     padding: 0; }
+  .styleguide aside {
+    padding-bottom: 2rem; }
   .styleguide .twc-breadcrumbs {
     position: relative; }
   .styleguide .twc-box-column {
