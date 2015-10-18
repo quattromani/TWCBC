@@ -2544,13 +2544,6 @@ nav[role=navigation] {
     background: #369; }
     .styleguide .grid:nth-of-type(even) {
       background: #f2f4f6; }
-  .styleguide form input, .styleguide form label {
-    display: block; }
-  .styleguide form input,
-  .styleguide form select,
-  .styleguide form textarea {
-    width: 100%;
-    margin-bottom: 2rem; }
   .styleguide .heading-font-family {
     font-family: Arial, "Helvetica Neue", Helvetica, Arial, sans-serif, Arial, Sans-Serif;
     font-style: normal;
@@ -2592,8 +2585,6 @@ nav[role=navigation] {
     *zoom: 1;
     *display: inline;
     *vertical-align: auto; }
-  .styleguide .expandable li ul {
-    display: block; }
 
 /* ==========================================================================
     Accordion -- Version: 1.9.0.0 - Updated: 1/11/2014
