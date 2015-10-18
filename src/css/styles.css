@@ -2482,8 +2482,6 @@ nav[role=navigation] {
   .styleguide nav .twc-container {
     position: relative;
     padding: 0; }
-  .styleguide .twc-container {
-    overflow: inherit; }
   .styleguide .twc-breadcrumbs {
     position: relative; }
   .styleguide .twc-box-column {
