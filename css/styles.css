@@ -2692,6 +2692,14 @@ nav[role=navigation] {
 .js-open ul {
   display: block !important; }
 
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 197px; }
+  .sticky:before, .sticky:after {
+    content: '';
+    display: table; }
+
 /* ==========================================================================
     Syntax Highlighter -- Version: 1.9.0.0 - Compiled: timestamp()
    ========================================================================== */
