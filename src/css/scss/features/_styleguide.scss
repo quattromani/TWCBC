@@ -3,10 +3,17 @@
 
 .styleguide {
   nav {
+    position: relative;
+    z-index: 9;
+
     .twc-container {
       position: relative;
       padding: 0;
     }
+  }
+
+  .twc-bc-container {
+    @include padding(0);
   }
 
   aside {
@@ -14,7 +21,12 @@
   }
 
   .twc-breadcrumbs {
+    @include padding($base-spacing 0);
     position: relative;
+
+    .twc-container {
+      padding: 0;
+    }
   }
 
   .twc-box-column {
@@ -325,8 +337,8 @@
     }
   }
 
-.js-open {
-  ul {
-    display: block !important;
+  .js-open {
+    ul {
+      display: block !important;
+    }
   }
-}
