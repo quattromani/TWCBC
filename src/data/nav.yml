@@ -171,8 +171,6 @@ category:
         subsection:
         - title: "Tile List"
           url: "tile-list"
-        - title: "Details / Summary"
-          url: "details-summary"
         - title: "Forms"
           url: "forms"
           zoom:

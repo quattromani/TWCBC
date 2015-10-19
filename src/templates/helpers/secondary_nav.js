@@ -42,7 +42,7 @@ module.exports.register = function(Handlebars, options, params) {
       for (var i = 0; i < list.length; i++) {
         console.log(list[i].title + " == " + subsection);
         if (list[i].title.toLowerCase() === subsection.toLowerCase()) {
-          html += '<li class="js-expandable js-active">';
+          html += '<li class="js-expandable js-open">';
         } else {
           html += '<li class="js-expandable">';
         }
