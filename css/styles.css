@@ -2590,48 +2590,51 @@ nav[role=navigation] {
     Accordion -- Version: 1.9.0.0 - Updated: 1/11/2014
    ========================================================================== */
 .expandable li h6, .expandableHybrid li h6 {
-  padding: 0.5em;
-  border-bottom: 1px solid #e1e1e1;
-  background-color: #3779b3;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#3779b3), to(#02447e));
-  background-image: -webkit-linear-gradient(top, #3779b3, #02447e);
-  background-image: linear-gradient(top, #3779b3, #02447e);
-  /* -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#3779b3', EndColorStr='#02447e')"; */
-  color: #fff; }
+  margin-bottom: 0; }
 .expandable li.js-notexpandable h6:after, .expandable li.js-notexpandableHybrid h6:after, .expandableHybrid li.js-notexpandable h6:after, .expandableHybrid li.js-notexpandableHybrid h6:after {
-  font-family: "fontawesome"; }
+  float: right;
+  content: '\f105';
+  color: inherit; }
 .expandable li.js-expandable h6:after, .expandable li.js-expandableHybrid h6:after, .expandableHybrid li.js-expandable h6:after, .expandableHybrid li.js-expandableHybrid h6:after {
-  font-family: "fontawesome"; }
+  float: right;
+  content: '\f107';
+  color: inherit; }
+.expandable li.js-expandable.js-active h6:after, .expandable li.js-expandableHybrid.js-active h6:after, .expandableHybrid li.js-expandable.js-active h6:after, .expandableHybrid li.js-expandableHybrid.js-active h6:after {
+  -webkit-transform: rotate(-180degdeg);
+      -ms-transform: rotate(-180degdeg);
+          transform: rotate(-180degdeg); }
 .expandable li ul, .expandableHybrid li ul {
-  border-right: 1px solid #e1e1e1; }
+  display: none; }
+  @media (max-width: 768px) {
+    .expandable li ul, .expandableHybrid li ul {
+      border-right: none; } }
   .expandable li ul li.js-notexpandableHybrid a:after, .expandableHybrid li ul li.js-notexpandableHybrid a:after {
-    font-family: "fontawesome";
-    color: #C2C2C2; }
+    float: right;
+    content: '\f105'; }
   .expandable li ul li.js-expandableHybridSub a:after, .expandableHybrid li ul li.js-expandableHybridSub a:after {
-    font-family: "fontawesome";
-    color: #C2C2C2; }
-  .expandable li ul li.js-active.js-expandableHybridSub, .expandableHybrid li ul li.js-active.js-expandableHybridSub {
-    background: #e3effb; }
-    .expandable li ul li.js-active.js-expandableHybridSub a:after, .expandableHybrid li ul li.js-active.js-expandableHybridSub a:after {
-      font-family: "fontawesome";
-      color: #C2C2C2; }
+    float: right;
+    content: '\f105'; }
+  .expandable li ul li.js-active.js-expandableHybridSub a:after, .expandableHybrid li ul li.js-active.js-expandableHybridSub a:after {
+    float: right;
+    content: '\f105'; }
 .expandable li li, .expandableHybrid li li {
-  border-bottom: 1px dotted #e1e1e1; }
-.expandable li.liState, .expandableHybrid li.liState {
-  background: #c8d6e3; }
+  padding: 0.5em; }
+.expandable li.js-last, .expandableHybrid li.js-last {
+  border-bottom: none; }
+
+.activeContent {
+  display: none; }
 
 @media (max-width: 768px) {
   .expandable li ul li.js-notexpandableHybrid a:after, .expandableHybrid li ul li.js-notexpandableHybrid a:after {
-    font-family: "fontawesome";
-    color: #C2C2C2; }
+    float: right;
+    content: '\f105'; }
   .expandable li ul li.js-expandableHybridSub a:after, .expandableHybrid li ul li.js-expandableHybridSub a:after {
-    font-family: "fontawesome";
-    color: #C2C2C2; }
-  .expandable li ul li.js-active.js-expandableHybridSub, .expandableHybrid li ul li.js-active.js-expandableHybridSub {
-    background: #e3effb; }
-    .expandable li ul li.js-active.js-expandableHybridSub a:after, .expandableHybrid li ul li.js-active.js-expandableHybridSub a:after {
-      font-family: "fontawesome";
-      color: #C2C2C2; } }
+    float: right;
+    content: '\f107'; }
+  .expandable li ul li.js-active.js-expandableHybridSub a:after, .expandableHybrid li ul li.js-active.js-expandableHybridSub a:after {
+    float: right;
+    content: '\f106'; } }
 .sticky {
   position: -webkit-sticky;
   position: sticky;

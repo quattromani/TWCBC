@@ -189,63 +189,87 @@
   h5 {
     @include inline-block;
   }
-
-  // .expandable li ul {
-  //   display: block;
-  // }
 }
 
 /* ==========================================================================
     Accordion -- Version: 1.9.0.0 - Updated: 1/11/2014
    ========================================================================== */
 
-   .expandable, .expandableHybrid {
-    li {
-      h6 {
-      @include padding(.5em);    // Theme
-      border-bottom: 1px solid #e1e1e1;    // Theme
-      @include linear-gradient(#3779b3, #02447e);    // Theme
-      color: $text-white;    // Theme
+.expandable, .expandableHybrid {
+  li {
+    h6 {
+      margin-bottom: 0;    // Framework
+      // @include padding(.5em);    // Theme
+      // border-bottom: 1px solid #e1e1e1;    // Theme
+      // @include background-gradient(#3779b3, #02447e);    // Theme
+      // color: $text-white;    // Theme
     }
     &.js-notexpandable h6:after, &.js-notexpandableHybrid h6:after {
-      font-family: $fontawesome;    // Theme
+      float: right;    // Framework
+      // font-family: $fontawesome;    // Theme
+      content: '\f105';    // Framework
+      color: inherit;    // Framework
     }
     &.js-expandable, &.js-expandableHybrid {
       h6:after {
-        font-family: $fontawesome;    // Theme
+        float: right;    // Framework
+        // font-family: $fontawesome;    // Theme
+        content: '\f107';    // Framework
+        color: inherit;    // Framework
+      }
+      &.js-active h6:after {
+        @include rotate(-180deg);    // Framework
       }
     }
     ul {
-      border-right: 1px solid $lightgrey;    // Theme
+      display: none;    // Framework
+      // border-right: 1px solid $lightgrey;    // Theme
+      @include bp(medium) {
+        border-right: none;    // Framework
+      }
       li {
         &.js-notexpandableHybrid {
           a:after {
-            font-family: $fontawesome;    // Theme
-            color: #C2C2C2;    // Theme
+            float: right;    // Framework
+            // font-family: $fontawesome;    // Theme
+            content: '\f105';    // Framework
+            // color: #C2C2C2;    // Theme
           }
         }
         &.js-expandableHybridSub {
           a:after {
-            font-family: $fontawesome;    // Theme
-            color: #C2C2C2;    // Theme
+            float: right;
+            // font-family: $fontawesome;    // Theme
+            content: '\f105';    // Framework
+            // color: #C2C2C2;    // Theme
           }
         }
         &.js-active.js-expandableHybridSub {
-          background: #e3effb;    // Theme
+          // background: #e3effb;    // Theme
           a:after {
-            font-family: $fontawesome;    // Theme
-            color: #C2C2C2;    // Theme
+            float: right;    // Framework
+            // font-family: $fontawesome;    // Theme
+            content: '\f105';    // Framework
+            // color: #C2C2C2;    // Theme
           }
         }
       }
     }
     li {
-      border-bottom: 1px dotted $lightgrey;    // Theme
+      @include padding(.5em);    // Framework
+      // border-bottom: 1px dotted $lightgrey;    // Theme
+    }
+    &.js-last {
+      border-bottom: none;    // Framework
     }
     &.liState {
-      background: $steelSky-light;    // Theme
+      // background: $steelSky-light;    // Theme
     }
   }
+}
+
+.activeContent {
+  display: none;    // Framework
 }
 
 @media (max-width: $medium) {
@@ -255,21 +279,27 @@
         li {
           &.js-notexpandableHybrid {
             a:after {
-              font-family: $fontawesome;    // Theme
-              color: #C2C2C2;    // Theme
+              float: right;    // Framework
+              // font-family: $fontawesome;    // Theme
+              content: '\f105';    // Framework
+              // color: #C2C2C2;    // Theme
             }
           }
           &.js-expandableHybridSub {
             a:after {
-              font-family: $fontawesome;    // Theme
-              color: #C2C2C2;    // Theme
+              float: right;    // Framework
+              // font-family: $fontawesome;    // Theme
+              content: '\f107';    // Framework
+              // color: #C2C2C2;    // Theme
             }
           }
           &.js-active.js-expandableHybridSub {
-            background: #e3effb;    // Theme
+            // background: #e3effb;    // Theme
             a:after {
-              font-family: $fontawesome;    // Theme
-              color: #C2C2C2;    // Theme
+              float: right;    // Framework
+              // font-family: $fontawesome;    // Theme
+              content: '\f106';    // Framework
+              // color: #C2C2C2;    // Theme
             }
           }
         }
