@@ -2387,8 +2387,6 @@ header[role=banner] {
   top: 0;
   width: 100%;
   z-index: 99; }
-  header[role=banner] .twc-logo {
-    padding: 2rem 0; }
 
 nav[role=navigation] {
   background-color: #fff;
