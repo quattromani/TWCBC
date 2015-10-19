@@ -113,6 +113,8 @@ category:
         - title: Text
           url: text
           zoom:
+          - title: "About Text"
+            url: "about-text"
           - title: "Fonts"
             url: "fonts"
           - title: "Headings"
@@ -124,6 +126,8 @@ category:
         - title: Lists
           url: "lists"
           zoom:
+          - title: "About Lists"
+            url: "about-lists"
           - title: "Unordered Lists"
             url: "unordered-lists"
           - title: "Ordered Lists"
@@ -137,6 +141,8 @@ category:
         - title: Buttons
           url: "buttons"
           zoom:
+          - title: "About Buttons"
+            url: "about-buttons"
           - title: "Anchor buttons"
             url: "anchor-buttons"
           - title: "Button"
@@ -150,6 +156,8 @@ category:
         - title: Images
           url: "images"
           zoom:
+          - title: "About Images"
+            url: "about-images"
           - title: "Figure & Figcaption"
             url: "figure-and-figcaption"
           - title: "Image Focus"
@@ -159,6 +167,8 @@ category:
         - title: Links
           url: "links"
           zoom:
+          - title: "About Links"
+            url: "about-links"
           - title: "Anchor Links"
             url: "anchor"
           - title: "Email Links"
@@ -216,14 +226,10 @@ category:
           url: "box-column"
         - title: "Tabs"
           url: "tabs"
-        - title: "Progress Bar"
-          url: "progress-bar"
         - title: "Tables"
           url: "tables"
         - title: "Browser Alert"
           url: "browser-alert"
-        - title: "Email Signature"
-          url: "email-signature"
         - title: "Breadcrumbs"
           url: "breadcrumbs"
         - title: "Column Control"
