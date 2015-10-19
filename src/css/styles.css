@@ -2599,12 +2599,14 @@ nav[role=navigation] {
    ========================================================================== */
 .expandable li h6,
 .expandableHybrid li h6 {
-  padding: 0.5em;
+  padding: 0.75em;
   background-color: #3779b3;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#3779b3), to(#02447e));
   background-image: -webkit-linear-gradient(top, #3779b3, #02447e);
   background-image: linear-gradient(top, #3779b3, #02447e);
   /* -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#3779b3', EndColorStr='#02447e')"; */
+  font-size: 14px;
+  font-size: 1.4rem;
   margin-bottom: 0;
   border-bottom: 1px solid #e1e1e1;
   color: #fff; }
