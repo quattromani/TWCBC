@@ -40,9 +40,12 @@ module.exports.register = function(Handlebars, options, params) {
       var html = '<div class="accordion"><div class="expandable"><ul>';
 
       for (var i = 0; i < list.length; i++) {
-        html += '<li class="js-expandable">';
-
-        // console.log(list[i]);
+        console.log(list[i].title + " == " + subsection);
+        if (list[i].title.toLowerCase() === subsection.toLowerCase()) {
+          html += '<li class="js-expandable js-active">';
+        } else {
+          html += '<li class="js-expandable">';
+        }
 
         if (!!list[i].zoom && !!list[i].url && !!list[i].title) {
           html += '<h6>' + list[i].title + '</h6>';

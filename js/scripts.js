@@ -130,9 +130,9 @@ $('.accordion .expandable ul li').each(function() {
 	}
 });
 //open first nav item if no cookie exists
-if (!$.cookie('js-expand')) {
-	$('.accordion .expandable ul .js-expandable').first().addClass('js-active').find('ul').slideDown();
-}
+// if (!$.cookie('js-expand')) {
+// 	$('.accordion .expandable ul .js-expandable').first().addClass('js-active').find('ul').slideDown();
+// }
 $('.accordion .expandable h6').click(function() {
 	var categoryText = $(this).text();
 	$(this).parent().addClass('js-active').find('ul').slideToggle(function() {
