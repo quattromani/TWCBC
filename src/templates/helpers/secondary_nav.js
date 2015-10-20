@@ -36,11 +36,9 @@ module.exports.register = function(Handlebars, options, params) {
     }
 
     function buildHTML(start_url, list) {
-      // console.log("building html with", "url: " + start_url, "list: " + JSON.stringify(list, null, '  '));
       var html = '<div class="accordion"><div class="expandable"><ul>';
 
       for (var i = 0; i < list.length; i++) {
-        console.log(list[i].title + " == " + subsection);
         if (list[i].title.toLowerCase() === subsection.toLowerCase()) {
           html += '<li class="js-expandable js-open">';
         } else {
