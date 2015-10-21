@@ -69,13 +69,23 @@ cssmin: {
   }
 },
 
-autoprefixer: {
-  dev: {
+postcss: {
+  options: {
+    map: true, // inline sourcemaps
+
+    processors: [
+      require('pixrem')(), // add fallbacks for rem units
+      require('autoprefixer')({browsers: 'last 2 versions'}) // add vendor prefixes
+    ]
+  },
+  dist: {
     files: {
       '<%= config.src %>/css/styles.css': ['<%= config.src %>/css/styles.css']
     }
   }
 },
+
+
 
 connect: {
   options: {
@@ -176,7 +186,7 @@ grunt.registerTask('build', [
   'concat',
   'uglify',
   'sass',
-  'autoprefixer',
+  'postcss',
   'cssmin',
   'copy',
   'assemble'

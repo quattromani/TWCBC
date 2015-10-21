@@ -116,31 +116,26 @@
 .fa-rotate-90 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
   -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
   transform: rotate(90deg); }
 
 .fa-rotate-180 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
   -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
   transform: rotate(180deg); }
 
 .fa-rotate-270 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   -webkit-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
   transform: rotate(270deg); }
 
 .fa-flip-horizontal {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
   -webkit-transform: scale(-1, 1);
-  -ms-transform: scale(-1, 1);
   transform: scale(-1, 1); }
 
 .fa-flip-vertical {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
   -webkit-transform: scale(1, -1);
-  -ms-transform: scale(1, -1);
   transform: scale(1, -1); }
 
 :root .fa-rotate-90,
@@ -1741,6 +1736,7 @@ input,
 select,
 textarea {
   font-size: 13px;
+  font-size: 13px;
   font-size: 1.3rem;
   line-height: 1.25; }
 
@@ -1888,6 +1884,7 @@ video {
 h1,
 .h1 {
   font-size: 36px;
+  font-size: 36px;
   font-size: 3.6rem;
   font-family: Arial, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
@@ -1897,6 +1894,7 @@ h1,
 
 h2,
 .h2 {
+  font-size: 30px;
   font-size: 30px;
   font-size: 3rem;
   font-family: Arial, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1908,6 +1906,7 @@ h2,
 h3,
 .h3 {
   font-size: 24px;
+  font-size: 24px;
   font-size: 2.4rem;
   font-family: Arial, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
@@ -1917,6 +1916,7 @@ h3,
 
 h4,
 .h4 {
+  font-size: 22px;
   font-size: 22px;
   font-size: 2.2rem;
   font-family: Arial, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1928,6 +1928,7 @@ h4,
 h5,
 .h5 {
   font-size: 20px;
+  font-size: 20px;
   font-size: 2rem;
   font-family: Arial, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 200;
@@ -1937,6 +1938,7 @@ h5,
 
 h6,
 .h6 {
+  font-size: 18px;
   font-size: 18px;
   font-size: 1.8rem;
   font-family: Arial, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1998,8 +2000,7 @@ a {
   margin: 0;
   padding: 0;
   will-change: transition;
-  -webkit-transition: all 0.2s ease-in-out;
-          transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   background-color: transparent;
   vertical-align: baseline;
   font-family: inherit;
@@ -2026,8 +2027,7 @@ a[href^="mailto"] {
   color: #369;
   text-decoration: #333;
   will-change: transition;
-  -webkit-transition: all 0.2s ease-in-out;
-          transition: all 0.2s ease-in-out; }
+  transition: all 0.2s ease-in-out; }
   a[href^="mailto"]:before {
     content: attr(data-cta); }
   a[href^="mailto"]:hover:before {
@@ -2035,13 +2035,13 @@ a[href^="mailto"] {
 
 a[href^="tel"] {
   will-change: transition;
-  -webkit-transition: all 0.2s ease-in-out;
-          transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   font-weight: normal;
   color: inherit;
   text-decoration: none; }
 
 .read-more {
+  font-size: 14px;
   font-size: 14px;
   font-size: 1.4rem;
   display: block; }
@@ -2055,11 +2055,14 @@ a[href^="tel"] {
     text-decoration: inherit;
     content: "";
     font-size: 13px;
+    font-size: 13px;
     font-size: 1.3rem;
+    padding: 0 5px;
     padding: 0 0.5rem;
     color: currentColor; }
 
 .back {
+  margin-bottom: 20px !important;
   margin-bottom: 2rem !important; }
   .back::before {
     font-family: "fontawesome", Arial, Sans-Serif;
@@ -2071,7 +2074,9 @@ a[href^="tel"] {
     text-decoration: inherit;
     content: "";
     font-size: 13px;
+    font-size: 13px;
     font-size: 1.3rem;
+    padding: 0 5px;
     padding: 0 0.5rem;
     color: inherit; }
 
@@ -2089,7 +2094,9 @@ a.morelink {
     text-decoration: inherit;
     content: "";
     font-size: 13px;
+    font-size: 13px;
     font-size: 1.3rem;
+    padding: 0 5px;
     padding: 0 0.5rem;
     color: currentColor; }
 
@@ -2103,7 +2110,9 @@ a.morelink.less::before {
   text-decoration: inherit;
   content: "";
   font-size: 13px;
+  font-size: 13px;
   font-size: 1.3rem;
+  padding: 0 5px;
   padding: 0 0.5rem;
   color: currentColor; }
 a.morelink.less:after {
@@ -2117,6 +2126,7 @@ a[href$=".pdf"] {
   background: url("/TWC/core/images/pdf-icon.png") no-repeat; }
 
 ol {
+  margin: 0 0 0 30px;
   margin: 0 0 0 3rem;
   padding: 0; }
   ol li {
@@ -2145,6 +2155,7 @@ ul {
   padding: 0; }
   .horizontal.slashes li:after {
     content: '/';
+    padding: 0 10px;
     padding: 0 1rem; }
   .horizontal.slashes li.js-last:after {
     content: ''; }
@@ -2159,6 +2170,7 @@ ul {
 .vertical li {
   display: block !important; }
 .vertical > li {
+  padding: 10px 0;
   padding: 1rem 0; }
 .vertical.lined > li {
   overflow: auto;
@@ -2211,11 +2223,13 @@ ol,
 dl,
 blockquote {
   clear: inherit;
+  margin-bottom: 6.666px;
   margin-bottom: 0.66667rem;
   vertical-align: middle; }
 
 p,
 .p {
+  margin-bottom: 20px;
   margin-bottom: 2rem;
   font-family: Arial, "Helvetica Neue", Helvetica, Arial, sans-serif;
   word-wrap: break-word; }
@@ -2225,6 +2239,7 @@ i {
 
 blockquote {
   width: 75%;
+  padding-left: 20px;
   padding-left: 2rem;
   border-left: 3px solid currentColor;
   font-style: italic;
@@ -2263,12 +2278,14 @@ mark {
    ========================== */
 .lede {
   font-size: 17px;
+  font-size: 17px;
   font-size: 1.7rem;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   line-height: 1.4;
   color: #333; }
 
 .banner-text {
+  font-size: 15px;
   font-size: 15px;
   font-size: 1.5rem;
   background: #333;
@@ -2280,12 +2297,14 @@ mark {
 
 .body-text {
   font-size: 13px;
+  font-size: 13px;
   font-size: 1.3rem;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   line-height: 1.4;
   color: #333; }
 
 .slider-text {
+  font-size: 13px;
   font-size: 13px;
   font-size: 1.3rem;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -2294,12 +2313,14 @@ mark {
 
 .small-body-text {
   font-size: 12px;
+  font-size: 12px;
   font-size: 1.2rem;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   line-height: 15px;
   color: #333; }
 
 .disclaimer-text {
+  font-size: 11px;
   font-size: 11px;
   font-size: 1.1rem;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -2361,6 +2382,7 @@ mark {
     Accessibility -- Version: 1.9.0.1 - Updated: 1/1/14 timestamp()
    ========================================================================== */
 .visually-hidden {
+  margin: -20px;
   margin: -2rem;
   padding: 0;
   position: absolute;
@@ -2378,22 +2400,18 @@ mark {
     overflow: visible; }
 
 header[role=banner] {
-  background-color: #d0d6dd;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#d0d6dd), to(#fff));
-  background-image: -webkit-linear-gradient(top, #d0d6dd, #fff);
-  background-image: linear-gradient(top, #d0d6dd, #fff);
-  /* -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#d0d6dd', EndColorStr='#fff')"; */
+  background-color: #fff;
+  background-image: linear-gradient(to top, #fff, #d0d6dd);
+  /* -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#fff', EndColorStr='#d0d6dd')"; */
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 99; }
 
 nav[role=navigation] {
-  background-color: #fff;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ced1d5));
-  background-image: -webkit-linear-gradient(top, #fff, #ced1d5);
-  background-image: linear-gradient(top, #fff, #ced1d5);
-  /* -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#fff', EndColorStr='#ced1d5')"; */
+  background-color: #ced1d5;
+  background-image: linear-gradient(to top, #ced1d5, #fff);
+  /* -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#ced1d5', EndColorStr='#fff')"; */
   display: table;
   width: 100%;
   border-top: 1px solid #cacbce; }
@@ -2406,9 +2424,7 @@ nav[role=navigation] {
     text-align: center; }
     nav[role=navigation] li ul {
       background-color: #fff;
-      background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ced1d5));
-      background-image: -webkit-linear-gradient(top, #fff, #ced1d5);
-      background-image: linear-gradient(top, #fff, #ced1d5);
+      background-image: linear-gradient(to top, #fff, #ced1d5);
       /* -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#fff', EndColorStr='#ced1d5')"; */
       display: none;
       position: absolute;
@@ -2428,6 +2444,7 @@ nav[role=navigation] {
     nav[role=navigation] li:first-of-type {
       border-left: 1px solid #cacbce; }
     nav[role=navigation] li a {
+      padding: 10px 20px;
       padding: 1rem 2rem;
       display: table-cell;
       width: 50%;
@@ -2486,8 +2503,10 @@ nav[role=navigation] {
   .styleguide .twc-bc-container {
     padding: 0; }
   .styleguide aside {
+    padding-bottom: 20px;
     padding-bottom: 2rem; }
   .styleguide .twc-breadcrumbs {
+    padding: 20px 0;
     padding: 2rem 0;
     position: relative; }
     .styleguide .twc-breadcrumbs .twc-container {
@@ -2508,18 +2527,21 @@ nav[role=navigation] {
     right: 0;
     bottom: unset; }
   .styleguide .colors, .styleguide .grid {
+    padding: 20px;
     padding: 2rem;
     border-radius: 3px;
     background-clip: border-box; }
     .styleguide .colors.white, .styleguide .white.grid {
       outline: 1px solid white; }
   .styleguide .swatch {
+    margin-bottom: 20px;
     margin-bottom: 2rem;
     border-radius: 3px;
     background-clip: border-box;
     overflow: auto; }
   .styleguide .swatch-color {
     position: relative;
+    padding: 3.5em 20px;
     padding: 3.5em 2rem; }
     .styleguide .swatch-color.white {
       border: 1px solid #e1e1e1;
@@ -2536,6 +2558,7 @@ nav[role=navigation] {
       right: 0;
       background-color: rgba(0, 0, 0, 0.1); }
   .styleguide .swatch-info {
+    padding: 10px;
     padding: 1rem;
     border: 1px solid #e1e1e1;
     border-top: none;
@@ -2543,6 +2566,7 @@ nav[role=navigation] {
     color: #333;
     text-align: center; }
     .styleguide .swatch-info p {
+      margin-bottom: 10px;
       margin-bottom: 1rem; }
       .styleguide .swatch-info p:first-of-type {
         font-weight: bold; }
@@ -2557,14 +2581,15 @@ nav[role=navigation] {
     font-style: normal;
     font-weight: normal; }
   .styleguide pre {
+    margin: 20px 0 0;
     margin: 2rem 0 0;
+    padding: 20px;
     padding: 2rem;
     border-radius: 3px;
     background-clip: border-box;
     overflow: auto;
     word-wrap: break-word;
     -moz-tab-size: 2;
-      -o-tab-size: 2;
          tab-size: 2; }
   .styleguide code,
   .styleguide kbd,
@@ -2575,16 +2600,22 @@ nav[role=navigation] {
     color: #369; }
   .styleguide .banded-brand {
     background-color: #369;
+    padding-top: 60px;
     padding-top: 6rem;
+    padding-bottom: 60px;
     padding-bottom: 6rem; }
     .styleguide .banded-brand * {
       color: #fff; }
   .styleguide .banded-dark {
     background-color: #f2f4f6;
+    padding-top: 60px;
     padding-top: 6rem;
+    padding-bottom: 60px;
     padding-bottom: 6rem; }
   .styleguide .banded-light {
+    padding-top: 60px;
     padding-top: 6rem;
+    padding-bottom: 60px;
     padding-bottom: 6rem; }
   .styleguide footer .twc-container {
     padding: 0; }
@@ -2601,10 +2632,9 @@ nav[role=navigation] {
 .expandableHybrid li h6 {
   padding: 0.75em;
   background-color: #3779b3;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#3779b3), to(#02447e));
-  background-image: -webkit-linear-gradient(top, #3779b3, #02447e);
-  background-image: linear-gradient(top, #3779b3, #02447e);
+  background-image: linear-gradient(to top, #3779b3, #02447e);
   /* -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#3779b3', EndColorStr='#02447e')"; */
+  font-size: 14px;
   font-size: 14px;
   font-size: 1.4rem;
   margin-bottom: 0;
@@ -2628,7 +2658,6 @@ nav[role=navigation] {
 .expandableHybrid li.js-expandable.js-active h6:after,
 .expandableHybrid li.js-expandableHybrid.js-active h6:after {
   -webkit-transform: rotate(-180degdeg);
-      -ms-transform: rotate(-180degdeg);
           transform: rotate(-180degdeg); }
 .expandable li ul,
 .expandableHybrid li ul {
@@ -2895,3 +2924,5 @@ nav[role=navigation] {
     width: 100%;
     border-top: 1px solid #0f0;
     z-index: 10000; } }
+
+/*# sourceMappingURL=styles.css.map */

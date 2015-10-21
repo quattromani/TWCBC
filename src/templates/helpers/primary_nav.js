@@ -4,7 +4,7 @@ module.exports.register = function(Handlebars, options, params) {
   Handlebars.registerHelper('primary_nav', function(data, base_url, options) {
 
     function buildHTML(start_url, list) {
-      var html = '<nav role="navigation"><div class="twc-container"><ul class="navigation menu">';
+      var html = '<nav role="navigation" class="twc-new-navigation"><div class="twc-container"><ul class="navigation menu">';
 
       for (var i = 0; i < list.length; i++) {
         html += '<li class="js-expandable">';

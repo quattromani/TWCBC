@@ -6,7 +6,7 @@
   background-image:    -moz-linear-gradient(top, $startColor, $endColor);
   background-image:     -ms-linear-gradient(top, $startColor, $endColor);
   background-image:      -o-linear-gradient(top, $startColor, $endColor);
-  background-image:         linear-gradient(top, $startColor, $endColor);
+  background-image:         linear-gradient(to top, $startColor, $endColor);
   /* -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$startColor}', EndColorStr='#{$endColor}')"; */
 }
 

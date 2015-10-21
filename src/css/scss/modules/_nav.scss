@@ -2,7 +2,7 @@
 
 // Begin Nav
 nav[role=navigation] {
-  @include linear-gradient($white, #ced1d5);
+  @include linear-gradient(#ced1d5, $white);
   display: table;
   width: 100%;
   border-top: 1px solid #cacbce;

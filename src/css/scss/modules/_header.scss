@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 header[role=banner] {
-  @include linear-gradient(#d0d6dd, $white);
+  @include linear-gradient($white, #d0d6dd);
   position: fixed;
   top: 0;
   width: 100%;
