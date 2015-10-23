@@ -54,6 +54,12 @@
     }
   }
 
+  .expandable li h6 {
+    background-color: #369;
+    background-image: none;
+    cursor: pointer;
+  }
+
   .colors {
     @include padding($base-spacing);
     @include border-radius;

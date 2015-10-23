@@ -2524,6 +2524,10 @@ nav[role=navigation] {
     top: 0;
     right: 0;
     bottom: unset; }
+  .styleguide .expandable li h6 {
+    background-color: #369;
+    background-image: none;
+    cursor: pointer; }
   .styleguide .colors, .styleguide .grid {
     padding: 20px;
     padding: 2rem;
