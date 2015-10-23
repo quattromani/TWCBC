@@ -41,16 +41,6 @@
     position: relative;
   }
 
-  h2 {
-    text-transform: capitalize;
-  }
-
-  p {
-    &:only-of-type {
-      margin-bottom: 0;
-    }
-  }
-
   .btn {
     &.go {
       position: absolute;

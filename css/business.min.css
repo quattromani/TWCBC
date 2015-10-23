@@ -791,7 +791,7 @@ div.cta.omega.disabled button,div.cta.omega.disabled button:hover{background-col
 .address-lookup-form-wrapper .text{color:#000}
 .address-lookup-form-wrapper label p{padding:0}
 .address-lookup-form-wrapper label .twc-plain-text{padding:2px 0}
-.cta a,.cta button,.cta input[type="button"],.btn a,.btn button,.btn input[type="button"],.button a,.button button,.button input[type="button"],label.cta a,label.cta button,label.cta input[type="button"]{padding:.75em}
+.cta a,.cta button,.cta input[type="button"],.btn a,.btn button,.btn input[type="button"],.button a,.button button,.button input[type="button"],label.cta a,label.cta button,label.cta input[type="button"]{padding:.75em;font-family:Arial,"Helvetica Neue",Helvetica,sans-serif,Sans-Serif;font-size:95%;font-style:normal;font-weight:700}
 .noButton.cta a{padding:0}
 .noButton.cta a{padding:10px 0}
 .compEritTable{cursor:pointer}
