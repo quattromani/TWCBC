@@ -2888,36 +2888,36 @@ nav[role=navigation] {
     Prototype -- Version: 1.9.0.5  - Updated: 2/4/2014
    ========================================================================== */
 .viewport, .loadtime, .pv {
-  position: fixed;
   padding: 0.5em 1em;
-  background: black;
-  background: rgba(0, 0, 0, 0.675);
+  position: fixed;
+  background: #002b36;
+  background: rgba(0, 43, 54, 0.75);
   font-family: Inconsolata, Monaco, Consolas, "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
   color: #0f0;
   z-index: 100; }
 
 .pv {
-  top: 0;
-  left: 0;
   border-radius: 0 0 3px 0;
   background-clip: border-box;
+  top: 0;
+  left: 0;
   cursor: pointer; }
 
 .viewport {
-  top: 0;
-  right: 0;
   border-radius: 0 0 0 3px;
-  background-clip: border-box; }
+  background-clip: border-box;
+  top: 0;
+  right: 0; }
 
 .loadtime {
-  bottom: 0;
-  left: 0;
   border-radius: 0 3px 0 0;
-  background-clip: border-box; }
+  background-clip: border-box;
+  bottom: 0;
+  left: 0; }
 
 .internal {
-  margin-bottom: 1em;
   padding: 1em;
+  margin-bottom: 1em;
   color: #D4D5D6;
   text-align: center; }
 

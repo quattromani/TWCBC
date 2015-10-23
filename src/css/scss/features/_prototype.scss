@@ -7,37 +7,37 @@
 // For Prototype Demo ONLY!! Don't ever ingest this file...EVER!
 
 .viewport, .loadtime, .pv {
-  position: fixed;
   @include padding(.5em, 1em);
-  background: rgb(0,0,0);
-  background: rgba(0,0,0,.675);
+  position: fixed;
+  background: rgb(0, 43, 54);
+  background: rgba(0, 43, 54, $site-alpha);
   font-family: $pre;
   color: #0f0;
   z-index: 100;
 }
 
 .pv {
+  @include border-radius(0 0 3px 0);
   top: 0;
   left: 0;
-  @include border-radius(0 0 3px 0);
   cursor: pointer;
 }
 
 .viewport {
+  @include border-radius(0 0 0 3px);
   top: 0;
   right: 0;
-  @include border-radius(0 0 0 3px);
 }
 
 .loadtime {
-  bottom: 0;
-  left: 0;
-  @include border-radius(0 3px 0 0);
+ @include border-radius(0 3px 0 0);
+ bottom: 0;
+ left: 0;
 }
 
 .internal {
-  margin-bottom: 1em;
   @include padding(1em);
+  margin-bottom: 1em;
   color: #D4D5D6;
   text-align: center;
 }
