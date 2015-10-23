@@ -33,6 +33,10 @@
     }
   }
 
+  .twc-right {
+    margin: 0;
+  }
+
   .twc-box-column {
     clear: both;
   }
@@ -154,6 +158,10 @@
     overflow: auto;
     word-wrap: break-word;
     tab-size: 2;
+
+    &.prettyprint {
+      background-color: #002b36;
+    }
   }
 
   code,
@@ -169,6 +177,7 @@
     background-color: $link;
     padding-top: $base-spacing * 3;
     padding-bottom: $base-spacing * 3;
+    overflow: auto;
 
     * {
       color: $white;
@@ -179,11 +188,13 @@
     background-color: $offwhite;
     padding-top: $base-spacing * 3;
     padding-bottom: $base-spacing * 3;
+    overflow: auto;
   }
 
   .banded-light {
     padding-top: $base-spacing * 3;
     padding-bottom: $base-spacing * 3;
+    overflow: auto;
   }
 
   footer {

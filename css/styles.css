@@ -2513,6 +2513,8 @@ nav[role=navigation] {
       padding: 0; }
     .styleguide .twc-breadcrumbs ul {
       padding-top: 0; }
+  .styleguide .twc-right {
+    margin: 0; }
   .styleguide .twc-box-column {
     clear: both; }
   .styleguide .sub-section {
@@ -2587,6 +2589,8 @@ nav[role=navigation] {
     word-wrap: break-word;
     -moz-tab-size: 2;
          tab-size: 2; }
+    .styleguide pre.prettyprint {
+      background-color: #002b36; }
   .styleguide code,
   .styleguide kbd,
   .styleguide pre,
@@ -2599,7 +2603,8 @@ nav[role=navigation] {
     padding-top: 60px;
     padding-top: 6rem;
     padding-bottom: 60px;
-    padding-bottom: 6rem; }
+    padding-bottom: 6rem;
+    overflow: auto; }
     .styleguide .banded-brand * {
       color: #fff; }
   .styleguide .banded-dark {
@@ -2607,12 +2612,14 @@ nav[role=navigation] {
     padding-top: 60px;
     padding-top: 6rem;
     padding-bottom: 60px;
-    padding-bottom: 6rem; }
+    padding-bottom: 6rem;
+    overflow: auto; }
   .styleguide .banded-light {
     padding-top: 60px;
     padding-top: 6rem;
     padding-bottom: 60px;
-    padding-bottom: 6rem; }
+    padding-bottom: 6rem;
+    overflow: auto; }
   .styleguide footer .twc-container {
     padding: 0; }
   .styleguide h5 {
