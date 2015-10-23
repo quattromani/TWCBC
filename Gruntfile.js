@@ -57,25 +57,14 @@ module.exports = function(grunt) {
     }
   },
 
-cssmin: {
-  target: {
-    files: [{
-      expand: true,
-      cwd: '<%= config.src %>/css/',
-      src: ['*.css', '!*.min.css'],
-      dest: '<%= config.src %>/css/',
-      ext: '.min.css'
-    }]
-  }
-},
-
 postcss: {
   options: {
     map: true, // inline sourcemaps
 
     processors: [
-      require('pixrem')(), // add fallbacks for rem units
-      require('autoprefixer')({browsers: 'last 2 versions'}) // add vendor prefixes
+      require('pixrem')(),
+      require('autoprefixer')({browsers: 'last 2 versions'}),
+      require('cssnano')()
     ]
   },
   dist: {
@@ -187,7 +176,6 @@ grunt.registerTask('build', [
   'uglify',
   'sass',
   'postcss',
-  'cssmin',
   'copy',
   'assemble'
   ]);
