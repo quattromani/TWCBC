@@ -2602,13 +2602,16 @@ nav[role=navigation] {
     font-family: Inconsolata, Monaco, Consolas, "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
     font-size: 1em;
     color: #369; }
+  .styleguide [class*='banded-'] {
+    overflow: auto; }
   .styleguide .banded-brand {
     background-color: #369;
     padding-top: 60px;
     padding-top: 6rem;
     padding-bottom: 60px;
-    padding-bottom: 6rem;
-    overflow: auto; }
+    padding-bottom: 6rem; }
+    .styleguide .banded-brand .twc-container {
+      padding: 0; }
     .styleguide .banded-brand * {
       color: #fff; }
   .styleguide .banded-dark {
@@ -2616,14 +2619,12 @@ nav[role=navigation] {
     padding-top: 60px;
     padding-top: 6rem;
     padding-bottom: 60px;
-    padding-bottom: 6rem;
-    overflow: auto; }
+    padding-bottom: 6rem; }
   .styleguide .banded-light {
     padding-top: 60px;
     padding-top: 6rem;
     padding-bottom: 60px;
-    padding-bottom: 6rem;
-    overflow: auto; }
+    padding-bottom: 6rem; }
   .styleguide footer .twc-container {
     padding: 0; }
   .styleguide h5 {

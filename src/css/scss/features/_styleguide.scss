@@ -179,11 +179,18 @@
     color: $link;
   }
 
+  [class*='banded-'] {
+    overflow: auto;
+  }
+
   .banded-brand {
     background-color: $link;
     padding-top: $base-spacing * 3;
     padding-bottom: $base-spacing * 3;
-    overflow: auto;
+
+    .twc-container {
+      padding: 0;
+    }
 
     * {
       color: $white;
@@ -194,13 +201,11 @@
     background-color: $offwhite;
     padding-top: $base-spacing * 3;
     padding-bottom: $base-spacing * 3;
-    overflow: auto;
   }
 
   .banded-light {
     padding-top: $base-spacing * 3;
     padding-bottom: $base-spacing * 3;
-    overflow: auto;
   }
 
   footer {
