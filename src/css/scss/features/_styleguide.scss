@@ -195,6 +195,13 @@
     * {
       color: $white;
     }
+
+    hr {
+      margin: 1.5em 0;
+      border: 0;
+      border-top: 1px solid darken($link, 7.5%);
+      border-bottom: 1px solid lighten($link, 7.5%);
+    }
   }
 
   .banded-dark {

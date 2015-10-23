@@ -1947,6 +1947,9 @@ h6,
   color: #333;
   text-transform: initial; }
 
+h1, .h1 {
+  text-align: center; }
+
 .h1,
 .h2,
 .h3,
@@ -2407,6 +2410,9 @@ header[role=banner] {
   top: 0;
   width: 100%;
   z-index: 99; }
+  header[role=banner] .twc-container {
+    padding: 10px 0;
+    padding: 1rem 0; }
 
 nav[role=navigation] {
   background-color: #ced1d5;
@@ -2614,6 +2620,11 @@ nav[role=navigation] {
       padding: 0; }
     .styleguide .banded-brand * {
       color: #fff; }
+    .styleguide .banded-brand hr {
+      margin: 1.5em 0;
+      border: 0;
+      border-top: 1px solid #29537c;
+      border-bottom: 1px solid #3d79b6; }
   .styleguide .banded-dark {
     background-color: #f2f4f6;
     padding-top: 60px;
@@ -2893,7 +2904,7 @@ nav[role=navigation] {
   background: #002b36;
   background: rgba(0, 43, 54, 0.75);
   font-family: Inconsolata, Monaco, Consolas, "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
-  color: #0f0;
+  color: #2aa198;
   z-index: 100; }
 
 .pv {

@@ -6,4 +6,8 @@ header[role=banner] {
   top: 0;
   width: 100%;
   z-index: 99;
+
+  .twc-container {
+    @include padding(($base-spacing / 2) 0);
+  }
 }
