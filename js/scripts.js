@@ -143,6 +143,24 @@ $('.accordion .expandable h6').click(function() {
 		}
 	});
 });
+;function equalHeight(group) {
+  if ($(window).width() > mediumBreakPoint) {
+    var tallest = 0;
+    group.each(function() {
+      var thisHeight = $(this).outerHeight();;
+      if(thisHeight > tallest) {
+        tallest = thisHeight;
+      }
+    });
+    group.height(tallest);
+  } else {
+
+  }
+}
+
+$(document).ready(function() {
+  equalHeight($('.equal'));
+});
 ;// Add classes to first and last li's for every instance
 $(function() {
   // Add classes to first and last of each list
