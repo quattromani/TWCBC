@@ -69,7 +69,7 @@ postcss: {
   },
   dist: {
     files: {
-      '<%= config.src %>/css/styles.css': ['<%= config.src %>/css/styles.css']
+      '<%= config.dist %>/css/styles.css': ['<%= config.src %>/css/styles.css']
     }
   }
 },
