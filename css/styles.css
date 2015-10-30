@@ -2721,6 +2721,9 @@ nav[role=navigation] {
     content: '';
     display: table; }
 
+.equal {
+  display: table; }
+
 /* ==========================================================================
     Syntax Highlighter -- Version: 1.9.0.0 - Compiled: timestamp()
    ========================================================================== */
