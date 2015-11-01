@@ -67,6 +67,11 @@
 
 
 
+  <div class="twc-breadcrumbs"><div class="twc-container"><ul class="horizontal slashes"><li><a analyticsname="" href="/twcbcstyletempXYZ.html">Editorial Framework &amp; Style Guide</a></li><li><a analyticsname="" href="/twcbcstyletempXYZ/toolkit.html">Toolkit</a></li><li><a analyticsname="" href="/twcbcstyletempXYZ/toolkit/best-practices.html">Best Practices</a></li></ul></div></div>
+
+
+
+
 </header>
 
 
@@ -77,10 +82,374 @@
 
 <section class="columnControl">
 
-  
+  <div class="parsys_column twc-col2_3070">
+    <aside class="parsys parsys0 twc-col2_3070-c0 parsys_column sticky">
+
+      <h2>Best Practices</h2>
+
+<div class="accordion"><div class="expandable"><ul><li class="js-expandable"><a href="/twcbcstyletempXYZ/toolkit/best-practices/golden-rule.html"><h6>Golden Rule</h6></a></li><li class="js-expandable"><a href="/twcbcstyletempXYZ/toolkit/best-practices/html.html"><h6>HTML</h6></a></li><li class="js-expandable"><a href="/twcbcstyletempXYZ/toolkit/best-practices/css.html"><h6>CSS</h6></a></li><li class="js-expandable"><a href="/twcbcstyletempXYZ/toolkit/best-practices/javascript.html"><h6>Javascript</h6></a></li><li class="js-expandable"><h6>SEO</h6><ul><li><a href="/twcbcstyletempXYZ/toolkit/best-practices/seo.html#main">Main</a></li><li><a href="/twcbcstyletempXYZ/toolkit/best-practices/seo.html#section">Section</a></li><li><a href="/twcbcstyletempXYZ/toolkit/best-practices/seo.html#article">Article</a></li><li><a href="/twcbcstyletempXYZ/toolkit/best-practices/seo.html#aside">Aside</a></li><li><a href="/twcbcstyletempXYZ/toolkit/best-practices/seo.html#header">Header</a></li><li><a href="/twcbcstyletempXYZ/toolkit/best-practices/seo.html#footer">Footer</a></li></ul></li></ul></div></div>
 
 
 
+
+    </aside>
+
+    <article class="parsys parsys1 twc-col2_3070-c1 parsys_column">
+
+      
+
+<span id="html-anchor" class="h2 jumpTo-anchor">HTML</span>
+
+
+<div class="twc-right twc-icon-after icon-angle-right cta omega section">
+  <a analyticsname="" href="best-practices/html.html" id="">
+    <span>Zoom</span>
+  </a>
+  <div class="clear"></div>
+</div>
+
+
+<div class="twc-box-column">
+
+  <ul class="vertical lined">
+    <li>
+      <h5>Human Readable</h5>
+
+      <p class="lede">Code is written and maintained by people. Ensure your code is descriptive, well commented, and approachable by others.</p>
+    </li>
+    <li>
+      <h5>HTML5 doctype</h5>
+
+      <p class="lede">Enforce standards mode in every browser possible with this simple doctype at the beginning of every HTML page.</p>
+    </li>
+    <li>
+      <h5>Syntax</h5>
+      <ul class="bulleted">
+        <li>Use soft-tabs with two spaces</li>
+        <li>Nested elements should be indented once (2 spaces)</li>
+        <li>Don't include a trailing slash in self-closing elements</li>
+      </ul>
+    </li>
+    <li>
+      <h5>Attributes</h5>
+      <ul class="bulleted">
+        <li>
+          Attributes should be lowercase.
+        </li>
+        <li>
+          Always use double quotes ("), never single quotes.
+        </li>
+        <li>
+          Boolean attributes should be used without quoted values to avoid redundancy.
+        </li>
+      </ul>
+    </li>
+    <li>
+      <h5>Attribute order</h5>
+      <p>HTML attributes should come in this particular order for easier reading of code.</p>
+      <ul class="vertical bulleted">
+        <li><code>id</code></li>
+        <li><code>class</code></li>
+        <li><code>data-*</code></li>
+        <li><code>for</code> | <code>type</code> | <code>href</code> | <code>src</code></li>
+      </ul>
+    </li>
+    <li>
+
+      <h5>HTML Comments</h5>
+      <ul class="bulleted">
+        <li>
+          Section comments are separated from the previous block by two lines, and should have one following line of space.
+        </li>
+        <li>
+          Prepend section headings with an equal sign (=), to make a Find operation easier.
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+</div>
+
+
+<span id="css-anchor" class="h2 jumpTo-anchor">CSS</span>
+
+
+<div class="twc-right twc-icon-after icon-angle-right cta omega section">
+  <a analyticsname="" href="best-practices/css.html" id="">
+    <span>Zoom</span>
+  </a>
+  <div class="clear"></div>
+</div>
+
+
+<div class="twc-box-column">
+
+  <ul class="vertical lined">
+    <li>
+      <ul class="bulleted">
+        <li>Use soft-tabs with two spaces</li>
+        <li>When grouping selectors, keep individual selectors to a single line</li>
+        <li>Include one space before the opening brace of declaration blocks</li>
+        <li>Place closing braces of declaration blocks on a new line</li>
+        <li>Include one space after <code>:</code> in each property</li>
+        <li>Each declaration should appear on its own line</li>
+        <li>End all declarations with a semi-colon</li>
+        <li>Comma-separated values should include a space after each comma</li>
+        <li>Don't include spaces after commas in RGB or RGBa colors</li>
+        <li>Do not specify units for zero values, e.g., margin: 0; instead of margin: 0px;</li>
+        <li>Lowercase all hex values, e.g., #fff instead of #FFF</li>
+        <li>Use shorthand hex values where available, e.g., #fff instead of #ffffff</li>
+        <li>Quote attribute values in selectors, e.g., input[type="text"]</li>
+      </ul>
+    </li>
+    <li>
+      <h5>Declaration Organization</h5>
+
+      <ol>
+        <li>Box (Display, Float, Position, Left, Top, Width, Height, Margin, Padding, etc.)</li>
+        <li>Border</li>
+        <li>Background</li>
+        <li>Text</li>
+        <li>Other</li>
+      </ol>
+
+    </li>
+    <li>
+      <h5>General Formatting</h5>
+
+      <p>Use a new line for every block, list or table element, and indent every such child element to show heirarchy and improve understanding</p>
+
+    </li>
+    <li>
+      <p>Avoid Qualifying ID and class names with type selectors</p>
+      <p>p.s. ID's are bad for CSS, only use ID's for javascript hooks when necessary</p>
+    </li>
+    <li>
+      <h5>Hexadecimal Notation</h5>
+
+      <p>For color values that permit, 3 character hexadecimal is preferred</p>
+    </li>
+    <li>
+      <div class="row">
+        <div class="error-box">
+          <span class="message">
+            <span class="h4">!important</span>
+          </span>
+        </div>
+      </div>
+
+      <h5>Just don't do it.</h5>
+      <p>Use greater specificity to workaround using <b>!important;</b> -- you will be judged in the afterlife</p>
+    </li>
+    <li>
+      <h5>Use the SMACSS Approach</h5>
+    </li>
+  </ul>
+
+  <hr>
+  <h2>Sass (or less or stylus, you choose)</h2>
+  <hr>
+
+  <ul class="vertical lined">
+    <li>
+      <h5>File Organization</h5>
+      <ul class="bulleted">
+        <li>
+          Mixins and variables go in scss/global/.
+        </li>
+        <li>
+          Styles related to components/modules/views go in sass/components/.
+        </li>
+        <li>
+          Sass and CSS from other projects goes in sass/vendor/.
+        </li>
+      </ul>
+    </li>
+    <li>
+      <h5>Main Stylesheet</h5>
+      <p>All files get compiled into the main.scss stylesheet, and should be scoped accordingly.</p>
+      <p>The main.scss file serves as a "table of contents" and the @import directives should be listed with vendor dependencies first, then author dependencies and core stylesheets, then components.</p>
+      <p>Organize the components imports in a manner that makes sense, in other words, group components with the component they extend or inherit from.</p>
+    </li>
+    <li>
+      <h5>Structuring Code</h5>
+      <p>@extends and @includes are likely to be overwritten by future elements, placing them at the top of the property list calls them out and avoids the beginning of a specificity war.</p>
+
+      <ul class="bulleted">
+        <li>
+          @extends should be grouped together at the top of the selector.
+        </li>
+        <li>
+          @includes should be grouped together after @extends.
+        </li>
+        <li>
+          Regular styles for the current selector should be after @includes.
+        </li>
+        <li>
+          Nested selectors appear last.
+        </li>
+        <li>
+          Nested selectors using & should appear above child (>) nested selectors.
+        </li>
+      </ul>
+
+    </li>
+    <li>
+      <h5>Limit nesting to 3 levels and/or 50 lines</h5>
+      <p>Nesting selectors more than three levels deep and the code is at risk of being to reliant on HTML structure, overly-specific and difficult to understand.</p>
+      <p>50 lines is reasonable length for keeping an entire block on a code editor screen without having to scroll.</p>
+    </li>
+    <li>
+      <h5>Variablize ALL THE THINGS!</h5>
+      <ul class="bulleted">
+        <li>
+          Variablize all colors.
+        </li>
+        <li>
+          Numbers (other than 0 or 100%) with strong meaning or frequent use should be variables.
+        </li>
+        <li>
+          Use hyphens (-) in variable names.
+        </li>
+        <li>
+          Name variables based on what they represent, not their values, e.g. $text-size-large instead of $text-size-24.
+        </li>
+        <li>
+          Colors, fonts, and base measurements are all great candidates for variables.
+          If you find yourself writing a number other than 0 or 100% more than once, make it a variable.
+        </li>
+        <li>
+          Most variables should be stored in the _variables.scss partial; however, it's acceptable to define component specific variables in the component files.
+        </li>
+        <li>
+          In this case, the variables should be stored at the top of the file.
+        </li>
+      </ul>
+    </li>
+    <li>
+      <h5>Comments</h5>
+      <p>Try to stick with standard CSS comments, but you can use the Sass style (//) comments for trivial comments or quickly debugging.</p>
+    </li>
+  </ul>
+
+</div>
+
+
+<span id="javascript-anchor" class="h2 jumpTo-anchor">Javascript</span>
+
+
+<div class="twc-right twc-icon-after icon-angle-right cta omega section">
+  <a analyticsname="" href="best-practices/javascript.html" id="">
+    <span>Zoom</span>
+  </a>
+  <div class="clear"></div>
+</div>
+
+
+<div class="twc-box-column">
+
+  <ul class="vertical lined">
+    <li>
+      <p class="lede">Prefix all javascript-based selectors with js-. The idea is that you should be able to tell a presentational class from a functional class. Most of the codebase doesn't do this, let's try and move toward it.</p>
+    </li>
+  </ul>
+
+</div>
+
+
+<span id="seo-anchor" class="h2 jumpTo-anchor">SEO</span>
+
+
+<div class="twc-right twc-icon-after icon-angle-right cta omega section">
+  <a analyticsname="" href="best-practices/seo.html" id="">
+    <span>Zoom</span>
+  </a>
+  <div class="clear"></div>
+</div>
+
+
+<div class="twc-box-column">
+
+  <h5>Only One h1 Tag Per Page</h5>
+
+  <p>While technically we <em>could</em> load a page up with h1 tags, it's a bad SEO practice and can cause penalties.</p>
+
+  <hr>
+
+  <h5>Use Title Attributes with Links</h5>
+
+  <p>Using a title attribute in your anchor elements will improve accessibility when used the right way.</p>
+
+  <p>It is important to understand that the title attribute should be used to increase the meaning of the anchor tag.</p>
+
+  <hr>
+
+  <h5>How Much Will A Reader Read?</h5>
+
+  <p>"A sentence should contain no unnecessary words, a paragraph no unnecessary sentences, for the same reason that a drawing should have no unnecessary lines and a machine no unnecessary parts."</p>
+
+  <h3 id="main">The main Element</h3>
+
+<p>The <code>&lt;main&gt;</code> element should contain the main content for your web page. All of this content should be unique to the individual page, and should not appear elsewhere on the site. Any content that is repeated on multiple pages (logos, search boxes, footer links, etc.) should not be placed within the <code>&lt;main&gt;</code> element.</p>
+
+<p>Use the ARIA role=”main” attribute here is it indicates the significance of this element to programs that don’t yet support the <code>&lt;main&gt;</code> element (such as some screen readers).</p>
+
+<p>You should only use one <code>&lt;main&gt;</code> element on a page, and it shouldn’t be placed within an <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code>, <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, or <code>&lt;nav&gt;</code> element.</p>
+
+
+  <hr>
+
+  <h3 id="section">The section Element</h3>
+
+<p>The <code>&lt;section&gt;</code> element is used to represent a group of related content. This is similar to the purpose of an <code>&lt;article&gt;</code> element with the main difference being that the content within a <code>&lt;section&gt;</code> element doesn’t necessarily need to make sense out of the context of the page.</p>
+
+<p>It’s advisable to use a heading element (<code>&lt;h1&gt;</code> – <code>&lt;h6&gt;</code>) to define the topic for the section.</p>
+
+<p>Using this blog post as an example, you could have <code>&lt;section&gt;</code> elements that represent each of the individual parts within the post.</p>
+
+<p>If you just need to group content together for styling purposes you should use a <code>&lt;div&gt;</code> element rather than a <code>&lt;section&gt;</code>.</p>
+
+
+  <hr>
+
+  <h3 id="article">The article Element</h3>
+
+<p>The <code>&lt;article&gt;</code> element should contain a piece of self-contained content that could be distributed outside the context of the page. This includes things like news articles, blog posts, or user comments.</p>
+
+<p>You can nest <code>&lt;article&gt;</code> elements within one another. In this case it’s implied that the nested elements are related to the outer <code>&lt;article&gt;</code> element.</p>
+
+
+  <hr>
+
+  <h3 id="aside">The aside Element</h3>
+
+<p>The <code>&lt;aside&gt;</code> element is used to represent content that is tangibly related to the content surrounding it, but could be considered separate. This includes things like sidebars (like those you might find in a book), groups of <code>&lt;nav&gt;</code> elements, figures and pull quotes.</p>
+
+
+  <hr>
+
+  <h3 id="header">The header Element</h3>
+
+<p>The <code>&lt;header&gt;</code> element is used to represent the introductory content to an article or web page. This will usually contain a heading element as well as some metadata that’s relevant to the content, such as the post date of a news article for example. It could also contain a table of contents (within a <code>&lt;nav&gt;</code> element) for a longer document.</p>
+
+<p>A <code>&lt;header&gt;</code> element will be associated with the nearest sectioning element, usually it’s direct parent in the page structure.</p>
+
+
+  <hr>
+
+  <h3 id="footer">The footer Element</h3>
+
+<p>The <code>&lt;footer&gt;</code> element is used to represent information about a section such as the author, copyright information, or links to related web pages.</p>
+
+<p>As with <code>&lt;footer&gt;</code>, the <code>&lt;footer&gt;</code> element is associated with the nearest sectioning element.</p>
+
+
+</div>
+
+
+
+    </article>
+  </div>
 
 </section>
 
@@ -142,6 +511,9 @@
     </footer>
     <!-- ./Footer Component -->
 
+
+<div class="loadtime"></div>
+<div class="viewport"></div>
 
     <!-- scripts -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
