@@ -1,4 +1,16 @@
-<h4>Audio</h4>
+<span id="audio" class="h2 jumpTo-anchor">Audio</span>
+
+{{#if page.zoom }}
+
+{{else}}
+<div class="twc-right twc-icon-after icon-angle-right cta omega section">
+  <a analyticsname="" href="{{ slugify page.section }}/{{ slugify page.subsection }}/audio.html" id="">
+    <span>Zoom</span>
+  </a>
+  <div class="clear"></div>
+</div>
+{{/if}}
+
 <audio src="assets/audio/test.mp3" controls>
   <p>Your user agent does not support the HTML5 Audio element.</p>
 </audio>
