@@ -242,26 +242,26 @@
         color: $text-white;
       }
 
-      &.js-notexpandable h6:after,
-      &.js-notexpandableHybrid h6:after {
-        float: right;
-        font-family: $fontawesome;
-        content: '\f105';
-        color: inherit;
-      }
-
       &.js-expandable,
       &.js-expandableHybrid {
         h6:after {
           float: right;
           font-family: $fontawesome;
-          content: '\f107';
+          content: '\f107' !important;
           color: inherit;
         }
 
         &.js-active h6:after {
           @include rotate(-180deg);
         }
+      }
+
+      &.js-notexpandable h6:after,
+      &.js-notexpandableHybrid h6:after {
+        float: right;
+        font-family: $fontawesome;
+        content: '\f105' !important;
+        color: inherit;
       }
 
       ul {
@@ -277,7 +277,7 @@
             a:after {
               float: right;
               font-family: $fontawesome;
-              content: '\f105';
+              content: '\f105' !important;
               color: #C2C2C2;
             }
           }
@@ -286,7 +286,7 @@
             a:after {
               float: right;
               font-family: $fontawesome;
-              content: '\f105';
+              content: '\f105' !important;
               color: #C2C2C2;
             }
           }
@@ -297,7 +297,7 @@
             a:after {
               float: right;
               font-family: $fontawesome;
-              content: '\f105';
+              content: '\f105' !important;
               color: #C2C2C2;
             }
           }
@@ -332,7 +332,7 @@
               a:after {
                 float: right;
                 font-family: $fontawesome;
-                content: '\f105';
+                content: '\f105' !important;
                 color: #C2C2C2;
               }
             }
@@ -341,7 +341,7 @@
               a:after {
                 float: right;
                 font-family: $fontawesome;
-                content: '\f107';
+                content: '\f107' !important;
                 color: #C2C2C2;
               }
             }
@@ -351,7 +351,7 @@
               a:after {
                 float: right;
                 font-family: $fontawesome;
-                content: '\f106';
+                content: '\f106' !important;
                 color: #C2C2C2;
               }
             }
