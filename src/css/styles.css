@@ -2491,7 +2491,8 @@ nav[role=navigation] {
       position: relative;
       padding: 0; }
   .styleguide .twc-bc-container {
-    padding: 0; }
+    padding: 0;
+    overflow: auto; }
   .styleguide aside {
     padding-bottom: 2rem; }
   .styleguide .twc-breadcrumbs {
