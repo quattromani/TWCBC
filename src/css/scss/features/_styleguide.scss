@@ -383,3 +383,15 @@
   .equal {
     display: table;
   }
+
+  .bulleted li:before{
+    content: '' !important;
+    color: transparent;
+    font-family:"FontAwesome";
+    font-size:.385em;
+    font-size:.5rem;
+    float: none;
+    line-height:3.9;
+    margin-right: 0;
+  }
+

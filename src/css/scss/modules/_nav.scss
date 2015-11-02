@@ -23,6 +23,11 @@ nav[role=navigation] {
       position: absolute;
       left: 0;
       width: auto;
+
+      li:not(:empty) {
+        border-top: 1px solid #cacbce;
+        border-bottom: 1px solid #cacbce;
+      }
     }
 
     &:hover {

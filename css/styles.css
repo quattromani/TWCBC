@@ -2422,6 +2422,9 @@ nav[role=navigation] {
       position: absolute;
       left: 0;
       width: auto; }
+      nav[role=navigation] li ul li:not(:empty) {
+        border-top: 1px solid #cacbce;
+        border-bottom: 1px solid #cacbce; }
     nav[role=navigation] li:hover {
       background-color: #343b46; }
       nav[role=navigation] li:hover a {
@@ -2724,6 +2727,16 @@ nav[role=navigation] {
 
 .equal {
   display: table; }
+
+.bulleted li:before {
+  content: '' !important;
+  color: transparent;
+  font-family: "FontAwesome";
+  font-size: .385em;
+  font-size: .5rem;
+  float: none;
+  line-height: 3.9;
+  margin-right: 0; }
 
 /* ==========================================================================
     Syntax Highlighter -- Version: 1.9.0.0 - Compiled: timestamp()
