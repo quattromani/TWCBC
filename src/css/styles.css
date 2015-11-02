@@ -2720,7 +2720,7 @@ nav[role=navigation] {
 .sticky {
   position: -webkit-sticky;
   position: sticky;
-  top: 197px; }
+  top: 165px; }
   .sticky:before, .sticky:after {
     content: '';
     display: table; }
