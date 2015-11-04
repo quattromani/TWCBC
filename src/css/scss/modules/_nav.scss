@@ -21,7 +21,6 @@ nav[role=navigation] {
       @include linear-gradient($white, #ced1d5);
       display: none;
       position: absolute;
-      left: 0;
       width: auto;
 
       li:not(:empty) {
@@ -39,9 +38,21 @@ nav[role=navigation] {
       }
 
       ul {
-        display: block;
+        display: table;
 
         li {
+          display: block;
+          border-right: none;
+          text-align: left;
+
+          &:first-of-type {
+            border-left: none;
+          }
+
+          &:last-of-type {
+            border-bottom: none;
+          }
+
           &:hover {
             a {
               color: $white;

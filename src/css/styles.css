@@ -2420,7 +2420,6 @@ nav[role=navigation] {
       /* -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#fff', EndColorStr='#ced1d5')"; */
       display: none;
       position: absolute;
-      left: 0;
       width: auto; }
       nav[role=navigation] li ul li:not(:empty) {
         border-top: 1px solid #cacbce;
@@ -2431,9 +2430,17 @@ nav[role=navigation] {
         font-weight: normal;
         color: #fff; }
       nav[role=navigation] li:hover ul {
-        display: block; }
-        nav[role=navigation] li:hover ul li:hover a {
-          color: #fff; }
+        display: table; }
+        nav[role=navigation] li:hover ul li {
+          display: block;
+          border-right: none;
+          text-align: left; }
+          nav[role=navigation] li:hover ul li:first-of-type {
+            border-left: none; }
+          nav[role=navigation] li:hover ul li:last-of-type {
+            border-bottom: none; }
+          nav[role=navigation] li:hover ul li:hover a {
+            color: #fff; }
         nav[role=navigation] li:hover ul a {
           color: #000; }
     nav[role=navigation] li:first-of-type {
