@@ -8,8 +8,8 @@ nav[role=navigation] {
   border-top: 1px solid #cacbce;
 
   ul {
-    display:table-row;
-    width:100%;
+    display: table-row;
+    width: 100%;
   }
 
   li {
@@ -61,7 +61,9 @@ nav[role=navigation] {
         }
 
         a {
+          display: inline-block;
           color: $black;
+          width: 100%;
         }
       }
     }
@@ -73,7 +75,6 @@ nav[role=navigation] {
     a {
       @include padding($base-spacing/2 $base-spacing);
       display: table-cell;
-      width: 50%;
       font-weight: normal;
       text-transform: uppercase;
       color: $black;

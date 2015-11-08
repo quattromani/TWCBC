@@ -2442,13 +2442,14 @@ nav[role=navigation] {
           nav[role=navigation] li:hover ul li:hover a {
             color: #fff; }
         nav[role=navigation] li:hover ul a {
-          color: #000; }
+          display: inline-block;
+          color: #000;
+          width: 100%; }
     nav[role=navigation] li:first-of-type {
       border-left: 1px solid #cacbce; }
     nav[role=navigation] li a {
       padding: 1rem 2rem;
       display: table-cell;
-      width: 50%;
       font-weight: normal;
       text-transform: uppercase;
       color: #000; }
