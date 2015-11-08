@@ -2727,7 +2727,7 @@ nav[role=navigation] {
 .sticky {
   position: -webkit-sticky;
   position: sticky;
-  top: 165px; }
+  top: 181px; }
   .sticky:before, .sticky:after {
     content: '';
     display: table; }
