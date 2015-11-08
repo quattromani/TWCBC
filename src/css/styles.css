@@ -2518,6 +2518,8 @@ nav[role=navigation] {
     clear: both; }
   .styleguide .sub-section {
     position: relative; }
+  .styleguide .back-to-parent {
+    margin-bottom: 2rem; }
   .styleguide .btn.go {
     position: absolute;
     top: 0;

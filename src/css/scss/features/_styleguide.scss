@@ -46,6 +46,10 @@
     position: relative;
   }
 
+  .back-to-parent {
+    margin-bottom: $base-spacing;
+  }
+
   .btn {
     &.go {
       position: absolute;
