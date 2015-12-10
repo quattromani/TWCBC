@@ -2391,17 +2391,10 @@ header[role=banner] {
     padding: 1rem 0; }
 
 nav[role=navigation] {
-  background-color: #ced1d5;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ced1d5), to(#fff));
-  background-image: -webkit-linear-gradient(top, #ced1d5, #fff);
-  background-image: -moz-linear-gradient(top, #ced1d5, #fff);
-  background-image: -ms-linear-gradient(top, #ced1d5, #fff);
-  background-image: -o-linear-gradient(top, #ced1d5, #fff);
-  background-image: linear-gradient(to top, #ced1d5, #fff);
-  /* -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#ced1d5', EndColorStr='#fff')"; */
   display: table;
   width: 100%;
-  border-top: 1px solid #cacbce; }
+  border-top: 1px solid #cacbce;
+  background-color: #333; }
   nav[role=navigation] ul {
     display: table-row;
     width: 100%; }
@@ -2443,7 +2436,7 @@ nav[role=navigation] {
             color: #fff; }
         nav[role=navigation] li:hover ul a {
           display: inline-block;
-          color: #000;
+          color: #fff;
           width: 100%; }
     nav[role=navigation] li:first-of-type {
       border-left: 1px solid #cacbce; }
@@ -2452,7 +2445,7 @@ nav[role=navigation] {
       display: table-cell;
       font-weight: normal;
       text-transform: uppercase;
-      color: #000; }
+      color: #fff; }
 
 /* ==========================================================================
     Banner -- Version: 1.9.0.0 - Updated: 12/29/2013
@@ -2490,6 +2483,9 @@ nav[role=navigation] {
     filter: none; }
   .twc-ie8 .twc-banner {
     background-image: url("../images/background-feature-header.jpg"); }
+
+footer .twc-bc-footer {
+  padding: 2rem 0; }
 
 .styleguide {
   /* ==========================

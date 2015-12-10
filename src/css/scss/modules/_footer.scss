@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+footer {
+  .twc-bc-footer {
+    @include padding($base-spacing 0);
+  }
+}
