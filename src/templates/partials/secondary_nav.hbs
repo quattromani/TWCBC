@@ -1,35 +1,40 @@
 <h2>{{#if page.section }}{{ section }}{{else}}{{ category }}{{/if}}</h2>
 
-{{ secondary_nav this.nav.category site.baseurl category section title zoom }}
+{{!-- {{ secondary_nav this.nav.category site.baseurl category section title zoom }} --}}
 
-{{!-- {{#if (pluck_list_by_title this.nav.category title) }}
+{{#with (get-nav-slice nav-new this 0 site.baseurl) }}
   <div class="accordion">
     <div class="expandable">
-
-      {{ get_url_for_secondary_nav this.nav.category category section }}
-
       <ul>
-        {{#each (inherit_url (pluck_list_by_title this.nav.category title) (json (get_url_for_secondary_nav this.nav.category category section))) }}
-
-          {{#if zoom }}
-            <li class="js-expandable"><h6>{{ title }}</h6>
-
-            <ul>
-              {{#each (inherit_url zoom (concatenate_to parent_url '/' url)) }}
-                <li class="js-notexpandable"><a href="/{{ parent_url }}#{{ url }}">{{ title }}</a></li>
+        {{#each section }}
+          {{#if section }}
+            <li class="js-expandable{{#if current}} js-open{{/if }}">
+              <h6>{{ title }}</h6>
+              <ul>
+              {{#each section }}
+                <li><a href="{{ url-maker url 'jump' }}">{{ title }}</a></li>
               {{/each }}
-            </ul>
-
+              </ul>
+            </li>
           {{ else }}
-
-            <li class="js-expandable"><a href="/{{ parent_url }}/{{ url }}"><h6>{{ title }}</h6></a>
-
+            <li><a href="{{ url-maker url 'regular' }}"><h6>{{ title }}</h6></a></li>
           {{/if }}
-
-          </li>
-
         {{/each }}
       </ul>
     </div>
   </div>
-{{/if }} --}}
+{{/with }}
+          {{!-- {{#if zoom }} --}}
+            {{!-- <li class="js-expandable"><h6>{{ title }}</h6>
+
+            <ul>
+              {{#each section }}
+                <li class="js-notexpandable"><a href="">{{ title }}</a></li>
+              {{/each }}
+            </ul> --}}
+
+          {{!-- {{ else }} --}}
+
+            {{!-- <li class="js-expandable"><a href="{{ url }}"><h6>{{ title }}</h6></a> --}}
+
+          {{!-- {{/if }} --}}

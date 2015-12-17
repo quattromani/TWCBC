@@ -1,41 +1,23 @@
-{{ bread_crumbs this.nav.category site.baseurl category section title zoom }}
+{{!-- {{ bread_crumbs this.nav.category site.baseurl category section title zoom }} --}}
 
-{{!-- <div class="twc-breadcrumbs">
+{{!-- {{ json (bread-crumb-maker nav-new site.baseurl this) }} --}}
+
+{{#with (bread-crumb-maker nav-new site.baseurl this) }}
+<div class="twc-breadcrumbs">
   <div class="twc-container">
     <ul class="horizontal slashes">
+      {{#each this }}
       <li>
-        <a analyticsname="" href="/">
+        <a analyticsname="" href="{{ url-maker url 'normal' }}">
+          {{#if title }}
+            {{ title }}
+          {{ else }}
           Editorial Framework &amp; Style Guide
+          {{/if }}
         </a>
       </li>
-      {{#if page.category }}
-      <li>
-        <a analyticsname="" href="{{ site.baseurl }}/{{ page.category }}.html">
-          {{ page.category }}
-        </a>
-      </li>
-      {{/if}}
-      {{#if page.section }}
-      <li>
-        <a analyticsname="" href="{{ site.baseurl }}/{{ page.category }}/{{ page.section }}.html">
-          {{ page.section }}
-        </a>
-      </li>
-      {{/if}}
-      {{#if page.subsection }}
-      <li>
-        <a analyticsname="" href="{{ site.baseurl }}/{{ page.category }}/{{ page.section }}/{{ page.subsection }}.html">
-          {{ page.subsection }}
-        </a>
-      </li>
-      {{/if}}
-      {{#if page.zoom }}
-      <li>
-        <a analyticsname="" href="{{ site.baseurl }}/{{ page.category }}/{{ page.section }}/{{ page.subsection }}.html#{{ page.zoom }}">
-            {{ page.zoom }}
-        </a>
-      </li>
-      {{/if}}
+      {{/each }}
     </ul>
   </div>
-</div> --}}
+</div>
+{{/with }}
