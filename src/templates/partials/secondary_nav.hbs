@@ -1,8 +1,6 @@
 <h2>{{#if page.section }}{{ section }}{{else}}{{ category }}{{/if}}</h2>
 
-{{!-- {{ secondary_nav this.nav.category site.baseurl category section title zoom }} --}}
-
-{{#with (get-nav-slice nav-new this 0 site.baseurl) }}
+{{#with (get-nav-slice nav this 0 site.baseurl) }}
   <div class="accordion">
     <div class="expandable">
       <ul>
@@ -24,17 +22,3 @@
     </div>
   </div>
 {{/with }}
-          {{!-- {{#if zoom }} --}}
-            {{!-- <li class="js-expandable"><h6>{{ title }}</h6>
-
-            <ul>
-              {{#each section }}
-                <li class="js-notexpandable"><a href="">{{ title }}</a></li>
-              {{/each }}
-            </ul> --}}
-
-          {{!-- {{ else }} --}}
-
-            {{!-- <li class="js-expandable"><a href="{{ url }}"><h6>{{ title }}</h6></a> --}}
-
-          {{!-- {{/if }} --}}
