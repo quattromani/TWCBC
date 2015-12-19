@@ -1,6 +1,6 @@
 <h2>{{#if page.section }}{{ section }}{{else}}{{ category }}{{/if}}</h2>
 
-{{#with (get-nav-slice nav this 0 site.baseurl) }}
+{{#with (get-nav-slice nav-new this 0 site.baseurl) }}
   <div class="accordion">
     <div class="expandable">
       <ul>
