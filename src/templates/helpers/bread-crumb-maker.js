@@ -57,11 +57,8 @@ module.exports.register = function(Handlebars, options, params) {
       if (!!current_url) {
         url_array[i].title = current_url.title;
         url_array[i].url = current_url.url;
-        // console.log("url_array", url_array[i]);
       }
     }
-
-    // console.log(url_array);
 
     function buildURls(url_entries, rooturl) {
       var bread_crumbs = {};
@@ -80,34 +77,5 @@ module.exports.register = function(Handlebars, options, params) {
     }
 
     return buildURls(url_array, base_url);
-
-
-    // console.log(url_array);
-    // console.log(bread_crumbs);
-
-    // return bread_crumbs;
-
-    // function assign_url(nav_list, url) {
-    //   for (var item in nav_list) {
-    //     console.log(nav_list[item]);
-    //     // if (!!nav_list[item]) {
-    //     //   if (!!nav_list[item].url && !Array.isArray(nav_list[item].url)) {
-    //     //     if (nav_list[item].url === this_page.page.basename) {
-    //     //       nav_list[item].current = true;
-    //     //     }
-    //     //     var new_url = url.slice();
-    //     //     new_url.push(nav_list[item].url);
-    //     //     if (new_url[0] !== base_url) {
-    //     //       new_url.unshift(base_url);
-    //     //     }
-    //     //     nav_list[item].url = new_url;
-    //     //
-    //     //     if (!!nav_list[item].section && Array.isArray(nav_list[item].section)) {
-    //     //       assign_url(nav_list[item].section, nav_list[item].url);
-    //     //     }
-    //     //   }
-    //     // }
-    //   }
-    // }
   });
 };

@@ -6,7 +6,6 @@ module.exports.register = function(Handlebars, options, params) {
     } else {
       url = url_list.join('/') + '.html';
     }
-    // console.log(url);
 
     return url;
   });
