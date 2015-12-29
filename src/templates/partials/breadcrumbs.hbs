@@ -4,13 +4,19 @@
     <ul class="horizontal slashes">
       {{#each this }}
       <li>
-        <a analyticsname="" href="{{ url-maker url 'normal' }}">
+        {{#if last }}
           {{#if title }}
             {{ title }}
-          {{ else }}
-          Editorial Framework &amp; Style Guide
           {{/if }}
-        </a>
+        {{ else }}
+          <a analyticsname="" href="{{ url-maker url 'normal' }}">
+            {{#if title }}
+              {{ title }}
+            {{ else }}
+            Editorial Framework &amp; Style Guide
+            {{/if }}
+          </a>
+        {{/if }}
       </li>
       {{/each }}
     </ul>

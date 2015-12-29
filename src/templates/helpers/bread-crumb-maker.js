@@ -63,7 +63,7 @@ module.exports.register = function(Handlebars, options, params) {
     function buildURls(url_entries, rooturl) {
       var bread_crumbs = {};
       url_entries.unshift({ url: rooturl });
-      url_entries.pop();
+      url_entries[url_entries.length - 1].last = true;
 
       for (var j = 0; j < url_entries.length; j++) {
         var new_url = url_entries[j];
@@ -76,6 +76,7 @@ module.exports.register = function(Handlebars, options, params) {
       return url_entries;
     }
 
-    return buildURls(url_array, base_url);
+    var new_urls = buildURls(url_array, base_url);
+    return new_urls;
   });
 };
