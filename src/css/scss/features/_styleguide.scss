@@ -24,12 +24,14 @@
   .twc-breadcrumbs {
     @include padding($base-spacing 0);
     position: relative;
+    font-weight: bold;
 
     .twc-container {
       padding: 0;
     }
 
     ul {
+      @include font-size(14);
       padding-top: 0;
     }
   }
@@ -399,3 +401,18 @@
     margin-right: 0;
   }
 
+// Google Prettify
+
+pre {
+  .tag {
+    color: #f19e17 !important;
+  }
+
+  &.desert .com {
+    color: #007dc3 !important;
+  }
+
+  &.desert .typ {
+    color: #72ab3d !important;
+  }
+}

@@ -1964,7 +1964,7 @@ h1, .h1 {
 [class*='fa-twitter'] {
   color: #00aced; }
   [class*='fa-twitter']:hover {
-    color: #0099d3; }
+    color: #0099d4; }
 
 [class*='fa-pinterest'] {
   color: #cb2027; }
@@ -2504,10 +2504,13 @@ footer .twc-bc-footer {
     padding-bottom: 2rem; }
   .styleguide .twc-breadcrumbs {
     padding: 2rem 0;
-    position: relative; }
+    position: relative;
+    font-weight: bold; }
     .styleguide .twc-breadcrumbs .twc-container {
       padding: 0; }
     .styleguide .twc-breadcrumbs ul {
+      font-size: 14px;
+      font-size: 1.4rem;
       padding-top: 0; }
   .styleguide .twc-right {
     margin: 0; }
@@ -2743,6 +2746,13 @@ footer .twc-bc-footer {
   float: none;
   line-height: 3.9;
   margin-right: 0; }
+
+pre .tag {
+  color: #f19e17 !important; }
+pre.desert .com {
+  color: #007dc3 !important; }
+pre.desert .typ {
+  color: #72ab3d !important; }
 
 /* ==========================================================================
     Syntax Highlighter -- Version: 1.9.0.0 - Compiled: timestamp()
