@@ -1,11 +1,11 @@
 <span id="breadcrumbs-anchor" class="h2 jumpTo-anchor">Breadcrumbs</span>
 
-{{#if page.zoom }}
+{{#if page.subsection }}
 
 {{else}}
-<div class="twc-right twc-icon-after icon-angle-right cta omega section">
-  <a analyticsname="" href="breadcrumbs.html" id="">
-    <span>Zoom</span>
+<div class="twc-right cta omega section">
+  <a analyticsname="" href="{{ slugify page.section }}/breadcrumbs.html" id="">
+    <span><i class="fa fa-search-plus fa-lg"></i></span>
   </a>
   <div class="clear"></div>
 </div>
