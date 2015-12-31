@@ -169,6 +169,19 @@ category:
         url: 'html'
       - title: 'CSS'
         url: 'css'
+        zoom:
+        - title: 'Main'
+          url: 'main'
+        - title: 'Section'
+          url: 'section'
+        - title: 'Article'
+          url: 'article'
+        - title: 'Aside'
+          url: 'aside'
+        - title: 'Header'
+          url: 'header'
+        - title: 'Footer'
+          url: 'footer'
       - title: 'Javascript'
         url: 'javascript'
       - title: 'SEO'
@@ -188,7 +201,7 @@ category:
           url: 'footer'
 
   - title: 'Accessibility'
-    url: 'accessiblity'
+    url: 'accessibility'
     active: 'accessibility'
     section:
       subsection:
