@@ -186,3 +186,19 @@ category:
           url: 'header'
         - title: 'Footer'
           url: 'footer'
+
+  - title: 'Accessibility'
+    url: 'accessiblity'
+    active: 'accessibility'
+    section:
+      subsection:
+      - title: '508 Compliance'
+        url: '508-compliance'
+      - title: 'Alt Text'
+        url: 'alt-text'
+      - title: 'Title Tag'
+        url: 'title-tag'
+      - title: 'ARIA Roles'
+        url: 'aria-roles'
+      - title: 'Visually Hidden'
+        url: 'visually-hidden'

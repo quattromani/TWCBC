@@ -42,6 +42,8 @@
 
   .twc-box-column {
     clear: both;
+    border: 10px solid $text-lightgrey;
+    border-radius: 0;
   }
 
   .sub-section {
@@ -191,12 +193,15 @@
   }
 
   .banded-brand {
-    background-color: $link;
-    padding-top: $base-spacing * 3;
-    padding-bottom: $base-spacing * 3;
+    background-color: $banner-grey;
 
     .twc-container {
-      padding: 0;
+      background: $banner-grey url(https://unsplash.it/980/500/?random);
+      background-size: cover;
+      padding-top: $base-spacing * 3;
+      padding-bottom: $base-spacing * 3;
+      box-shadow: inset 200px 0 100px 0 $banner-grey,
+                  inset -200px 0 100px 0 $banner-grey;
     }
 
     * {
