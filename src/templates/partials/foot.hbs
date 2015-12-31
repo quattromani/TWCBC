@@ -6,10 +6,13 @@
     <script src="{{ site.url }}/js/vendor/jquery.cookie.js"></script>
     <script src="{{ site.url }}/js/vendor/stickyfill.js"></script>
 
-    <script src="{{ site.url }}/js/scripts.min.js"></script>
+    <script src="/js/scripts.min.js"></script>
 
     <script>
-      $('aside').Stickyfill();
+      $( document ).ready(function() {
+        $('aside').Stickyfill();
+        $('.styleguide article').css('visibility','visible');
+      });
     </script>
 
     {{#if site.google_analytics }}

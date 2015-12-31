@@ -2488,6 +2488,8 @@ footer .twc-bc-footer {
   /* ==========================
     Pre
    ========================== */ }
+  .styleguide article {
+    visibility: hidden; }
   .styleguide nav {
     position: relative;
     z-index: 9; }

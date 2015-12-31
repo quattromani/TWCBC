@@ -259,10 +259,13 @@
     <script src="http://quattromani.github.io/twcbcstyletempXYZ/js/vendor/jquery.cookie.js"></script>
     <script src="http://quattromani.github.io/twcbcstyletempXYZ/js/vendor/stickyfill.js"></script>
 
-    <script src="http://quattromani.github.io/twcbcstyletempXYZ/js/scripts.min.js"></script>
+    <script src="/js/scripts.min.js"></script>
 
     <script>
-      $('aside').Stickyfill();
+      $( document ).ready(function() {
+        $('aside').Stickyfill();
+        $('.styleguide article').css('visibility','visible');
+      });
     </script>
 
     

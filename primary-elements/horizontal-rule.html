@@ -239,7 +239,7 @@
 
       
 
-<span id="hr-anchor" class="h2 jumpTo-anchor">Horizontal Rule</span>
+<span id="horizontal-rule-anchor" class="h2 jumpTo-anchor">Horizontal Rule</span>
 
 
 
@@ -306,10 +306,13 @@
     <script src="http://quattromani.github.io/twcbcstyletempXYZ/js/vendor/jquery.cookie.js"></script>
     <script src="http://quattromani.github.io/twcbcstyletempXYZ/js/vendor/stickyfill.js"></script>
 
-    <script src="http://quattromani.github.io/twcbcstyletempXYZ/js/scripts.min.js"></script>
+    <script src="/js/scripts.min.js"></script>
 
     <script>
-      $('aside').Stickyfill();
+      $( document ).ready(function() {
+        $('aside').Stickyfill();
+        $('.styleguide article').css('visibility','visible');
+      });
     </script>
 
     

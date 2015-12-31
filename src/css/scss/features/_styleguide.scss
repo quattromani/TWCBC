@@ -2,6 +2,10 @@
 @charset "UTF-8";
 
 .styleguide {
+  article {
+    visibility: hidden;
+  }
+
   nav {
     position: relative;
     z-index: 9;
