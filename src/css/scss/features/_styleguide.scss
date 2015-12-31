@@ -200,7 +200,8 @@
       background-size: cover;
       padding-top: $base-spacing * 3;
       padding-bottom: $base-spacing * 3;
-      box-shadow: inset 300px 0 100px 0 $banner-grey, inset -200px 0 100px 0 $banner-grey;
+      box-shadow: inset -300px 0px 150px -90px $banner-grey,
+                  inset 400px 0px 200px -90px $banner-grey;
     }
 
     h1 {
