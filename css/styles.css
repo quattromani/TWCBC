@@ -2603,9 +2603,14 @@ footer .twc-bc-footer {
       background-size: cover;
       padding-top: 6rem;
       padding-bottom: 6rem;
-      box-shadow: inset 200px 0 100px 0 #7f848b, inset -200px 0 100px 0 #7f848b; }
+      box-shadow: inset 300px 0 100px 0 #7f848b, inset -200px 0 100px 0 #7f848b; }
+    .styleguide .banded-brand h1 {
+      font-size: 27px;
+      font-size: 2.7rem; }
     .styleguide .banded-brand * {
-      color: #fff; }
+      color: #fff;
+      font-weight: 700;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
     .styleguide .banded-brand hr {
       margin: 1.5em 0;
       border: 0;

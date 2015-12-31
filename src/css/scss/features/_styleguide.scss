@@ -200,12 +200,17 @@
       background-size: cover;
       padding-top: $base-spacing * 3;
       padding-bottom: $base-spacing * 3;
-      box-shadow: inset 200px 0 100px 0 $banner-grey,
-                  inset -200px 0 100px 0 $banner-grey;
+      box-shadow: inset 300px 0 100px 0 $banner-grey, inset -200px 0 100px 0 $banner-grey;
+    }
+
+    h1 {
+      @include font-size(27);
     }
 
     * {
       color: $white;
+      font-weight: 700;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     }
 
     hr {
