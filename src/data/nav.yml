@@ -26,12 +26,12 @@ category:
           url: 'unordered-lists'
         - title: 'Ordered Lists'
           url: 'ordered-lists'
-        - title: 'Definition Lists'
-          url: 'definition-lists'
-        - title: 'Vertical Lists'
-          url: 'vertical-lists'
         - title: 'Horizontal Lists'
           url: 'horizontal-lists'
+        - title: 'Vertical Lists'
+          url: 'vertical-lists'
+        - title: 'Definition Lists'
+          url: 'definition-lists'
       - title: Buttons
         url: 'buttons'
         zoom:

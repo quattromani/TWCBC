@@ -2511,6 +2511,14 @@ footer .twc-bc-footer {
       font-size: 14px;
       font-size: 1.4rem;
       padding-top: 0; }
+  .styleguide hr.shadow {
+    display: block;
+    border: none;
+    height: 4px;
+    background-image: url("https://business.timewarnercable.com/content/dam/business/images/global/icons/hr-shadow.png");
+    background-size: cover; }
+  .styleguide .jumpTo-anchor {
+    margin-bottom: 2rem; }
   .styleguide .twc-right {
     margin: 0; }
   .styleguide .twc-box-column {
