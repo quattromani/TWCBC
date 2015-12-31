@@ -2737,7 +2737,7 @@ footer .twc-bc-footer {
 .sticky {
   position: -webkit-sticky;
   position: sticky;
-  top: 171px; }
+  top: 169px; }
   .sticky:before, .sticky:after {
     content: '';
     display: table; }
