@@ -1961,6 +1961,9 @@ h6,
   *display: inline;
   *vertical-align: auto; }
 
+.h2.text-right {
+  float: right; }
+
 [class*='fa-facebook'] {
   color: #3b5998; }
   [class*='fa-facebook']:hover {
@@ -2402,7 +2405,7 @@ header[role=banner] {
   z-index: 99; }
   header[role=banner] .twc-container {
     padding: 1rem 0; }
-  header[role=banner] h2 {
+  header[role=banner] .h2 {
     margin-top: 1rem; }
 
 nav[role=navigation] {
