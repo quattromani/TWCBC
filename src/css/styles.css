@@ -1,4 +1,12 @@
 @charset "UTF-8";
+ul.vertical > li {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
+  padding: 2rem 0 !important;
+  width: 100%; }
+
 .push {
   float: right !important;
   margin-left: 0; }
@@ -2210,9 +2218,13 @@ blockquote {
 
 p,
 .p {
+  display: inline;
   margin-bottom: 2rem;
   font-family: Arial, "Helvetica Neue", Helvetica, Arial, sans-serif;
   word-wrap: break-word; }
+  p:last-child,
+  .p:last-child {
+    margin-bottom: 0; }
 
 i {
   font-style: normal; }
@@ -2261,6 +2273,9 @@ mark {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   line-height: 1.4;
   color: #333; }
+
+.text-error {
+  color: #f00; }
 
 .banner-text {
   font-size: 15px;
@@ -2386,6 +2401,8 @@ header[role=banner] {
   z-index: 99; }
   header[role=banner] .twc-container {
     padding: 1rem 0; }
+  header[role=banner] h2 {
+    margin-top: 1rem; }
 
 nav[role=navigation] {
   display: table;
@@ -2644,79 +2661,82 @@ footer .twc-bc-footer {
 /* ==========================================================================
     Accordion -- Version: 1.9.0.0 - Updated: 1/11/2014
    ========================================================================== */
-.expandable li h6,
-.expandableHybrid li h6 {
-  padding: 0.75em;
-  background-color: #3779b3;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#3779b3), to(#02447e));
-  background-image: -webkit-linear-gradient(top, #3779b3, #02447e);
-  background-image: -moz-linear-gradient(top, #3779b3, #02447e);
-  background-image: -ms-linear-gradient(top, #3779b3, #02447e);
-  background-image: -o-linear-gradient(top, #3779b3, #02447e);
-  background-image: linear-gradient(to top, #3779b3, #02447e);
-  /* -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#3779b3', EndColorStr='#02447e')"; */
-  font-size: 14px;
-  font-size: 1.4rem;
-  margin-bottom: 0;
-  border-bottom: 1px solid #e1e1e1;
-  color: #fff; }
-.expandable li.js-expandable h6:after, .expandable li.js-expandableHybrid h6:after,
-.expandableHybrid li.js-expandable h6:after,
-.expandableHybrid li.js-expandableHybrid h6:after {
-  float: right;
-  font-family: "fontawesome";
-  content: '\f107' !important;
-  color: inherit; }
-.expandable li.js-expandable.js-active h6:after, .expandable li.js-expandableHybrid.js-active h6:after,
-.expandableHybrid li.js-expandable.js-active h6:after,
-.expandableHybrid li.js-expandableHybrid.js-active h6:after {
-  transform: rotate(-180degdeg); }
-.expandable li.js-notexpandable h6:after, .expandable li.js-notexpandableHybrid h6:after,
-.expandableHybrid li.js-notexpandable h6:after,
-.expandableHybrid li.js-notexpandableHybrid h6:after {
-  float: right;
-  font-family: "fontawesome";
-  content: '\f105' !important;
-  color: inherit; }
-.expandable li ul,
-.expandableHybrid li ul {
-  display: none;
-  border-right: 1px solid #e1e1e1; }
-  @media (max-width: 768px) {
-    .expandable li ul,
-    .expandableHybrid li ul {
-      border-right: none; } }
-  .expandable li ul li.js-notexpandableHybrid a:after,
-  .expandableHybrid li ul li.js-notexpandableHybrid a:after {
+.expandable,
+.expandableHybrid {
+  background-color: #fff; }
+  .expandable li h6,
+  .expandableHybrid li h6 {
+    padding: 0.75em;
+    background-color: #3779b3;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#3779b3), to(#02447e));
+    background-image: -webkit-linear-gradient(top, #3779b3, #02447e);
+    background-image: -moz-linear-gradient(top, #3779b3, #02447e);
+    background-image: -ms-linear-gradient(top, #3779b3, #02447e);
+    background-image: -o-linear-gradient(top, #3779b3, #02447e);
+    background-image: linear-gradient(to top, #3779b3, #02447e);
+    /* -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#3779b3', EndColorStr='#02447e')"; */
+    font-size: 14px;
+    font-size: 1.4rem;
+    margin-bottom: 0;
+    border-bottom: 1px solid #e1e1e1;
+    color: #fff; }
+  .expandable li.js-expandable h6:after, .expandable li.js-expandableHybrid h6:after,
+  .expandableHybrid li.js-expandable h6:after,
+  .expandableHybrid li.js-expandableHybrid h6:after {
+    float: right;
+    font-family: "fontawesome";
+    content: '\f107' !important;
+    color: inherit; }
+  .expandable li.js-expandable.js-active h6:after, .expandable li.js-expandableHybrid.js-active h6:after,
+  .expandableHybrid li.js-expandable.js-active h6:after,
+  .expandableHybrid li.js-expandableHybrid.js-active h6:after {
+    transform: rotate(-180degdeg); }
+  .expandable li.js-notexpandable h6:after, .expandable li.js-notexpandableHybrid h6:after,
+  .expandableHybrid li.js-notexpandable h6:after,
+  .expandableHybrid li.js-notexpandableHybrid h6:after {
     float: right;
     font-family: "fontawesome";
     content: '\f105' !important;
-    color: #C2C2C2; }
-  .expandable li ul li.js-expandableHybridSub a:after,
-  .expandableHybrid li ul li.js-expandableHybridSub a:after {
-    float: right;
-    font-family: "fontawesome";
-    content: '\f105' !important;
-    color: #C2C2C2; }
-  .expandable li ul li.js-active.js-expandableHybridSub,
-  .expandableHybrid li ul li.js-active.js-expandableHybridSub {
-    background: #e3effb; }
-    .expandable li ul li.js-active.js-expandableHybridSub a:after,
-    .expandableHybrid li ul li.js-active.js-expandableHybridSub a:after {
+    color: inherit; }
+  .expandable li ul,
+  .expandableHybrid li ul {
+    display: none;
+    border-right: 1px solid #e1e1e1; }
+    @media (max-width: 768px) {
+      .expandable li ul,
+      .expandableHybrid li ul {
+        border-right: none; } }
+    .expandable li ul li.js-notexpandableHybrid a:after,
+    .expandableHybrid li ul li.js-notexpandableHybrid a:after {
       float: right;
       font-family: "fontawesome";
       content: '\f105' !important;
       color: #C2C2C2; }
-.expandable li li,
-.expandableHybrid li li {
-  padding: 0.5em;
-  border-bottom: 1px dotted #e1e1e1; }
-.expandable li.js-last,
-.expandableHybrid li.js-last {
-  border-bottom: none; }
-.expandable li.liState,
-.expandableHybrid li.liState {
-  background: #c8d6e3; }
+    .expandable li ul li.js-expandableHybridSub a:after,
+    .expandableHybrid li ul li.js-expandableHybridSub a:after {
+      float: right;
+      font-family: "fontawesome";
+      content: '\f105' !important;
+      color: #C2C2C2; }
+    .expandable li ul li.js-active.js-expandableHybridSub,
+    .expandableHybrid li ul li.js-active.js-expandableHybridSub {
+      background: #e3effb; }
+      .expandable li ul li.js-active.js-expandableHybridSub a:after,
+      .expandableHybrid li ul li.js-active.js-expandableHybridSub a:after {
+        float: right;
+        font-family: "fontawesome";
+        content: '\f105' !important;
+        color: #C2C2C2; }
+  .expandable li li,
+  .expandableHybrid li li {
+    padding: 0.5em;
+    border-bottom: 1px dotted #e1e1e1; }
+  .expandable li.js-last,
+  .expandableHybrid li.js-last {
+    border-bottom: none; }
+  .expandable li.liState,
+  .expandableHybrid li.liState {
+    background: #c8d6e3; }
 
 .activeContent {
   display: none; }

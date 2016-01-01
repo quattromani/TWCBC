@@ -22,9 +22,14 @@ blockquote {
 
 p,
 .p {
+  display: inline;
 	margin-bottom: $base-spacing;
   font-family: $base-font-family;
   word-wrap: break-word;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 i {
@@ -84,6 +89,10 @@ mark {
   font-family: $arial;
   line-height: 1.4;
   color: $text;
+}
+
+.text-error {
+  color: #f00;
 }
 
 .banner-text {
