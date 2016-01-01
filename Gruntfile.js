@@ -129,16 +129,16 @@ connect: {
     video: {
       expand: true,
       flatten: true,
-      cwd: '<%= config.src %>/templates/assets/video',
+      cwd: '<%= config.src %>/assets/video',
       src: '**',
-      dest: '<%= config.dist %>/video'
+      dest: '<%= config.dist %>/assets/video'
     },
     audio: {
       expand: true,
       flatten: true,
-      cwd: '<%= config.src %>/templates/assets/audio',
+      cwd: '<%= config.src %>/assets/audio',
       src: '**',
-      dest: '<%= config.dist %>/audio'
+      dest: '<%= config.dist %>/assets/audio'
     },
     scripts: {
       cwd: '<%= config.src %>/js/vendor',
