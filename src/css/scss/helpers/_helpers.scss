@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+.clear {
+	clear: both;
+}
+
+.center {
+	@include center;
+}
+
+.left {
+	float: left;
+	left: 0;
+}
+
+.right {
+	float: right;
+	right: 0;
+}
+
+/* ==========================
+    Body Text
+   ========================== */
+
+.base-font {
+  font-family: $base-font-family;
+}
+
+.lede {
+  @include font-size($lede-font-size);
+}
+
+.body-text {
+  @include font-size($body-text);
+}
+
+.small-body-text {
+  @include font-size($small-body-text);
+}
+
+.disclaimer-text {
+  @include font-size($disclaimer-text);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.small-caps {
+  font-variant: small-caps;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-center {
+  display: inline-block;
+	text-align: center;
+	clear: both;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-justify {
+	text-align: justify;
+}
+
+.text-bold {
+	font-weight: 700;
+}
+
+.image-left {
+	float: left;
+	margin-right: $base-spacing;
+
+  + p {
+    display: inline;
+  }
+}
+
+.image-center {
+	@include margin(0 auto);
+	text-align: center;
+}
+
+.image-right {
+	float: right;
+	margin-left: $base-spacing;
+
+  + p {
+    display: inline;
+  }
+}
+
+.box {
+	@include margin(0, 0, $base-spacing, 0);
+	@include padding($base-spacing);
+	@include border-radius;
+	border: 1px solid $grey;
+	background: $lightgrey;
+
+	h1,h2,h3,h4,h5,h6 {
+		margin-bottom: 0;
+	}
+}
+
+.border-radius {
+	@include border-radius;
+}
+
+.bordered-solid {
+	@include padding($base-spacing);
+	border: 1px solid $grey;
+}
+
+.bordered-dotted {
+	@include padding($base-spacing);
+	border: 1px dotted $grey;
+}
+
+.bordered-left {
+	padding-left: $gutter;
+	border-left: 1px dotted $grey;
+}
+
+.bordered-left-dark {
+	@extend .bordered-left;
+	border-left: 1px solid $text;
+}
+
+.bordered-right {
+	padding-right: $gutter;
+	border-right: 1px dotted $grey;
+}
+
+.bordered-right-dark {
+	@extend .bordered-right;
+	border-right: 1px solid $text;
+}
+
+.overlay-striped {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAGCAYAAAAG5SQMAAAAG0lEQVR42mJgQICZcIIBXZSBOGUAAAAA//8DAIbHA5cISpS5AAAAAElFTkSuQmCC);
+}
+
+.nowrap {
+	overflow: hidden;
+}
+
+.hidden,
+.desktop-hidden {
+	display: none;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+.no-fouc {
+	display: none;
+}
+
+.js-last {
+	border-bottom: 0;
+}
+
+.desktop-br { display: block; }
+
+// Text Truncation
+
+[class*='truncate'] {
+	overflow: hidden;
+	margin-bottom: $base-spacing;
+}
