@@ -41,7 +41,7 @@ section:
     - title: 'Button'
       url: 'button'
     - title: 'Input Button'
-      url: 'input'
+      url: 'input-button'
     - title: 'Radio Buttons'
       url: 'radio-buttons'
     - title: 'Button Group'
