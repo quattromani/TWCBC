@@ -4,7 +4,7 @@ ul.vertical > li {
   *zoom: 1;
   *display: inline;
   *vertical-align: auto;
-  padding: 2rem 0 !important;
+  padding: 2rem 0;
   width: 100%; }
 
 .push {

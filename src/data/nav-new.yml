@@ -42,10 +42,10 @@ section:
       url: 'button'
     - title: 'Input Button'
       url: 'input-button'
+    - title: 'Disabled Button'
+      url: 'disabled-buttons'
     - title: 'Radio Buttons'
       url: 'radio-buttons'
-    - title: 'Button Group'
-      url: 'button-group'
   - title: Images
     url: 'images'
     section:
