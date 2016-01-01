@@ -80,6 +80,8 @@ section:
   - title: 'Forms'
     url: 'forms'
     section:
+    - title: 'About Forms'
+      url: 'about-forms'
     - title: 'Input'
       url: 'input'
     - title: 'Dropdowns'
@@ -181,6 +183,8 @@ section:
   - title: 'SEO'
     url: 'seo'
     section:
+    - title: 'About SEO'
+      url: 'seo'
     - title: 'Main'
       url: 'main'
     - title: 'Section'

@@ -76,7 +76,7 @@
         
           <a analyticsname="" href="/twcbcstyletempXYZ.html">
             
-            Editorial Framework &amp; Style Guide
+              Developer Toolkit
             
           </a>
         
@@ -164,6 +164,8 @@
               <h6>SEO</h6>
               <ul>
               
+                <li><a href="/twcbcstyletempXYZ/best-practices.html#seo-anchor">About SEO</a></li>
+              
                 <li><a href="/twcbcstyletempXYZ/best-practices.html#main-anchor">Main</a></li>
               
                 <li><a href="/twcbcstyletempXYZ/best-practices.html#section-anchor">Section</a></li>
@@ -218,63 +220,77 @@
 
   <p>"A sentence should contain no unnecessary words, a paragraph no unnecessary sentences, for the same reason that a drawing should have no unnecessary lines and a machine no unnecessary parts."</p>
 
+</div>
+
   <h3 id="main-anchor">The main Element</h3>
 
-<p>The <code>&lt;main&gt;</code> element should contain the main content for your web page. All of this content should be unique to the individual page, and should not appear elsewhere on the site. Any content that is repeated on multiple pages (logos, search boxes, footer links, etc.) should not be placed within the <code>&lt;main&gt;</code> element.</p>
+<div class="twc-box-column">
 
-<p>Use the ARIA role=”main” attribute here is it indicates the significance of this element to programs that don’t yet support the <code>&lt;main&gt;</code> element (such as some screen readers).</p>
+  <p>The <code>&lt;main&gt;</code> element should contain the main content for your web page. All of this content should be unique to the individual page, and should not appear elsewhere on the site. Any content that is repeated on multiple pages (logos, search boxes, footer links, etc.) should not be placed within the <code>&lt;main&gt;</code> element.</p>
 
-<p>You should only use one <code>&lt;main&gt;</code> element on a page, and it shouldn’t be placed within an <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code>, <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, or <code>&lt;nav&gt;</code> element.</p>
+  <p>Use the ARIA role=”main” attribute here is it indicates the significance of this element to programs that don’t yet support the <code>&lt;main&gt;</code> element (such as some screen readers).</p>
 
+  <p>You should only use one <code>&lt;main&gt;</code> element on a page, and it shouldn’t be placed within an <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code>, <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, or <code>&lt;nav&gt;</code> element.</p>
 
-  <hr>
+</div>
+
 
   <h3 id="section-anchor">The section Element</h3>
 
-<p>The <code>&lt;section&gt;</code> element is used to represent a group of related content. This is similar to the purpose of an <code>&lt;article&gt;</code> element with the main difference being that the content within a <code>&lt;section&gt;</code> element doesn’t necessarily need to make sense out of the context of the page.</p>
+<div class="twc-box-column">
 
-<p>It’s advisable to use a heading element (<code>&lt;h1&gt;</code> – <code>&lt;h6&gt;</code>) to define the topic for the section.</p>
+  <p>The <code>&lt;section&gt;</code> element is used to represent a group of related content. This is similar to the purpose of an <code>&lt;article&gt;</code> element with the main difference being that the content within a <code>&lt;section&gt;</code> element doesn’t necessarily need to make sense out of the context of the page.</p>
 
-<p>Using this blog post as an example, you could have <code>&lt;section&gt;</code> elements that represent each of the individual parts within the post.</p>
+  <p>It’s advisable to use a heading element (<code>&lt;h1&gt;</code> – <code>&lt;h6&gt;</code>) to define the topic for the section.</p>
 
-<p>If you just need to group content together for styling purposes you should use a <code>&lt;div&gt;</code> element rather than a <code>&lt;section&gt;</code>.</p>
+  <p>Using this blog post as an example, you could have <code>&lt;section&gt;</code> elements that represent each of the individual parts within the post.</p>
 
+  <p>If you just need to group content together for styling purposes you should use a <code>&lt;div&gt;</code> element rather than a <code>&lt;section&gt;</code>.</p>
 
-  <hr>
+</div>
+
 
   <h3 id="article-anchor">The article Element</h3>
 
-<p>The <code>&lt;article&gt;</code> element should contain a piece of self-contained content that could be distributed outside the context of the page. This includes things like news articles, blog posts, or user comments.</p>
+<div class="twc-box-column">
 
-<p>You can nest <code>&lt;article&gt;</code> elements within one another. In this case it’s implied that the nested elements are related to the outer <code>&lt;article&gt;</code> element.</p>
+  <p>The <code>&lt;article&gt;</code> element should contain a piece of self-contained content that could be distributed outside the context of the page. This includes things like news articles, blog posts, or user comments.</p>
 
+  <p>You can nest <code>&lt;article&gt;</code> elements within one another. In this case it’s implied that the nested elements are related to the outer <code>&lt;article&gt;</code> element.</p>
 
-  <hr>
+</div>
+
 
   <h3 id="aside-anchor">The aside Element</h3>
 
-<p>The <code>&lt;aside&gt;</code> element is used to represent content that is tangibly related to the content surrounding it, but could be considered separate. This includes things like sidebars (like those you might find in a book), groups of <code>&lt;nav&gt;</code> elements, figures and pull quotes.</p>
+<div class="twc-box-column">
 
+  <p>The <code>&lt;aside&gt;</code> element is used to represent content that is tangibly related to the content surrounding it, but could be considered separate. This includes things like sidebars (like those you might find in a book), groups of <code>&lt;nav&gt;</code> elements, figures and pull quotes.</p>
 
-  <hr>
+</div>
+
 
   <h3 id="header-anchor">The header Element</h3>
 
-<p>The <code>&lt;header&gt;</code> element is used to represent the introductory content to an article or web page. This will usually contain a heading element as well as some metadata that’s relevant to the content, such as the post date of a news article for example. It could also contain a table of contents (within a <code>&lt;nav&gt;</code> element) for a longer document.</p>
+<div class="twc-box-column">
 
-<p>A <code>&lt;header&gt;</code> element will be associated with the nearest sectioning element, usually it’s direct parent in the page structure.</p>
+  <p>The <code>&lt;header&gt;</code> element is used to represent the introductory content to an article or web page. This will usually contain a heading element as well as some metadata that’s relevant to the content, such as the post date of a news article for example. It could also contain a table of contents (within a <code>&lt;nav&gt;</code> element) for a longer document.</p>
 
+  <p>A <code>&lt;header&gt;</code> element will be associated with the nearest sectioning element, usually it’s direct parent in the page structure.</p>
 
-  <hr>
+</div>
+
 
   <h3 id="footer-anchor">The footer Element</h3>
 
-<p>The <code>&lt;footer&gt;</code> element is used to represent information about a section such as the author, copyright information, or links to related web pages.</p>
+<div class="twc-box-column">
 
-<p>As with <code>&lt;footer&gt;</code>, the <code>&lt;footer&gt;</code> element is associated with the nearest sectioning element.</p>
+  <p>The <code>&lt;footer&gt;</code> element is used to represent information about a section such as the author, copyright information, or links to related web pages.</p>
 
+  <p>As with <code>&lt;footer&gt;</code>, the <code>&lt;footer&gt;</code> element is associated with the nearest sectioning element.</p>
 
 </div>
+
 
 
 
