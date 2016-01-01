@@ -289,8 +289,14 @@
           color: inherit;
         }
 
-        &.js-active h6:after {
-          @include rotate(-180deg);
+        &.js-active {
+          h6 {
+            background-color: #72ab3d;
+
+            &:after {
+              @include rotate(-180deg);
+            }
+          }
         }
       }
 
