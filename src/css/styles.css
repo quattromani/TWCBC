@@ -2270,6 +2270,7 @@ mark {
 .lede {
   font-size: 17px;
   font-size: 1.7rem;
+  display: block;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   line-height: 1.4;
   color: #333; }
