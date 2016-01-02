@@ -1,26 +1,34 @@
 <a href="#" class="open-panel"><span></span></a>
 
-{{ primary_nav nav.category site.baseurl }}
-
-{{!-- <nav role="navigation">
+{{!-- {{ primary_nav nav.category site.baseurl }} --}}
+<nav role="navigation" class="twc-new-navigation">
 	<div class="twc-container">
 		<ul class="navigation menu">
-			{{#each nav.category }}
-      <li>
-        <a href="/{{ url }}.html">
-          <span>{{title}}</span>
-        </a>
-        <ul>
-        {{#each (inherit_url section url) }}
-          <li>
-            <a href="/{{ parent_url }}/{{ url }}.html">
-              <span>{{ title }}</span>
-            </a>
-          </li>
-          {{/each}}
-        </ul>
-      </li>
-      {{/each}}
-    </ul>
-  </div>
-</nav> --}}
+			<li class="js-expandable js-first">
+				<a href="{{ site.baseurl }}/primary-elements.html">
+					<span>Primary Elements</span>
+				</a>
+			</li>
+			<li class="js-expandable">
+				<a href="{{ site.baseurl }}/component-library.html">
+					<span>Component Library</span>
+				</a>
+			</li>
+			<li class="js-expandable">
+				<a href="{{ site.baseurl }}/helpers.html">
+					<span>Helpers</span>
+				</a>
+			</li>
+			<li class="js-expandable">
+				<a href="{{ site.baseurl }}/best-practices.html">
+					<span>Best Practices</span>
+				</a>
+			</li>
+			<li class="js-expandable js-last">
+				<a href="{{ site.baseurl }}/accessibility.html">
+					<span>Accessibility</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
