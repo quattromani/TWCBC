@@ -74,7 +74,8 @@ nav[role=navigation] {
 
     a {
       @include padding($base-spacing/2 $base-spacing);
-      display: table-cell;
+      display: table;
+      width: 100%;
       font-weight: normal;
       text-transform: uppercase;
       color: $white;
