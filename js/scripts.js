@@ -116,6 +116,147 @@ $(function() {
   $('aside').css("cssText", "height: " + headerHeight + " !important;");
 });
 ;/* ==========================================================================
+    Accordion -- Version: 1.9.0.0 - Updated: 12/31/2013
+   ========================================================================== */
+$('.accordion .expandable ul li').each(function() {
+	if ($(this).has('ul').length) {
+		$(this).addClass('js-expandable');
+	} else {
+		$(this).addClass('js-notexpandable');
+	}
+	//check for expand cookie and slideDown() active
+	if ($.cookie('js-expand') && $(this).find('.expandable h6').text() === $.cookie('js-expand')) {
+		$(this).find('ul').slideDown();
+	}
+});
+//open first nav item if no cookie exists
+// if (!$.cookie('js-expand')) {
+// 	$('.accordion .expandable ul .js-expandable').first().addClass('js-active').find('ul').slideDown();
+// }
+$('.accordion .expandable h6').click(function() {
+	var categoryText = $(this).text();
+	$(this).parent().addClass('js-active').find('ul').slideToggle(function() {
+		$.cookie('js-expand', categoryText);
+		if ($(this).is(':hidden')) {
+			$(this).parent().removeClass('js-active');
+			$.cookie('js-expand', null);
+		}
+	});
+});
+;/* ==========================================================================
+    Button Checkbox -- Version: 1.9.0.1 - Updated: 2/4/2014
+   ========================================================================== */
+
+$(function() {
+  // Determine if input is already 'checked' on page load/reload
+  $('label').filter(function() {
+    return $(this).find('input').is(':checked');
+  }).addClass('js-checked');
+  $('input').click(function() {
+    $('input:not(:checked)').parent('label').removeClass("js-checked");
+    $('input:checked').parent('label').addClass("js-checked");
+  });
+});
+;function equalHeight(group) {
+  if ($(window).width() > mediumBreakPoint) {
+    var tallest = 0;
+    group.each(function() {
+      var thisHeight = $(this).outerHeight();;
+      if(thisHeight > tallest) {
+        tallest = thisHeight;
+      }
+    });
+    group.height(tallest);
+  } else {
+
+  }
+}
+
+$(document).ready(function() {
+  equalHeight($('.equal'));
+});
+;// Add classes to first and last li's for every instance
+$(function() {
+  // Add classes to first and last of each list
+  $('li:first-child').addClass('js-first');
+  $('li:last-child').addClass('js-last');
+});
+;/* ==========================================================================
+    Modal -- Version: 1.9.0.0 - Updated: 12/31/2013
+   ========================================================================== */
+
+$(function(){
+  $('.modal-button').click(function() {
+    var modal = $(this).attr('id');
+    loadPopup(modal);
+    return false;
+  });
+  $('.modal-next').click(function() {
+    var modal = $(this).attr('data-next');
+    var currModal = modal - 1;
+    loadPopup(modal, currModal);
+    return false;
+  });
+  $('.modal-prev').click(function() {
+    var modal = $(this).attr('data-prev');
+    var currModal = modal - 1 + 2;
+    loadPopup(modal, currModal);
+    return false;
+  });
+  // event for close the popup
+  $('.modal-close').click(function() {
+    disablePopup();
+    return false;
+  });
+  $(this).keyup(function(event) {
+    if (event.which === 27) {
+      disablePopup();
+    }
+  });
+  $('.modal-overlay').click(function() {
+    disablePopup();
+    return false;
+  });
+});
+
+function loadPopup(modal, currModal) {
+  $('#modal' + currModal).css({
+    'display': 'none'
+  });
+  $('#modal' + modal).css({
+    'margin-top': -$('#modal' + modal).height() / 2,
+    'display': 'block'
+  });
+  $('.modal-next').attr('data-next', modal - 1 + 2);
+  $('.modal-prev').attr('data-prev', modal - 1);
+  $('#modal' + modal).fadeIn(0500);
+  $('.modal-overlay').fadeIn('normal');
+}
+
+function disablePopup() {
+  $('.modal-container').fadeOut('normal');
+  $('.modal-overlay').fadeOut('normal');
+}
+;$('a[href*=#]:not([href=#])').click(function() {
+
+  var windowWidth = $("body").width();
+  var offset = windowWidth > 1020 ? $('nav') : $('header[role=banner]');
+  var offset_height = offset.outerHeight();
+
+  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    || location.hostname == this.hostname) {
+
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+     if (target.length) {
+       $('html,body').animate({
+           scrollTop: target.offset().top - headerHeight
+      }, 600);
+      return false;
+    }
+  }
+});
+;/* ==========================================================================
     Tabs to Accordion -- Version: 1.9.0.2 - Updated: 1/7/2013
    ========================================================================== */
 $(function() {
@@ -181,77 +322,6 @@ function buildAccordion(){
         }
     });
 }
-;/* ==========================================================================
-    Accordion -- Version: 1.9.0.0 - Updated: 12/31/2013
-   ========================================================================== */
-$('.accordion .expandable ul li').each(function() {
-	if ($(this).has('ul').length) {
-		$(this).addClass('js-expandable');
-	} else {
-		$(this).addClass('js-notexpandable');
-	}
-	//check for expand cookie and slideDown() active
-	if ($.cookie('js-expand') && $(this).find('.expandable h6').text() === $.cookie('js-expand')) {
-		$(this).find('ul').slideDown();
-	}
-});
-//open first nav item if no cookie exists
-// if (!$.cookie('js-expand')) {
-// 	$('.accordion .expandable ul .js-expandable').first().addClass('js-active').find('ul').slideDown();
-// }
-$('.accordion .expandable h6').click(function() {
-	var categoryText = $(this).text();
-	$(this).parent().addClass('js-active').find('ul').slideToggle(function() {
-		$.cookie('js-expand', categoryText);
-		if ($(this).is(':hidden')) {
-			$(this).parent().removeClass('js-active');
-			$.cookie('js-expand', null);
-		}
-	});
-});
-;function equalHeight(group) {
-  if ($(window).width() > mediumBreakPoint) {
-    var tallest = 0;
-    group.each(function() {
-      var thisHeight = $(this).outerHeight();;
-      if(thisHeight > tallest) {
-        tallest = thisHeight;
-      }
-    });
-    group.height(tallest);
-  } else {
-
-  }
-}
-
-$(document).ready(function() {
-  equalHeight($('.equal'));
-});
-;// Add classes to first and last li's for every instance
-$(function() {
-  // Add classes to first and last of each list
-  $('li:first-child').addClass('js-first');
-  $('li:last-child').addClass('js-last');
-});
-;$('a[href*=#]:not([href=#])').click(function() {
-
-  var windowWidth = $("body").width();
-  var offset = windowWidth > 1020 ? $('nav') : $('header[role=banner]');
-  var offset_height = offset.outerHeight();
-
-  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-    || location.hostname == this.hostname) {
-
-    var target = $(this.hash);
-    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-     if (target.length) {
-       $('html,body').animate({
-           scrollTop: target.offset().top - headerHeight
-      }, 600);
-      return false;
-    }
-  }
-});
 ;$('.prettyprint').hide();
 $('.toggle-code').click(function (ev) {
   var t = ev.target

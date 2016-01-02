@@ -26,7 +26,7 @@
   <link rel="stylesheet" href="https://business.timewarnercable.com/etc/designs/responsive/business.min.css">
   <link rel="stylesheet" href="https://business.timewarnercable.com/content/dam/business/css/test.css">
 
-  <link rel="stylesheet" href="http://quattromani.github.io/twcbcstyletempXYZ/css/styles.css" >
+  <link rel="stylesheet" href="/css/styles.css" >
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
@@ -270,7 +270,14 @@
 
 <div class="twc-box-column">
 
-  Video: local
+  <div class="video-container">
+    <video width="640px" height="360px" preload="none" poster="http://content.bitsontherun.com/thumbs/bkaovAYt-320.jpg" controls="controls">
+      <source type="video/mp4" src="http://content.bitsontherun.com/videos/bkaovAYt-52qL9xLP.mp4"></source>
+      <source type="video/webm" src="http://content.bitsontherun.com/videos/bkaovAYt-27m5HpIu.webm"></source>
+      <img width="100%" src="poster.jpg" alt="Big Buck Bunny" title="No video playback capabilities, please download">
+      <p class="text-warning">Your browser does not support HTML5 video.</p>
+    </video>
+  </div>
 
 </div>
 
@@ -334,7 +341,7 @@
     <script src="http://quattromani.github.io/twcbcstyletempXYZ/js/vendor/jquery.cookie.js"></script>
     <script src="http://quattromani.github.io/twcbcstyletempXYZ/js/vendor/stickyfill.js"></script>
 
-    <script src="http://quattromani.github.io/twcbcstyletempXYZ/js/scripts.min.js"></script>
+    <script src="/js/scripts.min.js"></script>
 
     <script>
       $( document ).ready(function() {

@@ -50,6 +50,13 @@
     }
   }
 
+  .cta {
+    span {
+      font-family: Arial,"Helvetica Neue",Helvetica,sans-serif,Sans-Serif;
+      font-weight: 700;
+    }
+  }
+
   .jumpTo-anchor {
     margin-bottom: $base-spacing;
   }
@@ -257,9 +264,9 @@
     }
   }
 
-  h5 {
-    @include inline-block;
-  }
+  // h5 {
+  //   @include inline-block;
+  // }
 }
 
 /* ==========================================================================
