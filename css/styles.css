@@ -4,7 +4,7 @@ ul.vertical > li {
   *zoom: 1;
   *display: inline;
   *vertical-align: auto;
-  padding: 2rem 0;
+  padding: 1rem 0;
   width: 100%; }
 
 .push {
@@ -2495,6 +2495,8 @@ footer {
   /* ==========================
     Pre
    ========================== */ }
+  .styleguide .twc-container {
+    display: table; }
   .styleguide article {
     visibility: hidden; }
   .styleguide nav {

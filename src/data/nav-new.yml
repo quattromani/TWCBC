@@ -126,6 +126,8 @@ section:
     url: 'tabs'
   - title: 'Tables'
     url: 'tables'
+  - title: 'Alert'
+    url: 'alert'
   - title: 'Browser Alert'
     url: 'browser-alert'
   - title: 'Breadcrumbs'
