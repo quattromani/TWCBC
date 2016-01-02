@@ -68,6 +68,14 @@ nav[role=navigation] {
       }
     }
 
+    &.js-active {
+      background-color: $lightgrey;
+
+      a {
+        color: $black;
+      }
+    }
+
     &:first-of-type {
       border-left: 1px solid #cacbce;
     }
