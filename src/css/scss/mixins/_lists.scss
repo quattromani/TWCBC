@@ -2,7 +2,7 @@
 @mixin vertical-list($arg: null) {
   > li {
     @include inline-block;
-    padding: $base-spacing 0;
+    padding: ($base-spacing / 2) 0;
     width: 100%;
   }
 

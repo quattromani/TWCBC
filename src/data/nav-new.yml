@@ -44,6 +44,8 @@ section:
       url: 'input-button'
     - title: 'Disabled Button'
       url: 'disabled-buttons'
+    - title: 'Checkbox Buttons'
+      url: 'checkbox-buttons'
     - title: 'Radio Buttons'
       url: 'radio-buttons'
   - title: Images
@@ -124,6 +126,8 @@ section:
     url: 'tabs'
   - title: 'Tables'
     url: 'tables'
+  - title: 'Alert'
+    url: 'alert'
   - title: 'Browser Alert'
     url: 'browser-alert'
   - title: 'Breadcrumbs'

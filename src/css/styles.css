@@ -4,7 +4,7 @@ ul.vertical > li {
   *zoom: 1;
   *display: inline;
   *vertical-align: auto;
-  padding: 2rem 0;
+  padding: 1rem 0;
   width: 100%; }
 
 .push {
@@ -1709,7 +1709,7 @@ section,
 summary {
   display: block; }
 
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, ins, kbd, q, samp, small, strong, var, b, i, dl, dt, dd, ul, li, fieldset, form, label, legend, table, caption, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, ins, kbd, q, samp, small, strong, var, b, i, ul, li, fieldset, form, label, legend, table, caption, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -2174,21 +2174,6 @@ ul {
 .striped li:nth-child(odd) {
   background-color: rgba(225, 225, 225, 0.1); }
 
-dt, dd {
-  display: inline;
-  margin: 0; }
-
-dt {
-  font-weight: bold; }
-
-dd + dt:before {
-  content: "\A";
-  white-space: pre; }
-dd + dd {
-  content: ', ';
-  font-weight: normal;
-  margin-left: -.25em; }
-
 /* SmartLinks */
 .horizontal li > div.smartLink {
   display: inline; }
@@ -2459,7 +2444,8 @@ nav[role=navigation] {
       border-left: 1px solid #cacbce; }
     nav[role=navigation] li a {
       padding: 1rem 2rem;
-      display: table-cell;
+      display: table;
+      width: 100%;
       font-weight: normal;
       text-transform: uppercase;
       color: #fff; }
@@ -2510,6 +2496,8 @@ footer {
   /* ==========================
     Pre
    ========================== */ }
+  .styleguide .twc-container {
+    display: table; }
   .styleguide article {
     visibility: hidden; }
   .styleguide nav {
@@ -2539,6 +2527,9 @@ footer {
     height: 4px;
     background-image: url("https://business.timewarnercable.com/content/dam/business/images/global/icons/hr-shadow.png");
     background-size: cover; }
+  .styleguide .cta span {
+    font-family: Arial,"Helvetica Neue",Helvetica,sans-serif,Sans-Serif;
+    font-weight: 700; }
   .styleguide .jumpTo-anchor {
     margin-bottom: 2rem; }
   .styleguide .twc-right {
@@ -2605,6 +2596,75 @@ footer {
     background: #369; }
     .styleguide .grid:nth-of-type(even) {
       background: #f2f4f6; }
+  .styleguide .twc-alert-section .twc-alert, .styleguide .twc-browser-alert-section .twc-alert {
+    border-bottom: 1px solid #eeeeef;
+    background: #d14853;
+    box-shadow: inset 0 -10px 14px 0 rgba(0, 0, 0, 0.2);
+    color: #fff; }
+  .styleguide .twc-alert-section .twc-container, .styleguide .twc-browser-alert-section .twc-container {
+    padding: 1em 2em 1em 0; }
+  .styleguide .twc-alert-section p.twc-alert-text, .styleguide .twc-browser-alert-section p.twc-alert-text {
+    position: relative;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif, Arial, Sans-Serif;
+    font-style: normal;
+    font-weight: normal; }
+    .styleguide .twc-alert-section p.twc-alert-text .twc-container, .styleguide .twc-browser-alert-section p.twc-alert-text .twc-container {
+      padding: 1em 2em 1em 0; }
+  .styleguide .twc-alert-section .twc-customerLocation p.twc-alert-text:before, .styleguide .twc-browser-alert-section .twc-customerLocation p.twc-alert-text:before, .styleguide .twc-alert-section p.twc-alert-text:before, .styleguide .twc-browser-alert-section p.twc-alert-text:before {
+    padding-right: 10px;
+    font-family: "fontawesome", Arial, Sans-Serif;
+    font-style: normal;
+    font-weight: normal;
+    content: '\f071';
+    font-size: 24px;
+    font-size: 2.4rem;
+    font-weight: 100;
+    color: #f6b42a;
+    text-shadow: 0 1px 3px #333;
+    vertical-align: middle; }
+  .styleguide .twc-alert-section .twc-alert-close:after, .styleguide .twc-browser-alert-section .twc-alert-close:after {
+    position: absolute;
+    top: 1em;
+    right: 0;
+    padding: 0 1em;
+    font-family: "fontawesome", Arial, Sans-Serif;
+    font-style: normal;
+    font-weight: normal;
+    content: '\f057';
+    color: #fff;
+    font-weight: lighter; }
+  .styleguide .twc-alert-section a.twc-icon:hover, .styleguide .twc-browser-alert-section a.twc-icon:hover {
+    color: inherit; }
+  @media (max-width: 768px) {
+    .styleguide .twc-alert-section p.twc-alert-text.twc-container, .styleguide .twc-browser-alert-section p.twc-alert-text.twc-container {
+      padding: 1em 3em 1em 3em; }
+    .styleguide .twc-alert-section .twc-alert-close:after, .styleguide .twc-browser-alert-section .twc-alert-close:after {
+      top: .5em;
+      right: 4%;
+      font-size: 24px;
+      font-size: 2.4rem; } }
+  @media (max-width: 640px) {
+    .styleguide .twc-alert-section .twc-alert-text:before, .styleguide .twc-browser-alert-section .twc-alert-text:before {
+      font-size: 18px;
+      font-size: 1.8rem;
+      vertical-align: baseline; }
+    .styleguide .twc-alert-section .twc-content, .styleguide .twc-browser-alert-section .twc-content {
+      padding-top: 0; }
+    .styleguide .twc-alert-section .twc-alert-close:after, .styleguide .twc-browser-alert-section .twc-alert-close:after {
+      padding: 0; } }
+  .styleguide .twc-browser-alert-section {
+    background-color: #fef937;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fef937), to(#e8d440));
+    background-image: -webkit-linear-gradient(top, #fef937, #e8d440);
+    background-image: -moz-linear-gradient(top, #fef937, #e8d440);
+    background-image: -ms-linear-gradient(top, #fef937, #e8d440);
+    background-image: -o-linear-gradient(top, #fef937, #e8d440);
+    background-image: linear-gradient(to top, #fef937, #e8d440);
+    /* -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#fef937', EndColorStr='#e8d440')"; */ }
+    .styleguide .twc-browser-alert-section ul {
+      margin-bottom: 0; }
+    .styleguide .twc-browser-alert-section .twc-alert-close:after {
+      color: #333; }
   .styleguide .heading-font-family {
     font-family: Arial, "Helvetica Neue", Helvetica, Arial, sans-serif, Arial, Sans-Serif;
     font-style: normal;
@@ -2657,11 +2717,6 @@ footer {
     padding-bottom: 6rem; }
   .styleguide footer .twc-container {
     padding: 0; }
-  .styleguide h5 {
-    display: inline-block;
-    *zoom: 1;
-    *display: inline;
-    *vertical-align: auto; }
 
 /* ==========================================================================
     Accordion -- Version: 1.9.0.0 - Updated: 1/11/2014
@@ -3134,15 +3189,5 @@ pre.desert .typ {
 [class*='truncate'] {
   overflow: hidden;
   margin-bottom: 2rem; }
-
-.working-with-digital-web-marketing dt {
-  float: left;
-  clear: left;
-  width: 150px;
-  text-align: right; }
-  .working-with-digital-web-marketing dt a {
-    font-weight: bold; }
-.working-with-digital-web-marketing dd {
-  margin: 0 0 0 2rem; }
 
 /*# sourceMappingURL=styles.css.map */

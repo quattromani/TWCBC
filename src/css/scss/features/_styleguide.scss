@@ -2,6 +2,10 @@
 @charset "UTF-8";
 
 .styleguide {
+  .twc-container {
+    display: table;
+  }
+
   article {
     visibility: hidden;
   }
@@ -47,6 +51,13 @@
       height: 4px;
       background-image:url('https://business.timewarnercable.com/content/dam/business/images/global/icons/hr-shadow.png');
       background-size: cover;
+    }
+  }
+
+  .cta {
+    span {
+      font-family: Arial,"Helvetica Neue",Helvetica,sans-serif,Sans-Serif;
+      font-weight: 700;
     }
   }
 
@@ -164,6 +175,95 @@
     }
   }
 
+  // Alerts
+  .twc-alert-section {
+
+  .twc-alert {
+    border-bottom: 1px solid #eeeeef;
+    background: #d14853;
+    @include box-shadow(inset 0 -10px 14px 0 rgba(0, 0, 0, 0.2));
+    color: $text-white;
+  }
+  .twc-container {
+    @include padding(1em,2em,1em,0);
+  }
+  p.twc-alert-text {
+    position: relative;
+    @include font-family($arial);
+    .twc-container {
+      padding: 1em 2em 1em 0;
+    }
+  }
+
+  .twc-customerLocation p.twc-alert-text:before, p.twc-alert-text:before {
+    padding-right: 10px;
+    @include font-family($fontawesome);
+    content: '\f071';
+    @include font-size(24);
+    font-weight: 100;
+    color: #f6b42a;
+    text-shadow: 0 1px 3px #333;
+    vertical-align: middle;
+  }
+
+  .twc-alert-close:after {
+    position: absolute;
+    top: 1em;
+    right: 0;
+    @include padding(0,1em);
+    @include font-family($fontawesome);
+    content: '\f057';
+    color: #fff;
+    font-weight: lighter;
+  }
+
+  a.twc-icon:hover {
+    color: inherit;
+  }
+
+  @media (max-width: $medium) {
+
+    p.twc-alert-text.twc-container {
+      @include padding(1em,3em,1em,3em);
+    }
+    .twc-alert-close:after {
+      top: .5em;
+      right: 4%;
+      @include font-size(24);
+    }
+
+  }
+
+  @media (max-width: $small) {
+
+    .twc-alert-text:before {
+      @include font-size(18);
+      vertical-align: baseline;
+    }
+    .twc-content {
+      padding-top: 0;
+    }
+    .twc-alert-close:after {
+      @include padding(0);
+    }
+  }
+
+}
+
+  // Browser Alerts
+  .twc-browser-alert-section {
+    @extend .twc-alert-section;
+    @include linear-gradient(#fef937, #e8d440);
+
+    ul {
+      margin-bottom: 0;
+    }
+
+    .twc-alert-close:after {
+      color: $text;
+    }
+  }
+
   // form {
   //   input, label {
   //     display:block;
@@ -257,9 +357,9 @@
     }
   }
 
-  h5 {
-    @include inline-block;
-  }
+  // h5 {
+  //   @include inline-block;
+  // }
 }
 
 /* ==========================================================================
