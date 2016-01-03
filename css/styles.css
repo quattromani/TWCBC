@@ -2751,13 +2751,11 @@ footer {
     font-family: "fontawesome";
     content: '\f107' !important;
     color: inherit; }
-  .expandable li.js-expandable.js-active h6, .expandable li.js-expandableHybrid.js-active h6,
-  .expandableHybrid li.js-expandable.js-active h6,
-  .expandableHybrid li.js-expandableHybrid.js-active h6 {
+  .expandable li.js-active h6,
+  .expandableHybrid li.js-active h6 {
     background-color: #72ab3d; }
-    .expandable li.js-expandable.js-active h6:after, .expandable li.js-expandableHybrid.js-active h6:after,
-    .expandableHybrid li.js-expandable.js-active h6:after,
-    .expandableHybrid li.js-expandableHybrid.js-active h6:after {
+    .expandable li.js-active h6:after,
+    .expandableHybrid li.js-active h6:after {
       transform: rotate(-180degdeg); }
   .expandable li.js-notexpandable h6:after, .expandable li.js-notexpandableHybrid h6:after,
   .expandableHybrid li.js-notexpandable h6:after,

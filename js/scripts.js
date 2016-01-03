@@ -143,6 +143,11 @@ $('.accordion .expandable h6').click(function() {
 		}
 	});
 });
+
+$('.accordion a, .accordion h6').click(function() {
+  $('.expandable li').removeClass('js-active');
+  $(this).closest('.expandable > ul > li').addClass('js-active');
+});
 ;/* ==========================================================================
     Alerts -- Version: 1.9.0.0 - Updated: 12/31/2013
    ========================================================================== */
