@@ -2117,9 +2117,20 @@ a.morelink.less:after {
 .iconable {
   margin-left: 1.5em; }
 
-a[href$=".PDF"],
-a[href$=".pdf"] {
-  background: url("/TWC/core/images/pdf-icon.png") no-repeat; }
+a[href$=".PDF"]::after,
+a[href$=".pdf"]::after {
+  font-family: "fontawesome", Arial, Sans-Serif;
+  font-style: normal;
+  font-weight: normal;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  content: "";
+  font-size: 13px;
+  font-size: 1.3rem;
+  padding: 0 0.5rem;
+  color: currentColor; }
 
 ol {
   margin: 0 0 0 3rem;

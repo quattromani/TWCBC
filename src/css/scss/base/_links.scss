@@ -101,5 +101,5 @@ a.morelink.less {
 
 a[href$=".PDF"],
 a[href$=".pdf"] {
-  background: url("/TWC/core/images/pdf-icon.png") no-repeat;
+  @include icon-after($icon-file-pdf-o, $color: currentColor);
 }
