@@ -2395,7 +2395,7 @@ header[role=banner] {
 nav[role=navigation] {
   display: table;
   width: 100%;
-  border-top: 1px solid #cacbce;
+  border-top: 1px solid #e1e1e1;
   background-color: #333; }
   nav[role=navigation] ul {
     display: table-row;
