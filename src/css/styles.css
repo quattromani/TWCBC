@@ -2431,7 +2431,7 @@ nav[role=navigation] {
         border-top: 1px solid #cacbce;
         border-bottom: 1px solid #cacbce; }
     nav[role=navigation] li:hover {
-      background-color: #343b46; }
+      background-color: #e1e1e1; }
       nav[role=navigation] li:hover a {
         font-weight: normal;
         color: #fff; }
