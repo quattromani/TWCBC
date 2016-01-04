@@ -2554,7 +2554,15 @@ footer {
     border: 10px solid #e1e1e1;
     border-radius: 0; }
     .styleguide .twc-box-column-example {
-      border: 0; }
+      padding: 1.5em;
+      margin-bottom: 2em;
+      background: #fff;
+      border-radius: 3px;
+      background-clip: padding-box;
+      box-shadow: 0 1px 2px 0 #888;
+      overflow: auto;
+      border: 0;
+      border-top: 1px solid #ddd; }
   .styleguide .sub-section {
     position: relative; }
   .styleguide .back-to-parent {
