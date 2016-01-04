@@ -2434,7 +2434,7 @@ nav[role=navigation] {
       background-color: #e1e1e1; }
       nav[role=navigation] li:hover a {
         font-weight: normal;
-        color: #fff; }
+        color: #000; }
       nav[role=navigation] li:hover ul {
         display: table; }
         nav[role=navigation] li:hover ul li {
