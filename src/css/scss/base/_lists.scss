@@ -65,8 +65,7 @@ ul {
 // Vertical List Items
 .vertical {
   li {
-    display: block !important;
-  }
+    display: block !important;  }
 
   > li {
     @include padding(($base-spacing / 2) 0);

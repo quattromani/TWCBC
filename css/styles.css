@@ -5,7 +5,7 @@ ul.vertical > li {
   *display: inline;
   *vertical-align: auto;
   padding: 1rem 0;
-  width: 100%; }
+  max-width: 100%; }
 
 .push {
   float: right !important;
@@ -3112,7 +3112,6 @@ pre.desert .typ {
   text-align: left; }
 
 .text-center {
-  display: inline-block;
   text-align: center;
   clear: both; }
 
