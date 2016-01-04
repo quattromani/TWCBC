@@ -2553,6 +2553,8 @@ footer {
     clear: both;
     border: 10px solid #e1e1e1;
     border-radius: 0; }
+    .styleguide .twc-box-column-example {
+      border: 0; }
   .styleguide .sub-section {
     position: relative; }
   .styleguide .back-to-parent {

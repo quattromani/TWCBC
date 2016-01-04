@@ -73,6 +73,10 @@
     clear: both;
     border: 10px solid $text-lightgrey;
     border-radius: 0;
+
+    &-example {
+      border: 0;
+    }
   }
 
   .sub-section {
