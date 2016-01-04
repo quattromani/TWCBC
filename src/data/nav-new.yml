@@ -112,6 +112,8 @@ section:
       url: 'audio'
   - title: 'Operational Message'
     url: 'operational-message'
+  - title: 'Tooltips'
+    url: 'tooltips'
   - title: 'Pagination'
     url: 'pagination'
   - title: 'Accordion'
@@ -145,8 +147,6 @@ section:
       url: 'marginless'
     - title: 'Push / Pull'
       url: 'push-pull'
-  - title: 'Hero Banner'
-    url: 'hero-banner'
 
 - title: 'Helpers'
   url: 'helpers'
