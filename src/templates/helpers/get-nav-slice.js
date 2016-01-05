@@ -1,4 +1,5 @@
 var _ = require('lodash');
+var path_checker = require('./path_checker');
 
 module.exports.register = function(Handlebars, options, params) {
   Handlebars.registerHelper('get-nav-slice', function(data, this_page, start_at, base_url, options) {
@@ -48,7 +49,8 @@ module.exports.register = function(Handlebars, options, params) {
       for (var item in nav_list) {
         if (!!nav_list[item]) {
           if (!!nav_list[item].url && !Array.isArray(nav_list[item].url)) {
-            if (nav_list[item].url === this_page.page.basename) {
+            console.log(nav_list[item].url);
+            if (path_checker(this_page.page.basename, this_page.page.dirname, nav_list[item].url)) {
               nav_list[item].current = true;
             }
             var new_url = url.slice();
@@ -73,6 +75,7 @@ module.exports.register = function(Handlebars, options, params) {
     start_at = start_at >= 0 ? start_at : 0;
     var nav_data = {};
     nav_data.section = _.deepFind(data.section, { 'url': path_array[start_at] });
+    console.log("Page: " + this_page.page.basename);
     assign_url(nav_data, path_array.slice(0, start_at));
 
     return nav_data.section;
