@@ -49,7 +49,7 @@ module.exports.register = function(Handlebars, options, params) {
       for (var item in nav_list) {
         if (!!nav_list[item]) {
           if (!!nav_list[item].url && !Array.isArray(nav_list[item].url)) {
-            console.log(nav_list[item].url);
+            // console.log(nav_list[item].url);
             if (path_checker(this_page.page.basename, this_page.page.dirname, nav_list[item].url)) {
               nav_list[item].current = true;
             }
@@ -75,7 +75,7 @@ module.exports.register = function(Handlebars, options, params) {
     start_at = start_at >= 0 ? start_at : 0;
     var nav_data = {};
     nav_data.section = _.deepFind(data.section, { 'url': path_array[start_at] });
-    console.log("Page: " + this_page.page.basename);
+    // console.log("Page: " + this_page.page.basename);
     assign_url(nav_data, path_array.slice(0, start_at));
 
     return nav_data.section;

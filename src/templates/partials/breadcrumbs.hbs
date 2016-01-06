@@ -1,4 +1,5 @@
 {{#with (bread-crumb-maker nav-new site.baseurl this) }}
+{{ this.length }}
 <div class="twc-breadcrumbs">
   <div class="twc-container">
     <ul class="horizontal slashes">
@@ -9,7 +10,7 @@
             {{ title }}
           {{/if }}
         {{ else }}
-          <a analyticsname="" href="{{ url-maker url 'normal' }}">
+          <a analyticsname="" href="{{#if first }}/twcbcstyletempXYZ{{/if }}{{ url-maker url 'normal' }}">
             {{#if title }}
               {{ title }}
             {{ else }}
