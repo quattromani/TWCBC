@@ -2716,7 +2716,7 @@ footer {
   .styleguide .banded-brand {
     background-color: #7f848b; }
     .styleguide .banded-brand .twc-container {
-      background: #7f848b url(/images/HeroBanner.png);
+      background: #7f848b url(/twcbcstyletempXYZ/images/HeroBanner.png);
       background-size: cover;
       padding-top: 6rem;
       padding-bottom: 6rem; }
