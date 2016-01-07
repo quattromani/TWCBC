@@ -326,12 +326,10 @@
     background-color: $banner-grey;
 
     .twc-container {
-      background: $banner-grey url(https://unsplash.it/980/500/?random);
+      background: $banner-grey url(/images/HeroBanner.png);
       background-size: cover;
       padding-top: $base-spacing * 3;
       padding-bottom: $base-spacing * 3;
-      box-shadow: inset -300px 0px 150px -90px $banner-grey,
-      inset 400px 0px 200px -90px $banner-grey;
     }
 
     h1 {
