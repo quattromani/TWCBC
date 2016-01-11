@@ -1,13 +1,22 @@
-<h3>
-  ARIA Roles
-</h3>
+<span id="aria-roles-anchor" class="h3 jumpTo-anchor">ARIA Roles</span>
 
-<figure>
-  <img src="{{ site.url }}/images/TWC_logo-placeholder.png" alt="TWC_logo-placeholder">
-</figure>
+{{#if page.subsection }}
 
-<p>banner - typically the "header" of the page</p>
-<p>navigation - any navigation list, typically the nav element</p>
-<p>main - the main content area</p>
-<p>complimentary - information that is tangentially related to the main content</p>
-<p>contentinfo - contains information about the parent document such as copyrights and privacy statements</p>
+{{else}}
+<div class="twc-right cta omega section">
+  <a analyticsname="" href="{{ slugify page.section }}/aria-roles.html" id="">
+    <span><i class="fa fa-search-plus fa-lg"></i></span>
+  </a>
+  <div class="clear"></div>
+</div>
+{{/if}}
+
+<div class="twc-box-column">
+
+  <p>banner - typically the "header" of the page</p>
+  <p>navigation - any navigation list, typically the nav element</p>
+  <p>main - the main content area</p>
+  <p>complimentary - information that is tangentially related to the main content</p>
+  <p>contentinfo - contains information about the parent document such as copyrights and privacy statements</p>
+
+</div>

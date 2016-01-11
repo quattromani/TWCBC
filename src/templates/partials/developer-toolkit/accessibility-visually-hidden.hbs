@@ -1,9 +1,18 @@
-<h3>
-  Visually Hidden Class
-</h3>
+<span id="visually-hidden-anchor" class="h3 jumpTo-anchor">Visually Hidden Class</span>
 
-<figure>
-  <img src="{{ site.url }}/images/TWC_logo-placeholder.png" alt="TWC_logo-placeholder">
-</figure>
+{{#if page.subsection }}
 
-<code><.visually-hidden></code> - The Visually-Hidden class allows for 508 Compliance on an element needed for visually assisted users.
+{{else}}
+<div class="twc-right cta omega section">
+  <a analyticsname="" href="{{ slugify page.section }}/visually-hidden.html" id="">
+    <span><i class="fa fa-search-plus fa-lg"></i></span>
+  </a>
+  <div class="clear"></div>
+</div>
+{{/if}}
+
+<div class="twc-box-column">
+
+  <code><.visually-hidden></code> - The Visually-Hidden class allows for 508 Compliance on an element needed for visually assisted users.
+
+</div>

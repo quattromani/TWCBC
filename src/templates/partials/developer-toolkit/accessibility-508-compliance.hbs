@@ -1,11 +1,20 @@
-<h3>
-  508 Compliance
-</h3>
+<span id="508-compliance-anchor" class="h3 jumpTo-anchor">508 Compliance</span>
 
-<figure>
-  <img src="{{ site.url }}/images/TWC_logo-placeholder.png" alt="TWC_logo-placeholder">
-</figure>
+{{#if page.subsection }}
 
-<p><a href="http://www.section508.gov/ ">Section 508 of the U.S. Code</a> is the law that requires federal agencies and their contractors to adhere to a minimal level of accessibility. The law can be loosely interpreted and basically boils down to:</p>
+{{else}}
+<div class="twc-right cta omega section">
+  <a analyticsname="" href="{{ slugify page.section }}/508-compliance.html" id="">
+    <span><i class="fa fa-search-plus fa-lg"></i></span>
+  </a>
+  <div class="clear"></div>
+</div>
+{{/if}}
 
-<blockquote>the use of text labels or descriptors for graphics and certain format elements. (HTML code already provides an "Alt Text" tag for graphics which can serve as a verbal descriptor for graphics). This section also addresses the usability of multimedia presentations, image maps, style sheets, scripting languages, applets and plug-ins, and electronic forms.</blockquote>
+<div class="twc-box-column">
+
+  <p><a href="http://www.section508.gov/ ">Section 508 of the U.S. Code</a> is the law that requires federal agencies and their contractors to adhere to a minimal level of accessibility. The law can be loosely interpreted and basically boils down to:</p>
+
+  <blockquote>the use of text labels or descriptors for graphics and certain format elements. (HTML code already provides an "Alt Text" tag for graphics which can serve as a verbal descriptor for graphics). This section also addresses the usability of multimedia presentations, image maps, style sheets, scripting languages, applets and plug-ins, and electronic forms.</blockquote>
+
+</div>

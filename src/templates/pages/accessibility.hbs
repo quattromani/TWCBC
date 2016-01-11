@@ -3,7 +3,7 @@ title: Accessibility
 description: ""
 class: styleguide
 parent: styleguide
-layout: interstitial.hbs
+layout: default.hbs
 category: Developer Toolkit
 section: Accessibility
 subsection:
@@ -12,75 +12,12 @@ zoom:
 
 {{> accessibility-about }}
 
-<div class="hero-band"></div>
+{{> accessibility-alt-text }}
 
-<div class="banded-light">
+{{> accessibility-title }}
 
-  <!-- Begin Content Wrapper -->
-  <section class="twc-container">
-    <div class="parsys">
+{{> accessibility-aria-roles }}
 
-      <div class="33-33-33 section columnControl">
-        <div class="parsys_column twc-col3_333333">
+{{> accessibility-508-compliance }}
 
-          <div class="parsys parsys0 twc-col3_333333-c0 parsys_column">
-            <div class="smartLink parbase section">
-
-              {{> accessibility-alt-text }}
-
-            </div>
-          </div>
-
-          <div class="parsys parsys1 twc-col3_333333-c1 parsys_column">
-            <div class="smartLink parbase section">
-
-              {{> accessibility-title }}
-
-            </div>
-          </div>
-
-          <div class="parsys parsys2 twc-col3_333333-c2 parsys_column">
-            <div class="smartLink parbase section">
-
-              {{> accessibility-aria-roles }}
-
-            </div>
-          </div>
-
-        </div>
-        <div class="new section"></div>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="twc-container">
-    <div class="parsys">
-
-      <div class="33-33-33 section columnControl">
-        <div class="parsys_column twc-col3_333333">
-
-          <div class="parsys parsys0 twc-col3_333333-c0 parsys_column">
-            <div class="smartLink parbase section">
-
-              {{> accessibility-508-compliance }}
-
-            </div>
-          </div>
-
-          <div class="parsys parsys1 twc-col3_333333-c1 parsys_column">
-            <div class="smartLink parbase section">
-
-              {{> accessibility-visually-hidden }}
-
-            </div>
-          </div>
-
-        </div>
-        <div class="new section"></div>
-      </div>
-
-    </div>
-  </section>
-
-</div>
+{{> accessibility-visually-hidden }}
