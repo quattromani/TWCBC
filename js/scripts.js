@@ -298,7 +298,7 @@ $('#marquee-left').click(function() {
 
 var jump_anchors = $(".jumpTo-anchor");
 
-$(window).scroll(function() {
+$(window).scroll(_.debounce(function() {
   var offset = $(window).scrollTop();
   var current_anchor;
 
@@ -314,6 +314,10 @@ $(window).scroll(function() {
 
   var nav_target = $('a[href*="#' + current_anchor.attr('id') + '"]');
 
+  if (!nav_target.length) {
+    nav_target = $('aside .accordion .js-expandable h6:contains("' + current_anchor.attr('id') + '")').closest('a');
+  }
+
   if (nav_target.parent().parent().parent().hasClass('js-expandable')) {
     nav_target = nav_target.parent().parent().parent();
   } else {
@@ -328,7 +332,7 @@ $(window).scroll(function() {
     nav_target.find('ul').slideDown();
     nav_target.addClass("js-active");
   }
-});
+}, 200));
 ;/* ==========================================================================
     Tabs to Accordion -- Version: 1.9.0.2 - Updated: 1/7/2013
    ========================================================================== */
