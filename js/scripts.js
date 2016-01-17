@@ -305,7 +305,7 @@ $(window).scroll(_.debounce(function() {
   for (var i = 0; i < jump_anchors.length; i++) {
     var this_anchor = $(jump_anchors).eq(i);
 
-    if (this_anchor.offset().top - offset > 450) {
+    if (this_anchor.offset().top - offset > $(window).height() * 1 / 4) {
       break;
     }
 
