@@ -379,34 +379,39 @@
         <li><strong>State</strong> — These describe how things look when in a particular state (hidden or expanded, active/inactive)</li>
         <li><strong>Theme</strong> — These define things like a color scheme or typographic treatment across a site</li>
       </ul>
-      <pre class="prettyprint lang-css">
-        .componentName {
-        Base {
-        ...
-      }
+<pre class="prettyprint lang-css">
+.componentName {
+  Base {
+    ...
+  }
 
-      Layout {
-      ...
-    }
+  Layout {
+    ...
+  }
 
-    Module {
+  Module {
     ...
   }
 
   State {
-  ...
-}
+    ...
+  }
 
-Theme {
-...
-}
+  Theme {
+    ...
+  }
 }
 </pre>
 </li>
 </ul>
 
 <hr>
-<h3 id="sass-anchor">Sass</h3>
+<h3 id="sass-anchor">Sass/SCSS</h3>
+
+<p>Sass (or SCSS) is the preferred method of CSS pre-processing used in any Time Warner Cable project. An extension of CSS that adds power and elegance to the basic language. It allows to use variables, nested rules, mixins, inline imports, and more.</p>
+<p>As a general rule, you will never want to alter a file with a <code>.css</code> extension as this is the output file. Always refactor <code>.scss</code> files.</p>
+
+<a href="http://sass-lang.com/">Learn more about Sass <i class="fa fa-external-link"></i></a>
 <hr>
 
 <ul class="vertical lined">
@@ -490,26 +495,26 @@ Theme {
     <h3 id="comments-anchor">Commenting Code</h3>
     <p>Try to stick with standard CSS comments, but you can use the Sass style (//) comments for trivial comments or quickly debugging.</p>
 
-    <pre class="prettyprint lang-css">
-      // File headers are commented thusly:
+<pre class="prettyprint lang-css">
+// File headers are commented thusly:
 
-      /* ==========================================================================
-      Component Name -- Version: 1.0.0.0 - Updated: MM/DD/YYYY
-      ========================================================================== */
-    </pre>
+/* ======================================================================
+  Component Name -- Version: 1.0.0.0 - Updated: MM/DD/YYYY
+  ====================================================================== */
+</pre>
 
-    <pre class="prettyrint lang-css">
-      /*
-      * Chunk of long
-      * text gets commented
-      * like this
-      */
-    </pre>
+<pre class="prettyprint lang-css">
+/*
+* Chunk of long
+* text gets commented
+* like this
+*/
+</pre>
 
-    <pre class="prettyrint lang-css">
-      // Hints get styled like this:
-      /* Hint */
-    </pre>
+<pre class="prettyprint lang-css">
+// Hints get styled like this:
+/* Hint */
+</pre>
   </li>
 </ul>
 
