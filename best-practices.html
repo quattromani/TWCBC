@@ -333,6 +333,9 @@
         <li>Lowercase all hex values, e.g., #fff instead of #FFF</li>
         <li>Use shorthand hex values where available, e.g., #fff instead of #ffffff</li>
         <li>Quote attribute values in selectors, e.g., input[type="text"]</li>
+        <li>Use a new line for every block, list or table element, and indent every such child element to show heirarchy and improve understanding</li>
+        <li>Avoid Qualifying ID and class names with type selectors</li>
+        <li>ID's are bad for CSS, only use ID's for javascript hooks when necessary</li>
       </ul>
     </li>
 
@@ -348,18 +351,7 @@
 
     </li>
     <li>
-      <h3 id="general-anchor">General Formatting</h3>
-      <div class="error">// put this with Syntax</div>
-      <p>Use a new line for every block, list or table element, and indent every such child element to show heirarchy and improve understanding</p>
-
-    </li>
-    <li>
-      <p>Avoid Qualifying ID and class names with type selectors</p>
-      <p>p.s. ID's are bad for CSS, only use ID's for javascript hooks when necessary</p>
-    </li>
-    <li>
-      <h3 id="hex-anchor">Hexidecimal Notation</h3>
-
+    <h3 id="hex-anchor">Hexidecimal Notation</h3>
       <p>For color values that permit, 3 character hexadecimal is preferred</p>
     </li>
     <li>
@@ -376,7 +368,29 @@
     </li>
     <li>
       <h3 id="smacss-anchor">Use the SMACSS Approach</h3>
-      <div class="error">// this needs content</div>
+<pre class="prettyprint lang-css">
+.componentName {
+  Base {
+    ...
+  }
+
+  Layout {
+    ...
+  }
+
+  Module {
+    ...
+  }
+
+  State {
+    ...
+  }
+
+  Theme {
+    ...
+  }
+}
+</pre>
     </li>
   </ul>
 
