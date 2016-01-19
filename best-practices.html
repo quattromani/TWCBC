@@ -351,7 +351,7 @@
 
     </li>
     <li>
-    <h3 id="hex-anchor">Hexidecimal Notation</h3>
+      <h3 id="hex-anchor">Hexidecimal Notation</h3>
       <p>For color values that permit, 3 character hexadecimal is preferred</p>
     </li>
     <li>
@@ -368,119 +368,150 @@
     </li>
     <li>
       <h3 id="smacss-anchor">Use the SMACSS Approach</h3>
-<pre class="prettyprint lang-css">
-.componentName {
-  Base {
-    ...
-  }
+      <p>SMACSS stands for Scalable and Modular Architecture for CSS and it has 2 core goals.</p>
 
-  Layout {
-    ...
-  }
+      <p>Much like OCCSS, the purpose of this categorization is less code repetition, a more consistent experience, and easier maintenance. Under SMACSS there are 5 general categories of css rules.</p>
 
-  Module {
+      <ul class="vertical lined">
+        <li><strong>Base</strong> — These are your defaults (html, body, h1, ul, etc)</li>
+        <li><strong>Layout</strong> — These divide the page into major sections</li>
+        <li><strong>Module</strong> — These are the reusable modular components of a design</li>
+        <li><strong>State</strong> — These describe how things look when in a particular state (hidden or expanded, active/inactive)</li>
+        <li><strong>Theme</strong> — These define things like a color scheme or typographic treatment across a site</li>
+      </ul>
+      <pre class="prettyprint lang-css">
+        .componentName {
+        Base {
+        ...
+      }
+
+      Layout {
+      ...
+    }
+
+    Module {
     ...
   }
 
   State {
-    ...
-  }
+  ...
+}
 
-  Theme {
-    ...
-  }
+Theme {
+...
+}
 }
 </pre>
-    </li>
-  </ul>
+</li>
+</ul>
 
-  <hr>
-  <h3 id="sass-anchor">Sass</h3>
-  <hr>
+<hr>
+<h3 id="sass-anchor">Sass</h3>
+<hr>
 
-  <ul class="vertical lined">
-    <li>
-      <h5>File Organization</h5>
-      <ul class="bulleted">
-        <li>
-          Mixins and variables go in scss/global/.
-        </li>
-        <li>
-          Styles related to components/modules/views go in sass/components/.
-        </li>
-        <li>
-          Sass and CSS from other projects goes in sass/vendor/.
-        </li>
-      </ul>
-    </li>
-    <li>
-      <h5>Main Stylesheet</h5>
-      <p>All files get compiled into the main.scss stylesheet, and should be scoped accordingly.</p>
-      <p>The main.scss file serves as a "table of contents" and the @import directives should be listed with vendor dependencies first, then author dependencies and core stylesheets, then components.</p>
-      <p>Organize the components imports in a manner that makes sense, in other words, group components with the component they extend or inherit from.</p>
-    </li>
-    <li>
-      <h5>Structuring Code</h5>
-      <p>@extends and @includes are likely to be overwritten by future elements, placing them at the top of the property list calls them out and avoids the beginning of a specificity war.</p>
+<ul class="vertical lined">
+  <li>
+    <h5>File Organization</h5>
+    <ul class="bulleted">
+      <li>
+        Mixins and variables go in scss/global/.
+      </li>
+      <li>
+        Styles related to components/modules/views go in sass/components/.
+      </li>
+      <li>
+        Sass and CSS from other projects goes in sass/vendor/.
+      </li>
+    </ul>
+  </li>
+  <li>
+    <h5>Main Stylesheet</h5>
+    <p>All files get compiled into the main.scss stylesheet, and should be scoped accordingly.</p>
+    <p>The main.scss file serves as a "table of contents" and the @import directives should be listed with vendor dependencies first, then author dependencies and core stylesheets, then components.</p>
+    <p>Organize the components imports in a manner that makes sense, in other words, group components with the component they extend or inherit from.</p>
+  </li>
+  <li>
+    <h5>Structuring Code</h5>
+    <p>@extends and @includes are likely to be overwritten by future elements, placing them at the top of the property list calls them out and avoids the beginning of a specificity war.</p>
 
-      <ul class="bulleted">
-        <li>
-          @extends should be grouped together at the top of the selector.
-        </li>
-        <li>
-          @includes should be grouped together after @extends.
-        </li>
-        <li>
-          Regular styles for the current selector should be after @includes.
-        </li>
-        <li>
-          Nested selectors appear last.
-        </li>
-        <li>
-          Nested selectors using & should appear above child (>) nested selectors.
-        </li>
-      </ul>
+    <ul class="bulleted">
+      <li>
+        @extends should be grouped together at the top of the selector.
+      </li>
+      <li>
+        @includes should be grouped together after @extends.
+      </li>
+      <li>
+        Regular styles for the current selector should be after @includes.
+      </li>
+      <li>
+        Nested selectors appear last.
+      </li>
+      <li>
+        Nested selectors using & should appear above child (>) nested selectors.
+      </li>
+    </ul>
 
-    </li>
-    <li>
-      <h5>Limit nesting to 3 levels and/or 50 lines</h5>
-      <p>Nesting selectors more than three levels deep and the code is at risk of being to reliant on HTML structure, overly-specific and difficult to understand.</p>
-      <p>50 lines is reasonable length for keeping an entire block on a code editor screen without having to scroll.</p>
-    </li>
-    <li>
-      <h5>Variablize ALL THE THINGS!</h5>
-      <ul class="bulleted">
-        <li>
-          Variablize all colors.
-        </li>
-        <li>
-          Numbers (other than 0 or 100%) with strong meaning or frequent use should be variables.
-        </li>
-        <li>
-          Use hyphens (-) in variable names.
-        </li>
-        <li>
-          Name variables based on what they represent, not their values, e.g. $text-size-large instead of $text-size-24.
-        </li>
-        <li>
-          Colors, fonts, and base measurements are all great candidates for variables.
-          If you find yourself writing a number other than 0 or 100% more than once, make it a variable.
-        </li>
-        <li>
-          Most variables should be stored in the _variables.scss partial; however, it's acceptable to define component specific variables in the component files.
-        </li>
-        <li>
-          In this case, the variables should be stored at the top of the file.
-        </li>
-      </ul>
-    </li>
+  </li>
+  <li>
+    <h5>Limit nesting to 3 levels and/or 50 lines</h5>
+    <p>Nesting selectors more than three levels deep and the code is at risk of being to reliant on HTML structure, overly-specific and difficult to understand.</p>
+    <p>50 lines is reasonable length for keeping an entire block on a code editor screen without having to scroll.</p>
+  </li>
+  <li>
+    <h5>Variablize ALL THE THINGS!</h5>
+    <ul class="bulleted">
+      <li>
+        Variablize all colors.
+      </li>
+      <li>
+        Numbers (other than 0 or 100%) with strong meaning or frequent use should be variables.
+      </li>
+      <li>
+        Use hyphens (-) in variable names.
+      </li>
+      <li>
+        Name variables based on what they represent, not their values, e.g. $text-size-large instead of $text-size-24.
+      </li>
+      <li>
+        Colors, fonts, and base measurements are all great candidates for variables.
+        If you find yourself writing a number other than 0 or 100% more than once, make it a variable.
+      </li>
+      <li>
+        Most variables should be stored in the _variables.scss partial; however, it's acceptable to define component specific variables in the component files.
+      </li>
+      <li>
+        In this case, the variables should be stored at the top of the file.
+      </li>
+    </ul>
+  </li>
 
-    <li>
-      <h3 id="comments-anchor">Commenting Code</h3>
-      <div class="error">// more content on commenting</div>
-      <p>Try to stick with standard CSS comments, but you can use the Sass style (//) comments for trivial comments or quickly debugging.</p>
-    </li>
-  </ul>
+  <li>
+    <h3 id="comments-anchor">Commenting Code</h3>
+    <p>Try to stick with standard CSS comments, but you can use the Sass style (//) comments for trivial comments or quickly debugging.</p>
+
+    <pre class="prettyprint lang-css">
+      // File headers are commented thusly:
+
+      /* ==========================================================================
+      Component Name -- Version: 1.0.0.0 - Updated: MM/DD/YYYY
+      ========================================================================== */
+    </pre>
+
+    <pre class="prettyrint lang-css">
+      /*
+      * Chunk of long
+      * text gets commented
+      * like this
+      */
+    </pre>
+
+    <pre class="prettyrint lang-css">
+      // Hints get styled like this:
+      /* Hint */
+    </pre>
+  </li>
+</ul>
 
 </div>
 

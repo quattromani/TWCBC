@@ -1,4 +1,4 @@
-$('.prettyprint').hide();
+$('.hide').hide();
 $('.toggle-code').click(function (ev) {
   var t = ev.target
   $('#' + $(this).attr('target')).toggle(500, function(){
