@@ -2563,6 +2563,8 @@ footer {
       overflow: auto;
       border: 0;
       border-top: 1px solid #ddd; }
+    .styleguide .twc-box-column:last-child {
+      margin-bottom: 60vh; }
   .styleguide .sub-section {
     position: relative; }
   .styleguide .back-to-parent {

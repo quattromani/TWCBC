@@ -85,6 +85,10 @@
       border: 0;
       border-top: 1px solid #ddd;
     }
+
+    &:last-child {
+      margin-bottom: 60vh;
+    }
   }
 
   .sub-section {
