@@ -2633,8 +2633,14 @@ footer {
     display: table; }
   .styleguide article {
     visibility: hidden; }
+    @media (max-width: 768px) {
+      .styleguide article {
+        padding: 0 1rem; } }
   .styleguide aside {
     padding-bottom: 2rem; }
+    @media (max-width: 768px) {
+      .styleguide aside {
+        padding: 0 1rem; } }
   .styleguide nav {
     position: relative;
     z-index: 9; }
