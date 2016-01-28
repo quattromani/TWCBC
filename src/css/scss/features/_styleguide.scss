@@ -88,6 +88,10 @@
 
     &:last-child {
       margin-bottom: 60vh;
+
+      @include bp($medium) {
+        margin-bottom: 0;
+      }
     }
   }
 
