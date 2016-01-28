@@ -2689,6 +2689,9 @@ footer {
       border-top: 1px solid #ddd; }
     .styleguide .twc-box-column:last-child {
       margin-bottom: 60vh; }
+      @media (max-width: 768px) {
+        .styleguide .twc-box-column:last-child {
+          margin-bottom: 0; } }
   .styleguide .sub-section {
     position: relative; }
   .styleguide .back-to-parent {
