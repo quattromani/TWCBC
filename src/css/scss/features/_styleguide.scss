@@ -8,6 +8,18 @@
 
   article {
     visibility: hidden;
+
+    @include bp($medium) {
+      @include padding(0 ($base-spacing / 2));
+    }
+  }
+
+  aside {
+    padding-bottom: $base-spacing;
+
+    @include bp($medium) {
+      @include padding(0 ($base-spacing / 2));
+    }
   }
 
   nav {
@@ -23,10 +35,6 @@
   .twc-bc-container {
     @include padding(0);
     overflow: auto;
-  }
-
-  aside {
-    padding-bottom: $base-spacing;
   }
 
   .twc-breadcrumbs {

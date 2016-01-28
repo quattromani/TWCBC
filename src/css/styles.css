@@ -2633,6 +2633,8 @@ footer {
     display: table; }
   .styleguide article {
     visibility: hidden; }
+  .styleguide aside {
+    padding-bottom: 2rem; }
   .styleguide nav {
     position: relative;
     z-index: 9; }
@@ -2642,8 +2644,6 @@ footer {
   .styleguide .twc-bc-container {
     padding: 0;
     overflow: auto; }
-  .styleguide aside {
-    padding-bottom: 2rem; }
   .styleguide .twc-breadcrumbs {
     padding: 2rem 0;
     position: relative;
