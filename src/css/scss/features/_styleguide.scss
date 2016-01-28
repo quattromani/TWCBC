@@ -535,6 +535,10 @@
       content: '';
       display: table;
     }
+
+    @include bp(medium) {
+      top: initial;
+    }
   }
 
   .equal {

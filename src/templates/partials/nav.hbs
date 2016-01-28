@@ -1,32 +1,33 @@
-<a href="#" class="open-panel"><span></span></a>
+<a href="#" class="open-panel" aria-label="navigation menu"><span></span></a>
 
 {{!-- {{ primary_nav nav.category site.baseurl }} --}}
 {{!-- {{ json page }} --}}
 {{!-- {{ page.basename }} --}}
+
 <nav role="navigation" class="twc-new-navigation">
-	<div class="twc-container">
-		<ul class="navigation menu">
-			<li class="js-expandable js-first{{#if (on-path this 'primary-elements') }} js-active{{/if }}">
+	<div class="twc-container menu" role="menubar">
+    <ul>
+			<li class="{{#if (on-path this 'primary-elements') }} js-active{{/if }}">
 				<a href="{{ site.baseurl }}/primary-elements.html">
 					<span>Primary Elements</span>
 				</a>
 			</li>
-			<li class="js-expandable{{#if (on-path this 'component-library') }} js-active{{/if }}">
+			<li class="{{#if (on-path this 'component-library') }} js-active{{/if }}">
 				<a href="{{ site.baseurl }}/component-library.html">
 					<span>Component Library</span>
 				</a>
 			</li>
-			<li class="js-expandable{{#if (on-path this 'helpers') }} js-active{{/if }}">
+			<li class="{{#if (on-path this 'helpers') }} js-active{{/if }}">
 				<a href="{{ site.baseurl }}/helpers.html">
 					<span>Helpers</span>
 				</a>
 			</li>
-			<li class="js-expandable{{#if (on-path this 'best-practices') }} js-active{{/if }}">
+			<li class="{{#if (on-path this 'best-practices') }} js-active{{/if }}">
 				<a href="{{ site.baseurl }}/best-practices.html">
 					<span>Best Practices</span>
 				</a>
 			</li>
-			<li class="js-expandable js-last{{#if (on-path this 'accessibility') }} js-active{{/if }}">
+			<li class="{{#if (on-path this 'accessibility') }} js-active{{/if }}">
 				<a href="{{ site.baseurl }}/accessibility.html">
 					<span>Accessibility</span>
 				</a>

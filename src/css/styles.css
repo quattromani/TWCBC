@@ -2403,67 +2403,185 @@ header[role=banner] {
   header[role=banner] .h2 {
     margin-top: 1rem; }
 
+.outer-wrapper {
+  position: relative;
+  width: 100%; }
+
+.inner-wrapper {
+  position: relative;
+  margin: 0 auto;
+  background-color: initial; }
+
 nav[role=navigation] {
   display: table;
   width: 100%;
   border-top: 1px solid #ebebeb;
   background-color: #333; }
-  nav[role=navigation] ul {
-    display: table-row;
+  nav[role=navigation] .container {
+    display: table;
     width: 100%; }
-  nav[role=navigation] li {
-    display: table-cell;
-    border-right: 1px solid #cacbce;
-    text-align: center; }
-    nav[role=navigation] li ul {
-      background-color: #fff;
-      background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ced1d5));
-      background-image: -webkit-linear-gradient(top, #fff, #ced1d5);
-      background-image: -moz-linear-gradient(top, #fff, #ced1d5);
-      background-image: -ms-linear-gradient(top, #fff, #ced1d5);
-      background-image: -o-linear-gradient(top, #fff, #ced1d5);
-      background-image: linear-gradient(to top, #fff, #ced1d5);
-      /* -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#fff', EndColorStr='#ced1d5')"; */
-      display: none;
-      position: absolute;
-      width: auto; }
-      nav[role=navigation] li ul li:not(:empty) {
-        border-top: 1px solid #cacbce;
-        border-bottom: 1px solid #cacbce; }
-    nav[role=navigation] li:hover {
-      background-color: #ebebeb; }
-      nav[role=navigation] li:hover a {
-        font-weight: normal;
-        color: #000; }
-      nav[role=navigation] li:hover ul {
-        display: table; }
-        nav[role=navigation] li:hover ul li {
+  nav[role=navigation] .menu {
+    display: table;
+    margin: 0 auto;
+    clear: both; }
+    nav[role=navigation] .menu ul {
+      margin: 0;
+      display: table-row;
+      text-align: center; }
+      nav[role=navigation] .menu ul li {
+        padding: 0;
+        font-size: 13px;
+        font-size: 1.3rem;
+        position: relative;
+        display: table-cell;
+        border-right: 1px solid #cacbce;
+        line-height: normal;
+        text-align: center;
+        vertical-align: middle; }
+        nav[role=navigation] .menu ul li a {
+          padding: 1rem 2rem;
           display: block;
-          border-right: none;
-          text-align: left; }
-          nav[role=navigation] li:hover ul li:first-of-type {
-            border-left: none; }
-          nav[role=navigation] li:hover ul li:last-of-type {
-            border-bottom: none; }
-          nav[role=navigation] li:hover ul li:hover a {
-            color: #fff; }
-        nav[role=navigation] li:hover ul a {
-          display: inline-block;
+          font-weight: 200;
+          vertical-align: middle;
           color: #fff;
-          width: 100%; }
-    nav[role=navigation] li.js-active {
-      background-color: #054a91; }
-      nav[role=navigation] li.js-active a {
+          text-transform: uppercase;
+          letter-spacing: 0.03em; }
+          nav[role=navigation] .menu ul li a:hover {
+            text-decoration: none; }
+        nav[role=navigation] .menu ul li.js-active {
+          background-color: #054a91; }
+          nav[role=navigation] .menu ul li.js-active a {
+            color: #fff; }
+        nav[role=navigation] .menu ul li:hover a {
+          background-color: #ebebeb;
+          color: #333; }
+        nav[role=navigation] .menu ul li:first-of-type {
+          border-left: 1px solid #cacbce; }
+        nav[role=navigation] .menu ul li a {
+          padding: 1rem 2rem;
+          display: table;
+          width: 100%;
+          font-weight: normal;
+          text-transform: uppercase;
+          color: #fff; }
+  @media (max-width: 768px) {
+    nav[role=navigation] {
+      background-color: #ebebeb; } }
+
+a.open-panel,
+a.close-panel {
+  display: none; }
+
+@media (max-width: 768px) {
+  .inner-wrapper {
+    width: 100%;
+    right: 0;
+    transition: transform 0.3s ease; }
+
+  .open-nav .inner-wrapper {
+    transform: translateX(-70%);
+    transition: all 0.3s ease-in-out; }
+
+  .open-nav nav[role=navigation] {
+    display: block; }
+
+  nav[role=navigation] {
+    position: absolute;
+    display: none;
+    margin-top: 0;
+    background-color: #fff;
+    top: 0;
+    right: -70%;
+    width: 70%;
+    height: 100%;
+    box-shadow: inset 5px 0 5px -5px shade(#fff, 20%); }
+    nav[role=navigation] .menu {
+      background-color: #333; }
+      nav[role=navigation] .menu ul li a {
         color: #fff; }
-    nav[role=navigation] li:first-of-type {
-      border-left: 1px solid #cacbce; }
-    nav[role=navigation] li a {
-      padding: 1rem 2rem;
-      display: table;
-      width: 100%;
-      font-weight: normal;
-      text-transform: uppercase;
-      color: #fff; }
+    nav[role=navigation] .menu ul {
+      display: inline-block;
+      *zoom: 1;
+      *display: inline;
+      *vertical-align: auto;
+      padding: 0; }
+      nav[role=navigation] .menu ul > li:hover {
+        margin: 0;
+        padding: 0; }
+      .open-nav nav[role=navigation] .menu ul {
+        max-height: 1200px; }
+      nav[role=navigation] .menu ul li {
+        margin: 0;
+        display: block;
+        float: left;
+        width: 100%;
+        text-align: left; }
+        nav[role=navigation] .menu ul li.js-active {
+          background-color: #ebebeb;
+          color: #333; }
+          nav[role=navigation] .menu ul li.js-active a {
+            border-top: none; }
+        nav[role=navigation] .menu ul li:hover > ul {
+          display: none; }
+        nav[role=navigation] .menu ul li:hover ul {
+          position: relative;
+          background-color: transparent;
+          margin: 0; }
+          nav[role=navigation] .menu ul li:hover ul li a {
+            padding: 0.7rem 2rem;
+            color: #fff; }
+          nav[role=navigation] .menu ul li:hover ul li:hover a {
+            background-color: #054a91;
+            color: #fff; }
+        nav[role=navigation] .menu ul li ul {
+          position: relative;
+          display: none; }
+          nav[role=navigation] .menu ul li ul li {
+            text-align: left; }
+        nav[role=navigation] .menu ul li a {
+          padding: 0.7rem 2rem;
+          font-size: 13px;
+          font-size: 1.3rem;
+          border-top: 1px solid tint(#fff, 20%); }
+          nav[role=navigation] .menu ul li a:empty {
+            padding: 0; }
+
+  .open-panel {
+    position: absolute;
+    top: 1rem;
+    z-index: 10;
+    right: 2rem; }
+
+  a.open-panel
+   {
+    display: inline-block; } }
+.open-panel {
+  cursor: pointer;
+  padding: 10px 32px 16px 0px; }
+  .open-panel span,
+  .open-panel span:before,
+  .open-panel span:after {
+    position: absolute;
+    display: block;
+    width: 32px;
+    height: 5px;
+    border-radius: 3px;
+    background-color: #fff;
+    content: '';
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; }
+  .open-panel span:before {
+    top: -10px; }
+  .open-panel span:after {
+    bottom: -10px; }
+  .open-panel.active span {
+    background-color: transparent; }
+    .open-panel.active span:before, .open-panel.active span:after {
+      top: 0; }
+    .open-panel.active span:before {
+      transform: rotate(45deg); }
+    .open-panel.active span:after {
+      transform: rotate(-45deg); }
 
 /* ==========================================================================
     Banner -- Version: 1.9.0.0 - Updated: 12/29/2013
@@ -2857,6 +2975,9 @@ footer {
   .sticky:before, .sticky:after {
     content: '';
     display: table; }
+  @media (max-width: 768px) {
+    .sticky {
+      top: initial; } }
 
 .equal {
   display: table; }
