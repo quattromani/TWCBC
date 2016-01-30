@@ -2266,10 +2266,11 @@ mark {
     Body Text
    ========================== */
 .lede {
-  font-size: 17px;
-  font-size: 1.7rem;
+  font-size: 22px;
+  font-size: 2.2rem;
   display: block;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-style: italic;
   line-height: 1.4;
   color: #333; }
 
@@ -2631,6 +2632,35 @@ footer {
    ========================== */ }
   .styleguide .twc-container {
     display: table; }
+  .styleguide .hero-band::after {
+    font-family: "fontawesome", Arial, Sans-Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    content: "";
+    font-size: 50px;
+    font-size: 5rem;
+    padding: 0 0.5rem;
+    color: inherit; }
+  .styleguide .hero-band:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-duration: 3s; }
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-35px); }
+  20%, 80% {
+    transform: translateY(-30px); } }
   .styleguide article {
     visibility: hidden; }
     @media (max-width: 768px) {
@@ -2911,7 +2941,7 @@ footer {
   .expandableHybrid li.js-notexpandableHybrid h6:after {
     float: right;
     font-family: "fontawesome";
-    content: '\f105' !important;
+    content: '' !important;
     color: inherit; }
   .expandable li ul,
   .expandableHybrid li ul {
@@ -3223,10 +3253,6 @@ pre.desert .typ {
    ========================== */
 .base-font {
   font-family: Arial, "Helvetica Neue", Helvetica, Arial, sans-serif; }
-
-.lede {
-  font-size: 14.625px;
-  font-size: 1.4625rem; }
 
 .body-text {
   font-size: 13px;

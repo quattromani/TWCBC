@@ -6,6 +6,28 @@
     display: table;
   }
 
+  .hero-band {
+    @include icon-after($icon-angle-down, $font-size: 50);
+    &:after {
+      @include centerer;
+      font-weight: 700;
+
+      animation-name: bounce;
+      animation-iteration-count: infinite;
+      animation-fill-mode: both;
+      animation-duration: 3s;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(-35px);
+      }
+      20%, 80% {
+        transform: translateY(-30px);
+      }
+    }
+  }
+
   article {
     visibility: hidden;
 
@@ -430,7 +452,7 @@
       &.js-notexpandableHybrid h6:after {
         float: right;
         font-family: $fontawesome;
-        content: '\f105' !important;
+        content: '' !important;
         color: inherit;
       }
 

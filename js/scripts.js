@@ -115,6 +115,16 @@ $(function() {
   $('.twc-bc-container').css('margin-top', headerHeight);
   $('aside').css("cssText", "height: " + headerHeight + " !important;");
 });
+
+// Disable click on tooltip link - this is not the native functionality
+$('.tooltip').click(function(e) {
+    e.preventDefault();
+});
+
+// Disable click on tooltip link - this is not the native functionality
+$('.example').click(function(a) {
+    a.preventDefault();
+});
 ;/* ==========================================================================
     Accordion -- Version: 1.9.0.0 - Updated: 12/31/2013
    ========================================================================== */

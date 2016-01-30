@@ -26,10 +26,6 @@
   font-family: $base-font-family;
 }
 
-.lede {
-  @include font-size($lede-font-size);
-}
-
 .body-text {
   @include font-size($body-text);
 }
