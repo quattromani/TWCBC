@@ -79,10 +79,6 @@ nav[role=navigation] {
 
         &:first-of-type {
           border-left: 1px solid #cacbce;
-
-          @include bp(medium) {
-            border: 0;
-          }
         }
 
         a {
