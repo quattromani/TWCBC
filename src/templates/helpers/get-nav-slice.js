@@ -77,7 +77,7 @@ module.exports.register = function(Handlebars, options, params) {
     nav_data.section = _.deepFind(data.section, { 'url': path_array[start_at] });
     // console.log("Page: " + this_page.page.basename);
     assign_url(nav_data, path_array.slice(0, start_at));
-
+    // console.log("PAGE: " + this_page.page.basename, JSON.stringify(nav_data.section, null, 2));
     return nav_data.section;
   });
 };
