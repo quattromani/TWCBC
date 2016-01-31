@@ -19,7 +19,7 @@ module.exports.register = function(Handlebars, options, params) {
       }
     }
 
-    console.log("Im not an object", category_i_want);
+    // console.log("Im not an object", category_i_want);
 
     return category_i_want + "";
 

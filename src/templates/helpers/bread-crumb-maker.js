@@ -79,9 +79,9 @@ module.exports.register = function(Handlebars, options, params) {
 
     var new_urls = buildURls(url_array, base_url);
     if (new_urls.length === 4) {
-      console.log(new_urls);
+      // console.log(new_urls);
       new_urls.splice(2, 1);
-      console.log(new_urls);
+      // console.log(new_urls);
     }
     return new_urls;
   });

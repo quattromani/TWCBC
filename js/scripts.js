@@ -352,23 +352,34 @@ $(window).scroll(_.debounce(function() {
   }
 
   var nav_target = $('a[href*="#' + current_anchor.attr('id') + '"]');
+  var nav_parent = null;
 
   if (!nav_target.length) {
     nav_target = $('aside .accordion .js-expandable h6:contains("' + current_anchor.attr('id') + '")').closest('a');
   }
 
+  console.log("wtf", nav_target);
+
   if (nav_target.parent().parent().parent().hasClass('js-expandable')) {
-    nav_target = nav_target.parent().parent().parent();
+    nav_parent = nav_target.parent().parent().parent();
+    console.log("super parent");
   } else {
-    nav_target = nav_target.parent();
+    nav_parent = null;
+    console.log("just me");
   }
+  nav_target = nav_target.parent();
 
   if (!nav_target.hasClass('js-active')) {
     console.log("changing because " + current_anchor.attr('id'));
 
     $('aside .accordion .js-expandable ul').slideUp();
     $('aside .accordion li').removeClass("js-active js-open");
-    nav_target.find('ul').slideDown();
+
+    if (nav_parent !== null) {
+      nav_parent.find('ul').slideDown();
+      nav_parent.addClass("js-active");
+    }
+
     nav_target.addClass("js-active");
   }
 }, 200));
