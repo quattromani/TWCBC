@@ -358,14 +358,10 @@ $(window).scroll(_.debounce(function() {
     nav_target = $('aside .accordion .js-expandable h6:contains("' + current_anchor.attr('id') + '")').closest('a');
   }
 
-  console.log("wtf", nav_target);
-
   if (nav_target.parent().parent().parent().hasClass('js-expandable')) {
     nav_parent = nav_target.parent().parent().parent();
-    console.log("super parent");
   } else {
     nav_parent = null;
-    console.log("just me");
   }
   nav_target = nav_target.parent();
 
