@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
 .twc-logo {
-  @include bp($small) {
-    width: 100% !important;
+  @include bp(small) {
+    width: auto !important;
+    padding: 0 ($base-spacing / 2);
   }
 }

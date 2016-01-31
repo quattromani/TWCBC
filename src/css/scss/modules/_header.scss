@@ -22,6 +22,7 @@ header[role=banner] {
 
     @include bp(medium) {
       float: none;
+      width: 100%;
       text-align: center;
     }
   }
