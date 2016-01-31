@@ -2465,6 +2465,9 @@ nav[role=navigation] {
           color: #333; }
         nav[role=navigation] .menu ul li:first-of-type {
           border-left: 1px solid #cacbce; }
+          @media (max-width: 768px) {
+            nav[role=navigation] .menu ul li:first-of-type {
+              border: 0; } }
         nav[role=navigation] .menu ul li a {
           padding: 1rem 2rem;
           display: table;
