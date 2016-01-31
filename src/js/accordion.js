@@ -18,11 +18,11 @@ $('.accordion .expandable ul li').each(function() {
 // }
 $('.accordion .expandable h6').click(function() {
 	var categoryText = $(this).text();
-  $('.expandable li').removeClass('js-active').find('ul').slideUp();
+  $('.expandable li').removeClass('js-active').removeClass('js-open').find('ul').slideUp();
 	$(this).parent().addClass('js-active').find('ul').slideToggle(function() {
 		$.cookie('js-expand', categoryText);
 		if ($(this).is(':hidden')) {
-			$(this).parent().removeClass('js-active');
+			$(this).parent().removeClass('js-active').removeClass('js-open');
 			$.cookie('js-expand', null);
 		}
 	});
