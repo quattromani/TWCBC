@@ -3056,6 +3056,10 @@ pre.desert .com {
 pre.desert .typ {
   color: #72ab3d !important; }
 
+@media (max-width: 640px) {
+  .twc-logo {
+    width: 100% !important; } }
+
 /* ==========================================================================
     Syntax Highlighter -- Version: 1.9.0.0 - Compiled: timestamp()
    ========================================================================== */
