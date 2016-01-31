@@ -50,15 +50,15 @@ $(window).scroll(_.debounce(function() {
 
   if (!nav_target.hasClass('js-active')) {
     console.log("changing because " + current_anchor.attr('id'));
+    console.log("we're local")
 
-    $('aside .accordion .js-expandable ul').slideUp();
-    $('aside .accordion li').removeClass("js-active js-open");
-
-    if (nav_parent !== null) {
+    if (nav_parent !== null && !nav_parent.hasClass('js-active')) {
+      $('aside .accordion .js-expandable ul').slideUp();
+      $('aside .accordion li').removeClass("js-active js-open");
       nav_parent.find('ul').slideDown();
       nav_parent.addClass("js-active");
     }
-
+    $('aside .accordion li:not(.js-expandable)').removeClass("js-active js-open");
     nav_target.addClass("js-active");
   }
 }, 200));
