@@ -450,6 +450,14 @@
             @include rotate(-180deg);
           }
         }
+
+        .js-active {
+          background-color: #72ab3d;
+
+          a {
+            color: $white;
+          }
+        }
       }
 
       &.js-notexpandable h6:after,

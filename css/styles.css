@@ -2951,6 +2951,12 @@ footer {
     .expandable li.js-active h6:after,
     .expandableHybrid li.js-active h6:after {
       transform: rotate(-180degdeg); }
+  .expandable li.js-active .js-active,
+  .expandableHybrid li.js-active .js-active {
+    background-color: #72ab3d; }
+    .expandable li.js-active .js-active a,
+    .expandableHybrid li.js-active .js-active a {
+      color: #fff; }
   .expandable li.js-notexpandable h6:after, .expandable li.js-notexpandableHybrid h6:after,
   .expandableHybrid li.js-notexpandable h6:after,
   .expandableHybrid li.js-notexpandableHybrid h6:after {
