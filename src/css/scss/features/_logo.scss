@@ -2,6 +2,7 @@
 
 .twc-logo {
   @include bp(small) {
-    width: 100% !important;
+    width: auto !important;
+    padding: 0 ($base-spacing / 2);
   }
 }

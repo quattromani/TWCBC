@@ -2408,6 +2408,7 @@ header[role=banner] {
     @media (max-width: 768px) {
       header[role=banner] .h2 {
         float: none;
+        width: 100%;
         text-align: center; } }
 
 .outer-wrapper {
@@ -3058,7 +3059,8 @@ pre.desert .typ {
 
 @media (max-width: 640px) {
   .twc-logo {
-    width: 100% !important; } }
+    width: auto !important;
+    padding: 0 1rem; } }
 
 /* ==========================================================================
     Syntax Highlighter -- Version: 1.9.0.0 - Compiled: timestamp()
