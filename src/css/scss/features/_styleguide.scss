@@ -48,6 +48,10 @@
     position: relative;
     z-index: 9;
 
+    @include bp(medium) {
+      position: absolute;
+    }
+
     .twc-container {
       position: relative;
       padding: 0;

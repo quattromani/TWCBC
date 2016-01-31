@@ -53,17 +53,21 @@ $('.fonts').each(function(){
 // Make room for the fixed header
 headerHeight = $('header[role=banner]').height();
 
-$(function() {
-  $('.twc-bc-container').css('margin-top', headerHeight);
-  $('aside').css("cssText", "height: " + headerHeight + " !important;");
-});
+$(window).on("resize", function () {
+  if ($(window).width() > mediumBreakPoint) {
+    $('.twc-bc-container').css('margin-top', headerHeight);
+    $('aside').css("cssText", "height: " + headerHeight + " !important;");
+  } else {
+
+  }
+}).resize();
 
 // Disable click on tooltip link - this is not the native functionality
 $('.tooltip').click(function(e) {
-    e.preventDefault();
+  e.preventDefault();
 });
 
 // Disable click on tooltip link - this is not the native functionality
 $('.example').click(function(a) {
-    a.preventDefault();
+  a.preventDefault();
 });

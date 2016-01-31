@@ -37,9 +37,3 @@ $i: 1;
 .h6 {
 	@include inline-block;
 }
-
-.h2 {
-  &.text-right {
-    float: right;
-  }
-}

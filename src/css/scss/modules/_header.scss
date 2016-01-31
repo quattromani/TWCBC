@@ -7,11 +7,22 @@ header[role=banner] {
   width: 100%;
   z-index: 99;
 
+  @include bp(medium) {
+    position: relative;
+  }
+
   .twc-container {
     @include padding(($base-spacing / 2) 0);
   }
 
   .h2 {
+    float: right;
     margin-top: 1rem;
+    text-align: right;
+
+    @include bp(medium) {
+      float: none;
+      text-align: center;
+    }
   }
 }

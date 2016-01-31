@@ -79,6 +79,10 @@ nav[role=navigation] {
 
         &:first-of-type {
           border-left: 1px solid #cacbce;
+
+          @include bp(medium) {
+            border: 0;
+          }
         }
 
         a {
@@ -90,12 +94,11 @@ nav[role=navigation] {
           color: $white;
         }
       }
-
-
     }
   }
 
   @include bp(medium) {
+    border: 0;
     background-color: $lightgrey;
   }
 }
@@ -208,17 +211,18 @@ a.close-panel {
         display: block;
         float: left;
         width: 100%;
+        border-right: none;
+        border-bottom: 1px solid $lightgrey;
         text-align: left;
 
         &.js-active {
-          background-color: $lightgrey;
-          color: $text;
+          border-bottom: 1px solid $lightgrey;
+          background-color: $lightgrey-alt;
 
           a {
             border-top: none;
           }
         }
-
 
         &:hover {
           > ul {
@@ -234,7 +238,7 @@ a.close-panel {
 
           li {
             a {
-              @include padding(($base-spacing * .35) $base-spacing);
+              @include padding($base-spacing);
               color: $white;
             }
 
@@ -258,7 +262,7 @@ a.close-panel {
       }
 
       a {
-        @include padding(($base-spacing * .35) $base-spacing);
+        @include padding(($base-spacing / 2) $base-spacing);
         @include font-size($nav-dropdown-font-size);
         border-top: 1px solid tint($nav-off-canvas-bg, 20%);
 

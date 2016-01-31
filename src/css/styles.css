@@ -1961,9 +1961,6 @@ h6,
   *display: inline;
   *vertical-align: auto; }
 
-.h2.text-right {
-  float: right; }
-
 [class*='fa-facebook'] {
   color: #3b5998; }
   [class*='fa-facebook']:hover {
@@ -2399,10 +2396,19 @@ header[role=banner] {
   top: 0;
   width: 100%;
   z-index: 99; }
+  @media (max-width: 768px) {
+    header[role=banner] {
+      position: relative; } }
   header[role=banner] .twc-container {
     padding: 1rem 0; }
   header[role=banner] .h2 {
-    margin-top: 1rem; }
+    float: right;
+    margin-top: 1rem;
+    text-align: right; }
+    @media (max-width: 768px) {
+      header[role=banner] .h2 {
+        float: none;
+        text-align: center; } }
 
 .outer-wrapper {
   position: relative;
@@ -2458,6 +2464,9 @@ nav[role=navigation] {
           color: #333; }
         nav[role=navigation] .menu ul li:first-of-type {
           border-left: 1px solid #cacbce; }
+          @media (max-width: 768px) {
+            nav[role=navigation] .menu ul li:first-of-type {
+              border: 0; } }
         nav[role=navigation] .menu ul li a {
           padding: 1rem 2rem;
           display: table;
@@ -2467,6 +2476,7 @@ nav[role=navigation] {
           color: #fff; }
   @media (max-width: 768px) {
     nav[role=navigation] {
+      border: 0;
       background-color: #ebebeb; } }
 
 a.open-panel,
@@ -2516,10 +2526,12 @@ a.close-panel {
         display: block;
         float: left;
         width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #ebebeb;
         text-align: left; }
         nav[role=navigation] .menu ul li.js-active {
-          background-color: #ebebeb;
-          color: #333; }
+          border-bottom: 1px solid #ebebeb;
+          background-color: #054a91; }
           nav[role=navigation] .menu ul li.js-active a {
             border-top: none; }
         nav[role=navigation] .menu ul li:hover > ul {
@@ -2529,7 +2541,7 @@ a.close-panel {
           background-color: transparent;
           margin: 0; }
           nav[role=navigation] .menu ul li:hover ul li a {
-            padding: 0.7rem 2rem;
+            padding: 2rem;
             color: #fff; }
           nav[role=navigation] .menu ul li:hover ul li:hover a {
             background-color: #054a91;
@@ -2540,7 +2552,7 @@ a.close-panel {
           nav[role=navigation] .menu ul li ul li {
             text-align: left; }
         nav[role=navigation] .menu ul li a {
-          padding: 0.7rem 2rem;
+          padding: 1rem 2rem;
           font-size: 13px;
           font-size: 1.3rem;
           border-top: 1px solid tint(#fff, 20%); }
@@ -2567,7 +2579,7 @@ a.close-panel {
     width: 32px;
     height: 5px;
     border-radius: 3px;
-    background-color: #fff;
+    background-color: #054a91;
     content: '';
     cursor: pointer;
     transition: all 0.3s ease-in-out; }
@@ -2674,6 +2686,9 @@ footer {
   .styleguide nav {
     position: relative;
     z-index: 9; }
+    @media (max-width: 768px) {
+      .styleguide nav {
+        position: absolute; } }
     .styleguide nav .twc-container {
       position: relative;
       padding: 0; }
@@ -3194,6 +3209,9 @@ pre.desert .typ {
   font-family: Inconsolata, Monaco, Consolas, "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
   color: #2aa198;
   z-index: 100; }
+  @media (max-width: 768px) {
+    .viewport, .loadtime, .pv {
+      display: none; } }
 
 .pv {
   border-radius: 0 0 3px 0;
