@@ -344,7 +344,7 @@ $(window).scroll(_.debounce(function() {
   for (var i = 0; i < jump_anchors.length; i++) {
     var this_anchor = $(jump_anchors).eq(i);
 
-    if (this_anchor.offset().top - offset > $(window).height() * 1 / 4) {
+    if (this_anchor.offset().top - offset > $(window).height() * 2 / 5) {
       break;
     }
 
@@ -367,15 +367,19 @@ $(window).scroll(_.debounce(function() {
 
   if (!nav_target.hasClass('js-active')) {
     console.log("changing because " + current_anchor.attr('id'));
-    console.log("we're local")
 
     if (nav_parent !== null && !nav_parent.hasClass('js-active')) {
       $('aside .accordion .js-expandable ul').slideUp();
       $('aside .accordion li').removeClass("js-active js-open");
       nav_parent.find('ul').slideDown();
       nav_parent.addClass("js-active");
+
+    } else if (nav_target.parent().parent().parent().hasClass("accordion")) {
+      $('aside .accordion .js-expandable ul').slideUp();
+      $('aside .accordion li').removeClass("js-active js-open");
     }
-    $('aside .accordion li:not(.js-expandable)').removeClass("js-active js-open");
+    console.log(nav_target.parent().parent().parent().attr("class"));
+    $('aside .accordion li:not(.js-expandable)').removeClass("js-active");
     nav_target.addClass("js-active");
   }
 }, 200));
