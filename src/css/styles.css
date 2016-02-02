@@ -2263,8 +2263,8 @@ mark {
     Body Text
    ========================== */
 .lede {
-  font-size: 22px;
-  font-size: 2.2rem;
+  font-size: 18px;
+  font-size: 1.8rem;
   display: block;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-style: italic;
@@ -2716,6 +2716,8 @@ footer {
     font-family: Arial,"Helvetica Neue",Helvetica,sans-serif,Sans-Serif;
     font-weight: 700; }
   .styleguide .jumpTo-anchor {
+    font-size: 24px;
+    font-size: 2.4rem;
     margin-bottom: 2rem; }
   .styleguide .twc-right {
     margin: 0; }
@@ -2954,10 +2956,10 @@ footer {
       transform: rotate(-180degdeg); }
   .expandable li.js-active .js-active,
   .expandableHybrid li.js-active .js-active {
-    background-color: #72ab3d; }
+    background-color: #fff; }
     .expandable li.js-active .js-active a,
     .expandableHybrid li.js-active .js-active a {
-      color: #fff; }
+      color: #72ab3d; }
   .expandable li.js-notexpandable h6:after, .expandable li.js-notexpandableHybrid h6:after,
   .expandableHybrid li.js-notexpandable h6:after,
   .expandableHybrid li.js-notexpandableHybrid h6:after {

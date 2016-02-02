@@ -96,6 +96,7 @@
   }
 
   .jumpTo-anchor {
+    @include font-size(24);
     margin-bottom: $base-spacing;
   }
 
@@ -452,10 +453,10 @@
         }
 
         .js-active {
-          background-color: #72ab3d;
+          background-color: $white;
 
           a {
-            color: $white;
+            color: #72ab3d;
           }
         }
       }
