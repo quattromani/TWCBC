@@ -2,6 +2,9 @@
 @charset "UTF-8";
 
 .styleguide {
+  .twc-container {
+    display: table;
+  }
 
   .hero-band {
     @include icon-after($icon-angle-down, $font-size: 50);
@@ -583,6 +586,10 @@
     @include bp(medium) {
       top: initial;
     }
+  }
+
+  .equal {
+    display: table;
   }
 
   .bulleted li:before{

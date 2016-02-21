@@ -2643,6 +2643,8 @@ footer {
   /* ==========================
     Pre
    ========================== */ }
+  .styleguide .twc-container {
+    display: table; }
   .styleguide .hero-band::after {
     font-family: "fontawesome", Arial, Sans-Serif;
     font-style: normal;
@@ -3039,6 +3041,9 @@ footer {
   @media (max-width: 768px) {
     .sticky {
       top: initial; } }
+
+.equal {
+  display: table; }
 
 .bulleted li:before {
   content: '' !important;
