@@ -2691,8 +2691,7 @@ footer {
       position: relative;
       padding: 0; }
   .styleguide .twc-bc-container {
-    padding: 0;
-    overflow: auto; }
+    padding: 0; }
   .styleguide .twc-breadcrumbs {
     padding: 2rem 0;
     position: relative;
