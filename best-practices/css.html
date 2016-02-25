@@ -511,6 +511,10 @@ Component Name -- Version: 1.0.0.0 - Updated: MM/DD/YYYY
 
 
     <script>
+      $(document).ready(function() {
+        equalHeight($('.equal'));
+      });
+
       $( document ).ready(function() {
         $('aside').Stickyfill();
         $('.styleguide article').css('visibility','visible');
