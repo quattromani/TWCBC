@@ -200,6 +200,10 @@ $(function() {
 
   }
 }
+
+$(document).ready(function() {
+  equalHeight($('.equal'));
+});
 ;// Add classes to first and last li's for every instance
 $(function() {
   // Add classes to first and last of each list

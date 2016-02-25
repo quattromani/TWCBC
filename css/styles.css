@@ -2643,6 +2643,8 @@ footer {
   /* ==========================
     Pre
    ========================== */ }
+  .styleguide.home .equal {
+    min-height: 300px; }
   .styleguide .hero-band::after {
     font-family: "fontawesome", Arial, Sans-Serif;
     font-style: normal;

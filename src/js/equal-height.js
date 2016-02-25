@@ -12,3 +12,7 @@ function equalHeight(group) {
 
   }
 }
+
+$(document).ready(function() {
+  equalHeight($('.equal'));
+});

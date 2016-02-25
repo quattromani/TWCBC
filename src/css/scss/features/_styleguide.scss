@@ -3,6 +3,12 @@
 
 .styleguide {
 
+  &.home {
+    .equal {
+      min-height: 300px;
+    }
+  }
+
   .hero-band {
     @include icon-after($icon-angle-down, $font-size: 50);
     &:after {
