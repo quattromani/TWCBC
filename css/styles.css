@@ -2633,6 +2633,8 @@ a.close-panel {
 
 footer {
   text-align: center; }
+  footer.twc-footer {
+    background: intial !important; }
   footer .twc-bc-footer {
     padding: 2rem 0;
     background: intial !important; }
