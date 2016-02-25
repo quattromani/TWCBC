@@ -4,11 +4,11 @@ footer {
   text-align: center;
 
   &.twc-footer {
-    background: intial !important;
+    background: initial !important;
   }
 
   .twc-bc-footer {
     @include padding($base-spacing 0);
-    background: intial !important;
+    background: initial !important;
   }
 }
